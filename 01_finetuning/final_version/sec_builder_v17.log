@@ -1,0 +1,393 @@
+2026-05-09 18:18:49 | INFO    | build_dataset:2978 | Processing 517 companies | forms: ('10-K', '10-Q', '8-K')
+2026-05-09 18:18:50 | INFO    | process_company:2710 | ══ AAPL (Apple Inc) ══
+2026-05-09 18:18:51 | INFO    | ticker_to_cik:1171 | CIK table: 10,381 entries
+2026-05-09 18:18:52 | INFO    | load_xbrl_facts:1447 |   XBRL: 503 GAAP + 2 DEI
+2026-05-09 18:18:53 | INFO    | get_filings:1223 |   10-K: 5 filings
+2026-05-09 18:18:53 | INFO    | process_company:2737 |   ▶ 10-K | 2021-09-25 | 0000320193-21-000105
+2026-05-09 18:18:56 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2021-10-29): stock=+1.14% SPY=+2.02% abnormal=-0.89%
+2026-05-09 18:18:56 | INFO    | process_company:2754 |     AR: -0.89% (neutral)
+2026-05-09 18:18:58 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:18:58 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 3831 chars
+2026-05-09 18:18:58 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:18:58 | INFO    | process_company:2796 |     Metrics: 47 | decum: False | text_sections: 2
+2026-05-09 18:19:09 | INFO    | process_company:2893 |     ✓ [FULL|Q=80|tier=silver|gold=False|decum=False|qa=False]: 2022 chars
+2026-05-09 18:19:09 | DEBUG   | process_company:2902 |     Elite rejections: ["REQ-2: missing metrics ['net_income_yoy']", 'REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:19:09 | INFO    | process_company:2737 |   ▶ 10-K | 2022-09-24 | 0000320193-22-000108
+2026-05-09 18:19:10 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2022-10-28): stock=-11.00% SPY=-3.26% abnormal=-7.74%
+2026-05-09 18:19:10 | INFO    | process_company:2754 |     AR: -7.74% (strong_negative)
+2026-05-09 18:19:13 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:19:13 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 3897 chars
+2026-05-09 18:19:13 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:19:13 | INFO    | process_company:2796 |     Metrics: 47 | decum: False | text_sections: 2
+2026-05-09 18:19:13 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.88 + Cash=$23.6B | Risk=HIGH
+2026-05-09 18:19:25 | INFO    | process_company:2893 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=False|qa=True]: 1921 chars
+2026-05-09 18:19:25 | DEBUG   | process_company:2902 |     Elite rejections: ['REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:19:25 | INFO    | process_company:2737 |   ▶ 10-K | 2023-09-30 | 0000320193-23-000106
+2026-05-09 18:19:27 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2023-11-03): stock=+5.66% SPY=+1.36% abnormal=+4.30%
+2026-05-09 18:19:27 | INFO    | process_company:2754 |     AR: +4.30% (positive)
+2026-05-09 18:19:28 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:19:29 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 3965 chars
+2026-05-09 18:19:29 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:19:29 | INFO    | process_company:2796 |     Metrics: 47 | decum: False | text_sections: 2
+2026-05-09 18:19:29 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.99 + Cash=$30.0B | Risk=HIGH
+2026-05-09 18:19:40 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True]: 1680 chars
+2026-05-09 18:19:40 | INFO    | process_company:2737 |   ▶ 10-K | 2024-09-28 | 0000320193-24-000123
+2026-05-09 18:19:41 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2024-11-01): stock=+1.93% SPY=+4.75% abnormal=-2.83%
+2026-05-09 18:19:41 | INFO    | process_company:2754 |     AR: -2.83% (negative)
+2026-05-09 18:19:42 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:19:42 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4009 chars
+2026-05-09 18:19:42 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:19:42 | INFO    | process_company:2796 |     Metrics: 46 | decum: False | text_sections: 2
+2026-05-09 18:19:42 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.87 + Cash=$29.9B | Risk=HIGH
+2026-05-09 18:19:54 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True]: 1969 chars
+2026-05-09 18:19:57 | INFO    | process_company:2921 |     ✓ Negative examples: 1 scenarios
+2026-05-09 18:19:57 | INFO    | process_company:2737 |   ▶ 10-K | 2025-09-27 | 0000320193-25-000079
+2026-05-09 18:19:58 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2025-10-31): stock=-0.70% SPY=-1.63% abnormal=+0.92%
+2026-05-09 18:19:58 | INFO    | process_company:2754 |     AR: +0.92% (neutral)
+2026-05-09 18:19:59 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:19:59 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4116 chars
+2026-05-09 18:19:59 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:19:59 | INFO    | process_company:2796 |     Metrics: 46 | decum: False | text_sections: 2
+2026-05-09 18:19:59 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.89 + Cash=$35.9B | Risk=HIGH
+2026-05-09 18:20:15 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True]: 1987 chars
+2026-05-09 18:20:16 | INFO    | get_filings:1223 |   10-Q: 8 filings
+2026-05-09 18:20:16 | INFO    | process_company:2737 |   ▶ 10-Q | 2023-12-30 | 0000320193-24-000006
+2026-05-09 18:20:17 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2024-02-02): stock=+1.74% SPY=+1.39% abnormal=+0.36%
+2026-05-09 18:20:17 | INFO    | process_company:2754 |     AR: +0.36% (neutral)
+2026-05-09 18:20:18 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/5
+2026-05-09 18:20:18 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 1244 chars
+2026-05-09 18:20:18 | INFO    | scrape_text_sections:1370 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-09 18:20:18 | INFO    | process_company:2796 |     Metrics: 46 | decum: False | text_sections: 2
+2026-05-09 18:20:31 | INFO    | process_company:2893 |     ✓ [FULL|Q=70|tier=bronze|gold=False|decum=False|qa=False]: 1730 chars
+2026-05-09 18:20:31 | DEBUG   | process_company:2902 |     Elite rejections: ["REQ-2: missing metrics ['net_income_yoy', 'gross_margin_delta']", 'REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:20:31 | INFO    | process_company:2737 |   ▶ 10-Q | 2024-03-30 | 0000320193-24-000069
+2026-05-09 18:20:32 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2024-05-03): stock=-0.04% SPY=+1.87% abnormal=-1.91%
+2026-05-09 18:20:32 | INFO    | process_company:2754 |     AR: -1.91% (neutral)
+2026-05-09 18:20:33 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:20:33 | INFO    | scrape_text_sections:1370 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-09 18:20:33 | INFO    | process_company:2796 |     Metrics: 46 | decum: False | text_sections: 2
+2026-05-09 18:20:42 | INFO    | process_company:2893 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=False|qa=False]: 2215 chars
+2026-05-09 18:20:42 | DEBUG   | process_company:2902 |     Elite rejections: ['REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:20:42 | INFO    | process_company:2737 |   ▶ 10-Q | 2024-06-29 | 0000320193-24-000081
+2026-05-09 18:20:43 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2024-08-02): stock=-1.65% SPY=+0.02% abnormal=-1.66%
+2026-05-09 18:20:43 | INFO    | process_company:2754 |     AR: -1.66% (neutral)
+2026-05-09 18:20:44 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:20:44 | INFO    | scrape_text_sections:1370 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-09 18:20:44 | INFO    | process_company:2796 |     Metrics: 46 | decum: True | text_sections: 2
+2026-05-09 18:20:44 | WARNING | process_company:2815 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-09 18:20:44 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.95 + Cash=$25.6B | Risk=HIGH
+2026-05-09 18:20:44 | WARNING | process_company:2927 |     ✗ LLM skipped — sanity BLOCK
+2026-05-09 18:20:44 | INFO    | process_company:2737 |   ▶ 10-Q | 2024-12-28 | 0000320193-25-000008
+2026-05-09 18:20:45 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2025-01-31): stock=-3.55% SPY=-0.17% abnormal=-3.37%
+2026-05-09 18:20:45 | INFO    | process_company:2754 |     AR: -3.37% (negative)
+2026-05-09 18:20:46 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:20:46 | INFO    | scrape_text_sections:1370 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-09 18:20:46 | INFO    | process_company:2796 |     Metrics: 46 | decum: True | text_sections: 2
+2026-05-09 18:20:46 | WARNING | process_company:2815 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-09 18:20:46 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.92 + Cash=$30.3B | Risk=HIGH
+2026-05-09 18:20:46 | WARNING | process_company:2927 |     ✗ LLM skipped — sanity BLOCK
+2026-05-09 18:20:46 | INFO    | process_company:2737 |   ▶ 10-Q | 2025-03-29 | 0000320193-25-000057
+2026-05-09 18:20:47 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2025-05-02): stock=-3.32% SPY=-0.43% abnormal=-2.89%
+2026-05-09 18:20:47 | INFO    | process_company:2754 |     AR: -2.89% (negative)
+2026-05-09 18:20:47 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:20:47 | INFO    | scrape_text_sections:1370 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-09 18:20:47 | INFO    | process_company:2796 |     Metrics: 46 | decum: False | text_sections: 2
+2026-05-09 18:20:47 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.82 + Cash=$28.2B | Risk=HIGH
+2026-05-09 18:21:09 | INFO    | process_company:2893 |     ✓ [FULL|Q=80|tier=silver|gold=False|decum=False|qa=True]: 1107 chars
+2026-05-09 18:21:09 | DEBUG   | process_company:2902 |     Elite rejections: ['REQ-3: insufficient causal language (1 hits)', 'REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:21:12 | INFO    | process_company:2921 |     ✓ Negative examples: 1 scenarios
+2026-05-09 18:21:12 | INFO    | process_company:2737 |   ▶ 10-Q | 2025-06-28 | 0000320193-25-000073
+2026-05-09 18:21:13 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2025-08-01): stock=+13.33% SPY=+2.49% abnormal=+10.84%
+2026-05-09 18:21:13 | INFO    | process_company:2754 |     AR: +10.84% (strong_positive)
+2026-05-09 18:21:15 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:21:15 | INFO    | scrape_text_sections:1370 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-09 18:21:15 | INFO    | process_company:2796 |     Metrics: 46 | decum: True | text_sections: 2
+2026-05-09 18:21:15 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.87 + Cash=$36.3B | Risk=HIGH
+2026-05-09 18:21:22 | INFO    | process_company:2893 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=True|qa=True]: 1723 chars
+2026-05-09 18:21:22 | DEBUG   | process_company:2902 |     Elite rejections: ['REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:21:22 | INFO    | process_company:2737 |   ▶ 10-Q | 2025-12-27 | 0000320193-26-000006
+2026-05-09 18:21:23 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2026-01-30): stock=+7.18% SPY=-0.20% abnormal=+7.38%
+2026-05-09 18:21:23 | INFO    | process_company:2754 |     AR: +7.38% (strong_positive)
+2026-05-09 18:21:24 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:21:24 | INFO    | scrape_text_sections:1370 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-09 18:21:24 | INFO    | process_company:2796 |     Metrics: 46 | decum: True | text_sections: 2
+2026-05-09 18:21:24 | INFO    | process_company:2826 |     ⚠ Liquidity paradox: CR=0.97 + Cash=$45.3B | Risk=HIGH
+2026-05-09 18:21:38 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=True|qa=True]: 1922 chars
+2026-05-09 18:21:41 | INFO    | process_company:2921 |     ✓ Negative examples: 1 scenarios
+2026-05-09 18:21:41 | INFO    | process_company:2737 |   ▶ 10-Q | 2026-03-28 | 0000320193-26-000013
+2026-05-09 18:21:42 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2026-05-01): stock=+4.71% SPY=+2.35% abnormal=+2.35%
+2026-05-09 18:21:42 | INFO    | process_company:2754 |     AR: +2.35% (positive)
+2026-05-09 18:21:43 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:21:43 | INFO    | scrape_text_sections:1370 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-09 18:21:43 | INFO    | process_company:2796 |     Metrics: 46 | decum: False | text_sections: 2
+2026-05-09 18:21:57 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True]: 2409 chars
+2026-05-09 18:21:58 | INFO    | get_filings:1223 |   8-K: 8 filings
+2026-05-09 18:21:58 | INFO    | process_company:2737 |   ▶ 8-K | 2025-07-31 | 0000320193-25-000071
+2026-05-09 18:21:59 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2025-07-31): stock=+6.00% SPY=+0.03% abnormal=+5.98%
+2026-05-09 18:21:59 | INFO    | process_company:2754 |     AR: +5.98% (strong_positive)
+2026-05-09 18:22:00 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/320193/000032019325000071/0000320193-25-000071-index.json
+2026-05-09 18:22:21 | INFO    | process_company:2774 |     ✓ 8-K [Q=80|tier=silver|gold=False]: 1923 chars
+2026-05-09 18:22:21 | INFO    | process_company:2737 |   ▶ 8-K | 2025-10-30 | 0000320193-25-000077
+2026-05-09 18:22:22 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2025-10-30): stock=-0.60% SPY=-1.40% abnormal=+0.80%
+2026-05-09 18:22:22 | INFO    | process_company:2754 |     AR: +0.80% (neutral)
+2026-05-09 18:22:23 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/320193/000032019325000077/0000320193-25-000077-index.json
+2026-05-09 18:22:39 | INFO    | process_company:2774 |     ✓ 8-K [Q=90|tier=gold|gold=True]: 1126 chars
+2026-05-09 18:22:39 | INFO    | process_company:2737 |   ▶ 8-K | 2025-12-04 | 0001140361-25-044561
+2026-05-09 18:22:40 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2025-12-05): stock=-0.18% SPY=-0.57% abnormal=+0.39%
+2026-05-09 18:22:40 | INFO    | process_company:2754 |     AR: +0.39% (neutral)
+2026-05-09 18:22:41 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/320193/000114036125044561/0001140361-25-044561-index.json
+2026-05-09 18:23:06 | INFO    | process_company:2737 |   ▶ 8-K | 2025-12-30 | 0001140361-26-000199
+2026-05-09 18:23:07 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2026-01-02): stock=-4.29% SPY=+1.60% abnormal=-5.89%
+2026-05-09 18:23:07 | INFO    | process_company:2754 |     AR: -5.89% (strong_negative)
+2026-05-09 18:23:07 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/320193/000114036126000199/0001140361-26-000199-index.json
+2026-05-09 18:23:08 | DEBUG   | process_company:2779 |     8-K not material
+2026-05-09 18:23:08 | INFO    | process_company:2737 |   ▶ 8-K | 2026-01-29 | 0000320193-26-000005
+2026-05-09 18:23:09 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2026-01-29): stock=+6.83% SPY=-2.37% abnormal=+9.19%
+2026-05-09 18:23:09 | INFO    | process_company:2754 |     AR: +9.19% (strong_positive)
+2026-05-09 18:23:09 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/320193/000032019326000005/0000320193-26-000005-index.json
+2026-05-09 18:23:37 | INFO    | process_company:2737 |   ▶ 8-K | 2026-02-24 | 0001140361-26-006577
+2026-05-09 18:23:38 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2026-02-24): stock=-3.08% SPY=-1.02% abnormal=-2.06%
+2026-05-09 18:23:38 | INFO    | process_company:2754 |     AR: -2.06% (negative)
+2026-05-09 18:23:38 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/320193/000114036126006577/0001140361-26-006577-index.json
+2026-05-09 18:23:39 | DEBUG   | process_company:2779 |     8-K not material
+2026-05-09 18:23:39 | INFO    | process_company:2737 |   ▶ 8-K | 2026-04-17 | 0001140361-26-015711
+2026-05-09 18:23:40 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2026-04-20): stock=-1.99% SPY=+0.91% abnormal=-2.90%
+2026-05-09 18:23:40 | INFO    | process_company:2754 |     AR: -2.90% (negative)
+2026-05-09 18:23:40 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/320193/000114036126015711/0001140361-26-015711-index.json
+2026-05-09 18:23:41 | DEBUG   | process_company:2779 |     8-K not material
+2026-05-09 18:23:41 | INFO    | process_company:2737 |   ▶ 8-K | 2026-04-30 | 0000320193-26-000011
+2026-05-09 18:23:42 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return AAPL (2026-04-30): stock=+5.93% SPY=+1.80% abnormal=+4.13%
+2026-05-09 18:23:42 | INFO    | process_company:2754 |     AR: +4.13% (positive)
+2026-05-09 18:23:42 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/320193/000032019326000011/0000320193-26-000011-index.json
+2026-05-09 18:23:54 | INFO    | process_company:2774 |     ✓ 8-K [Q=90|tier=gold|gold=True]: 1914 chars
+2026-05-09 18:24:11 | INFO    | build_multiyear_records:2489 |     ✓ Multi-year (6 periods): 1875 chars
+2026-05-09 18:24:25 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2021-09-25→2023-09-30: 1888 chars
+2026-05-09 18:24:44 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2022-09-24→2024-09-28: 2045 chars
+2026-05-09 18:25:13 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2023-09-30→2024-09-28: 1569 chars
+2026-05-09 18:25:41 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2024-09-28→2025-09-27: 1169 chars
+2026-05-09 18:25:41 | SUCCESS | process_company:2943 |   Multi-year 10-K: +5 records
+2026-05-09 18:26:01 | INFO    | build_multiyear_records:2489 |     ✓ Multi-year (10 periods): 2546 chars
+2026-05-09 18:26:25 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2023-12-30→2024-06-29: 1688 chars
+2026-05-09 18:26:42 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2024-03-30→2024-12-28: 1971 chars
+2026-05-09 18:27:05 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2024-06-29→2025-03-29: 1780 chars
+2026-05-09 18:27:26 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2024-12-28→2025-03-29: 1706 chars
+2026-05-09 18:27:43 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2025-03-29→2025-06-28: 1767 chars
+2026-05-09 18:27:53 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2025-03-29→2025-12-27: 1959 chars
+2026-05-09 18:28:07 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2025-06-28→2025-12-27: 1682 chars
+2026-05-09 18:28:24 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2025-12-27→2026-03-28: 1326 chars
+2026-05-09 18:28:24 | SUCCESS | process_company:2943 |   Multi-year 10-Q: +9 records
+2026-05-09 18:28:24 | SUCCESS | process_company:2947 |   AAPL: 38 total | total_429s=0, skipped=0, consecutive_now=0
+2026-05-09 18:28:24 | INFO    | build_dataset:3012 |   ✓ AAPL: 38 records | total written: 38
+2026-05-09 18:28:24 | INFO    | process_company:2710 | ══ MSFT (Microsoft Corp) ══
+2026-05-09 18:28:25 | INFO    | load_xbrl_facts:1447 |   XBRL: 544 GAAP + 3 DEI
+2026-05-09 18:28:26 | INFO    | get_filings:1223 |   10-K: 5 filings
+2026-05-09 18:28:26 | INFO    | process_company:2737 |   ▶ 10-K | 2021-06-30 | 0001564590-21-039151
+2026-05-09 18:28:27 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2021-07-29): stock=+1.05% SPY=+0.25% abnormal=+0.80%
+2026-05-09 18:28:27 | INFO    | process_company:2754 |     AR: +0.80% (neutral)
+2026-05-09 18:28:34 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:28:34 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4222 chars
+2026-05-09 18:28:34 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:28:34 | INFO    | process_company:2796 |     Metrics: 43 | decum: False | text_sections: 2
+2026-05-09 18:28:58 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=False]: 1599 chars
+2026-05-09 18:28:58 | INFO    | process_company:2737 |   ▶ 10-K | 2022-06-30 | 0001564590-22-026876
+2026-05-09 18:28:59 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2022-07-28): stock=+2.62% SPY=+2.00% abnormal=+0.62%
+2026-05-09 18:28:59 | INFO    | process_company:2754 |     AR: +0.62% (neutral)
+2026-05-09 18:29:04 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:29:04 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4252 chars
+2026-05-09 18:29:04 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:29:04 | INFO    | process_company:2796 |     Metrics: 43 | decum: False | text_sections: 2
+2026-05-09 18:29:18 | INFO    | process_company:2893 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=False|qa=True]: 1704 chars
+2026-05-09 18:29:18 | DEBUG   | process_company:2902 |     Elite rejections: ['REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:29:18 | INFO    | process_company:2737 |   ▶ 10-K | 2023-06-30 | 0000950170-23-035122
+2026-05-09 18:29:20 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2023-07-27): stock=-1.23% SPY=-0.81% abnormal=-0.42%
+2026-05-09 18:29:20 | INFO    | process_company:2754 |     AR: -0.42% (neutral)
+2026-05-09 18:29:26 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:29:26 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4060 chars
+2026-05-09 18:29:26 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:29:26 | INFO    | process_company:2796 |     Metrics: 44 | decum: False | text_sections: 2
+2026-05-09 18:29:35 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True]: 2287 chars
+2026-05-09 18:29:35 | INFO    | process_company:2737 |   ▶ 10-K | 2024-06-30 | 0000950170-24-087843
+2026-05-09 18:29:36 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2024-07-30): stock=-5.51% SPY=-3.66% abnormal=-1.85%
+2026-05-09 18:29:36 | INFO    | process_company:2754 |     AR: -1.85% (neutral)
+2026-05-09 18:29:42 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:29:42 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 3849 chars
+2026-05-09 18:29:42 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:29:42 | INFO    | process_company:2796 |     Metrics: 44 | decum: False | text_sections: 2
+2026-05-09 18:30:13 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True]: 2257 chars
+2026-05-09 18:30:13 | INFO    | process_company:2737 |   ▶ 10-K | 2025-06-30 | 0000950170-25-100235
+2026-05-09 18:30:14 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-07-30): stock=+2.28% SPY=-0.27% abnormal=+2.54%
+2026-05-09 18:30:14 | INFO    | process_company:2754 |     AR: +2.54% (positive)
+2026-05-09 18:30:20 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:30:20 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4752 chars
+2026-05-09 18:30:20 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:30:20 | INFO    | process_company:2796 |     Metrics: 43 | decum: False | text_sections: 2
+2026-05-09 18:30:30 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True]: 1834 chars
+2026-05-09 18:30:31 | INFO    | get_filings:1223 |   10-Q: 8 filings
+2026-05-09 18:30:31 | INFO    | process_company:2737 |   ▶ 10-Q | 2023-12-31 | 0000950170-24-008814
+2026-05-09 18:30:32 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2024-01-30): stock=-0.76% SPY=+0.63% abnormal=-1.39%
+2026-05-09 18:30:32 | INFO    | process_company:2754 |     AR: -1.39% (neutral)
+2026-05-09 18:30:37 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:30:37 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 160 chars
+2026-05-09 18:30:37 | INFO    | scrape_text_sections:1370 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-09 18:30:37 | INFO    | process_company:2796 |     Metrics: 43 | decum: False | text_sections: 3
+2026-05-09 18:31:03 | WARNING | process_company:2924 |     ✗ LLM pending
+2026-05-09 18:31:03 | INFO    | process_company:2737 |   ▶ 10-Q | 2024-03-31 | 0000950170-24-048288
+2026-05-09 18:31:05 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2024-04-25): stock=-0.30% SPY=+0.31% abnormal=-0.61%
+2026-05-09 18:31:05 | INFO    | process_company:2754 |     AR: -0.61% (neutral)
+2026-05-09 18:31:10 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:31:10 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 160 chars
+2026-05-09 18:31:10 | INFO    | scrape_text_sections:1370 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-09 18:31:10 | INFO    | process_company:2796 |     Metrics: 43 | decum: False | text_sections: 3
+2026-05-09 18:31:22 | INFO    | process_company:2893 |     ✓ [FULL|Q=80|tier=silver|gold=False|decum=False|qa=False]: 1657 chars
+2026-05-09 18:31:22 | DEBUG   | process_company:2902 |     Elite rejections: ["REQ-2: missing metrics ['net_income_yoy']", 'REQ-3: insufficient causal language (1 hits)']
+2026-05-09 18:31:22 | INFO    | process_company:2737 |   ▶ 10-Q | 2024-09-30 | 0000950170-24-118967
+2026-05-09 18:31:23 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2024-10-30): stock=-2.85% SPY=+1.90% abnormal=-4.76%
+2026-05-09 18:31:23 | INFO    | process_company:2754 |     AR: -4.76% (negative)
+2026-05-09 18:31:27 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:31:27 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 160 chars
+2026-05-09 18:31:27 | INFO    | scrape_text_sections:1370 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-09 18:31:27 | INFO    | process_company:2796 |     Metrics: 43 | decum: True | text_sections: 3
+2026-05-09 18:31:27 | WARNING | process_company:2815 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-09 18:31:27 | WARNING | process_company:2927 |     ✗ LLM skipped — sanity BLOCK
+2026-05-09 18:31:27 | INFO    | process_company:2737 |   ▶ 10-Q | 2024-12-31 | 0000950170-25-010491
+2026-05-09 18:31:29 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-01-29): stock=-6.57% SPY=+0.40% abnormal=-6.96%
+2026-05-09 18:31:29 | INFO    | process_company:2754 |     AR: -6.96% (strong_negative)
+2026-05-09 18:31:33 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:31:33 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 160 chars
+2026-05-09 18:31:33 | INFO    | scrape_text_sections:1370 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-09 18:31:33 | INFO    | process_company:2796 |     Metrics: 43 | decum: True | text_sections: 3
+2026-05-09 18:31:46 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=True|qa=True]: 1666 chars
+2026-05-09 18:31:46 | INFO    | process_company:2737 |   ▶ 10-Q | 2025-03-31 | 0000950170-25-061046
+2026-05-09 18:31:47 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-04-30): stock=+9.64% SPY=+1.19% abnormal=+8.45%
+2026-05-09 18:31:47 | INFO    | process_company:2754 |     AR: +8.45% (strong_positive)
+2026-05-09 18:31:52 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:31:52 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 160 chars
+2026-05-09 18:31:52 | INFO    | scrape_text_sections:1370 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-09 18:31:52 | INFO    | process_company:2796 |     Metrics: 43 | decum: False | text_sections: 3
+2026-05-09 18:32:05 | INFO    | process_company:2893 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=False|qa=True]: 1951 chars
+2026-05-09 18:32:05 | DEBUG   | process_company:2902 |     Elite rejections: ["REQ-2: missing metrics ['net_income_yoy']"]
+2026-05-09 18:32:05 | INFO    | process_company:2737 |   ▶ 10-Q | 2025-09-30 | 0001193125-25-256321
+2026-05-09 18:32:06 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-10-29): stock=-6.35% SPY=-1.43% abnormal=-4.92%
+2026-05-09 18:32:06 | INFO    | process_company:2754 |     AR: -4.92% (negative)
+2026-05-09 18:32:10 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:32:10 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 160 chars
+2026-05-09 18:32:10 | INFO    | scrape_text_sections:1370 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-09 18:32:10 | INFO    | process_company:2796 |     Metrics: 43 | decum: True | text_sections: 3
+2026-05-09 18:32:34 | WARNING | process_company:2924 |     ✗ LLM pending
+2026-05-09 18:32:34 | INFO    | process_company:2737 |   ▶ 10-Q | 2025-12-31 | 0001193125-26-027207
+2026-05-09 18:32:35 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2026-01-28): stock=-14.00% SPY=-1.33% abnormal=-12.68%
+2026-05-09 18:32:35 | INFO    | process_company:2754 |     AR: -12.68% (strong_negative)
+2026-05-09 18:32:40 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:32:40 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 160 chars
+2026-05-09 18:32:40 | INFO    | scrape_text_sections:1370 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-09 18:32:40 | INFO    | process_company:2796 |     Metrics: 43 | decum: True | text_sections: 3
+2026-05-09 18:32:54 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=True|qa=True]: 1926 chars
+2026-05-09 18:32:54 | INFO    | process_company:2737 |   ▶ 10-Q | 2026-03-31 | 0001193125-26-191507
+2026-05-09 18:32:55 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2026-04-29): stock=-2.47% SPY=+3.13% abnormal=-5.60%
+2026-05-09 18:32:55 | INFO    | process_company:2754 |     AR: -5.60% (strong_negative)
+2026-05-09 18:33:01 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 2/5
+2026-05-09 18:33:01 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 160 chars
+2026-05-09 18:33:01 | INFO    | scrape_text_sections:1370 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-09 18:33:01 | INFO    | process_company:2796 |     Metrics: 43 | decum: False | text_sections: 3
+2026-05-09 18:33:11 | INFO    | process_company:2893 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True]: 1699 chars
+2026-05-09 18:33:12 | INFO    | get_filings:1223 |   8-K: 8 filings
+2026-05-09 18:33:12 | INFO    | process_company:2737 |   ▶ 8-K | 2025-04-30 | 0000950170-25-061032
+2026-05-09 18:33:13 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-04-30): stock=+9.64% SPY=+1.19% abnormal=+8.45%
+2026-05-09 18:33:13 | INFO    | process_company:2754 |     AR: +8.45% (strong_positive)
+2026-05-09 18:33:13 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/789019/000095017025061032/0000950170-25-061032-index.json
+2026-05-09 18:33:22 | INFO    | process_company:2774 |     ✓ 8-K [Q=90|tier=gold|gold=True]: 2033 chars
+2026-05-09 18:33:22 | INFO    | process_company:2737 |   ▶ 8-K | 2025-07-01 | 0001193125-25-154103
+2026-05-09 18:33:23 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-07-01): stock=+2.33% SPY=+1.04% abnormal=+1.29%
+2026-05-09 18:33:23 | INFO    | process_company:2754 |     AR: +1.29% (neutral)
+2026-05-09 18:33:23 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/789019/000119312525154103/0001193125-25-154103-index.json
+2026-05-09 18:33:24 | DEBUG   | process_company:2779 |     8-K not material
+2026-05-09 18:33:24 | INFO    | process_company:2737 |   ▶ 8-K | 2025-07-30 | 0000950170-25-100226
+2026-05-09 18:33:24 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-07-30): stock=+2.28% SPY=-0.27% abnormal=+2.54%
+2026-05-09 18:33:24 | INFO    | process_company:2754 |     AR: +2.54% (positive)
+2026-05-09 18:33:24 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/789019/000095017025100226/0000950170-25-100226-index.json
+2026-05-09 18:33:42 | INFO    | process_company:2774 |     ✓ 8-K [Q=100|tier=gold|gold=True]: 1388 chars
+2026-05-09 18:33:42 | INFO    | process_company:2737 |   ▶ 8-K | 2025-09-24 | 0001193125-25-225125
+2026-05-09 18:33:43 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-09-30): stock=+1.16% SPY=+0.44% abnormal=+0.72%
+2026-05-09 18:33:43 | INFO    | process_company:2754 |     AR: +0.72% (neutral)
+2026-05-09 18:33:43 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/789019/000119312525225125/0001193125-25-225125-index.json
+2026-05-09 18:33:44 | DEBUG   | process_company:2779 |     8-K not material
+2026-05-09 18:33:44 | INFO    | process_company:2737 |   ▶ 8-K | 2025-10-28 | 0001193125-25-256310
+2026-05-09 18:33:44 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-10-29): stock=-6.35% SPY=-1.43% abnormal=-4.92%
+2026-05-09 18:33:44 | INFO    | process_company:2754 |     AR: -4.92% (negative)
+2026-05-09 18:33:44 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/789019/000119312525256310/0001193125-25-256310-index.json
+2026-05-09 18:34:23 | INFO    | process_company:2737 |   ▶ 8-K | 2025-12-05 | 0001193125-25-311196
+2026-05-09 18:34:24 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2025-12-08): stock=-3.30% SPY=-0.42% abnormal=-2.88%
+2026-05-09 18:34:24 | INFO    | process_company:2754 |     AR: -2.88% (negative)
+2026-05-09 18:34:24 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/789019/000119312525311196/0001193125-25-311196-index.json
+2026-05-09 18:34:25 | DEBUG   | process_company:2779 |     8-K not material
+2026-05-09 18:34:25 | INFO    | process_company:2737 |   ▶ 8-K | 2026-01-28 | 0001193125-26-027198
+2026-05-09 18:34:25 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2026-01-28): stock=-14.00% SPY=-1.33% abnormal=-12.68%
+2026-05-09 18:34:25 | INFO    | process_company:2754 |     AR: -12.68% (strong_negative)
+2026-05-09 18:34:25 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/789019/000119312526027198/0001193125-26-027198-index.json
+2026-05-09 18:34:43 | INFO    | process_company:2774 |     ✓ 8-K [Q=80|tier=silver|gold=False]: 1583 chars
+2026-05-09 18:34:43 | INFO    | process_company:2737 |   ▶ 8-K | 2026-04-29 | 0001193125-26-191457
+2026-05-09 18:34:44 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return MSFT (2026-04-29): stock=-2.47% SPY=+3.13% abnormal=-5.60%
+2026-05-09 18:34:44 | INFO    | process_company:2754 |     AR: -5.60% (strong_negative)
+2026-05-09 18:34:44 | DEBUG   | get:1146 | HTTP 404: s/edgar/data/789019/000119312526191457/0001193125-26-191457-index.json
+2026-05-09 18:35:38 | INFO    | build_multiyear_records:2489 |     ✓ Multi-year (5 periods): 2304 chars
+2026-05-09 18:35:54 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2021-06-30→2023-06-30: 1360 chars
+2026-05-09 18:36:16 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2022-06-30→2024-06-30: 1808 chars
+2026-05-09 18:36:34 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2023-06-30→2025-06-30: 1641 chars
+2026-05-09 18:36:34 | SUCCESS | process_company:2943 |   Multi-year 10-K: +4 records
+2026-05-09 18:37:03 | INFO    | build_multiyear_records:2489 |     ✓ Multi-year (8 periods): 2342 chars
+2026-05-09 18:37:17 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2023-12-31→2024-09-30: 1736 chars
+2026-05-09 18:37:45 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2024-03-31→2024-12-31: 1677 chars
+2026-05-09 18:38:12 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2024-09-30→2025-03-31: 1622 chars
+2026-05-09 18:38:34 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2024-12-31→2025-09-30: 1906 chars
+2026-05-09 18:38:42 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2025-03-31→2025-12-31: 1852 chars
+2026-05-09 18:38:58 | INFO    | build_multiyear_records:2507 |     ✓ 3yr 2025-09-30→2026-03-31: 2488 chars
+2026-05-09 18:38:58 | SUCCESS | process_company:2943 |   Multi-year 10-Q: +7 records
+2026-05-09 18:38:58 | SUCCESS | process_company:2947 |   MSFT: 32 total | total_429s=0, skipped=0, consecutive_now=0
+2026-05-09 18:38:58 | INFO    | build_dataset:3012 |   ✓ MSFT: 32 records | total written: 68
+2026-05-09 18:38:58 | INFO    | process_company:2710 | ══ NVDA (NVIDIA Corp) ══
+2026-05-09 18:38:59 | INFO    | load_xbrl_facts:1447 |   XBRL: 625 GAAP + 2 DEI
+2026-05-09 18:39:00 | INFO    | get_filings:1223 |   10-K: 5 filings
+2026-05-09 18:39:00 | INFO    | process_company:2737 |   ▶ 10-K | 2022-01-30 | 0001045810-22-000036
+2026-05-09 18:39:02 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return NVDA (2022-03-18): stock=+4.68% SPY=+1.84% abnormal=+2.85%
+2026-05-09 18:39:02 | INFO    | process_company:2754 |     AR: +2.85% (positive)
+2026-05-09 18:39:03 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:39:03 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4701 chars
+2026-05-09 18:39:03 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:39:03 | INFO    | process_company:2796 |     Metrics: 45 | decum: False | text_sections: 2
+2026-05-09 18:39:26 | INFO    | process_company:2893 |     ✓ [FULL|Q=70|tier=bronze|gold=False|decum=False|qa=False]: 1779 chars
+2026-05-09 18:39:26 | DEBUG   | process_company:2902 |     Elite rejections: ["REQ-2: missing metrics ['capex', 'gross_margin_delta']", 'REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:39:26 | INFO    | process_company:2737 |   ▶ 10-K | 2023-01-29 | 0001045810-23-000017
+2026-05-09 18:39:27 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return NVDA (2023-02-24): stock=+2.59% SPY=+1.97% abnormal=+0.62%
+2026-05-09 18:39:27 | INFO    | process_company:2754 |     AR: +0.62% (neutral)
+2026-05-09 18:39:29 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:39:29 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 2322 chars
+2026-05-09 18:39:29 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:39:29 | INFO    | process_company:2796 |     Metrics: 45 | decum: False | text_sections: 2
+2026-05-09 18:39:44 | INFO    | process_company:2893 |     ✓ [FULL|Q=80|tier=silver|gold=False|decum=False|qa=True]: 1692 chars
+2026-05-09 18:39:44 | DEBUG   | process_company:2902 |     Elite rejections: ["REQ-2: missing metrics ['capex']", 'REQ-7: invalid/incomplete investment signal']
+2026-05-09 18:39:49 | INFO    | process_company:2921 |     ✓ Negative examples: 1 scenarios
+2026-05-09 18:39:49 | INFO    | process_company:2737 |   ▶ 10-K | 2024-01-28 | 0001045810-24-000029
+2026-05-09 18:39:50 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return NVDA (2024-02-21): stock=+15.10% SPY=+1.82% abnormal=+13.28%
+2026-05-09 18:39:50 | INFO    | process_company:2754 |     AR: +13.28% (strong_positive)
+2026-05-09 18:39:51 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:39:51 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4663 chars
+2026-05-09 18:39:51 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:39:51 | INFO    | process_company:2796 |     Metrics: 45 | decum: False | text_sections: 2
+2026-05-09 18:39:51 | WARNING | process_company:2815 |     ✗ SANITY BLOCK: 3 rule(s). Action: BLOCK.
+2026-05-09 18:39:51 | WARNING | process_company:2927 |     ✗ LLM skipped — sanity BLOCK
+2026-05-09 18:39:51 | INFO    | process_company:2737 |   ▶ 10-K | 2025-01-26 | 0001045810-25-000023
+2026-05-09 18:39:53 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return NVDA (2025-02-26): stock=-10.65% SPY=-1.93% abnormal=-8.72%
+2026-05-09 18:39:53 | INFO    | process_company:2754 |     AR: -8.72% (strong_negative)
+2026-05-09 18:39:55 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:39:55 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 2231 chars
+2026-05-09 18:39:55 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:39:55 | INFO    | process_company:2796 |     Metrics: 44 | decum: False | text_sections: 2
+2026-05-09 18:39:55 | WARNING | process_company:2815 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-09 18:39:55 | WARNING | process_company:2927 |     ✗ LLM skipped — sanity BLOCK
+2026-05-09 18:39:55 | INFO    | process_company:2737 |   ▶ 10-K | 2026-01-25 | 0001045810-26-000021
+2026-05-09 18:39:56 | DEBUG   | fetch_abnormal_return:646 |   Abnormal return NVDA (2026-02-25): stock=-6.40% SPY=-1.16% abnormal=-5.25%
+2026-05-09 18:39:56 | INFO    | process_company:2754 |     AR: -5.25% (strong_negative)
+2026-05-09 18:39:57 | INFO    | scrape_text_sections:1347 |     Strategy-1 sections: 1/6
+2026-05-09 18:39:57 | INFO    | scrape_text_sections:1359 |     Strategy-2 Risk fallback: 4515 chars
+2026-05-09 18:39:57 | INFO    | scrape_text_sections:1370 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-09 18:39:57 | INFO    | process_company:2796 |     Metrics: 43 | decum: False | text_sections: 2
