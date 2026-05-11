@@ -1,0 +1,291 @@
+2026-05-11 19:58:49 | INFO    | build_dataset:3466 | Processing 65 companies | workers=2 | 40 RPM rate limiter active (fixed token bucket)
+2026-05-11 19:58:49 | INFO    | process_company:3152 | ══ LLY (Eli Lilly and Co) ══
+2026-05-11 19:58:49 | INFO    | process_company:3152 | ══ JNJ (Johnson & Johnson) ══
+2026-05-11 19:58:50 | INFO    | ticker_to_cik:1553 | CIK table: 10,381 entries
+2026-05-11 19:58:51 | INFO    | load_xbrl_facts:1812 |   XBRL: 609 GAAP + 2 DEI
+2026-05-11 19:58:51 | INFO    | load_xbrl_facts:1812 |   XBRL: 548 GAAP + 2 DEI
+2026-05-11 19:58:52 | INFO    | get_filings:1603 |   10-K: 5 filings
+2026-05-11 19:58:52 | INFO    | process_company:3178 |   ▶ 10-K | 2022-01-02 | 0000200406-22-000022
+2026-05-11 19:58:52 | INFO    | get_filings:1603 |   10-K: 5 filings
+2026-05-11 19:58:52 | INFO    | process_company:3178 |   ▶ 10-K | 2021-12-31 | 0000059478-22-000068
+2026-05-11 19:58:56 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=+0.53% SPY=+0.16% abnormal=+0.37%
+2026-05-11 19:58:56 | INFO    | process_company:3195 |     AR: +0.37% (neutral)
+2026-05-11 19:58:56 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=+6.66% SPY=+3.78% abnormal=+2.88%
+2026-05-11 19:58:56 | INFO    | process_company:3195 |     AR: +2.88% (positive)
+2026-05-11 19:59:07 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 1/6
+2026-05-11 19:59:07 | INFO    | scrape_text_sections:1724 |     Strategy-2 Risk fallback: 5252 chars
+2026-05-11 19:59:07 | INFO    | scrape_text_sections:1733 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 19:59:07 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 19:59:07 | INFO    | process_company:3254 |     Metrics:38 | decum:False | sections:2
+2026-05-11 19:59:09 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/6
+2026-05-11 19:59:09 | INFO    | scrape_text_sections:1733 |     Final sections: 4/6 | MD&A: poor (228 chars)
+2026-05-11 19:59:10 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 228 → 4277 chars
+2026-05-11 19:59:10 | INFO    | process_company:3254 |     Metrics:43 | decum:False | sections:4
+2026-05-11 19:59:18 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 882 chars, 0 causal phrases
+2026-05-11 19:59:22 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 722 chars, 3 causal phrases
+2026-05-11 19:59:31 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=4, throttled=0, rpm_cap=40
+2026-05-11 19:59:31 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=2 (need 3), missing=['capex']
+2026-05-11 20:00:04 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=5, throttled=0, rpm_cap=40
+2026-05-11 20:00:04 | INFO    | process_company:3376 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=False|qa=False|llm=llm_calls=5, throttled=0, rpm_cap=40]
+2026-05-11 20:00:04 | DEBUG   | process_company:3384 |     Elite rejections: ['REQ-7: invalid/incomplete signal']
+2026-05-11 20:00:04 | INFO    | process_company:3178 |   ▶ 10-K | 2023-01-01 | 0000200406-23-000016
+2026-05-11 20:00:05 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=-0.73% SPY=-2.92% abnormal=+2.19%
+2026-05-11 20:00:05 | INFO    | process_company:3195 |     AR: +2.19% (positive)
+2026-05-11 20:00:08 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/6
+2026-05-11 20:00:08 | INFO    | scrape_text_sections:1733 |     Final sections: 4/6 | MD&A: poor (228 chars)
+2026-05-11 20:00:08 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 228 → 4277 chars
+2026-05-11 20:00:08 | INFO    | process_company:3254 |     Metrics:43 | decum:False | sections:4
+2026-05-11 20:00:08 | INFO    | process_company:3284 |     ⚠ Liquidity paradox: CR=0.99 + Cash=$12.9B | Risk=HIGH
+2026-05-11 20:00:13 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=6, throttled=0, rpm_cap=40
+2026-05-11 20:00:13 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 60 → 70
+2026-05-11 20:00:13 | INFO    | process_company:3376 |     ✓ [FULL|Q=70|tier=bronze|gold=False|decum=False|qa=False|llm=llm_calls=6, throttled=0, rpm_cap=40]
+2026-05-11 20:00:13 | DEBUG   | process_company:3384 |     Elite rejections: ["REQ-2: missing ['capex']", 'REQ-7: invalid/incomplete signal']
+2026-05-11 20:00:13 | INFO    | process_company:3178 |   ▶ 10-K | 2022-12-31 | 0000059478-23-000082
+2026-05-11 20:00:14 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=-4.53% SPY=-0.95% abnormal=-3.58%
+2026-05-11 20:00:14 | INFO    | process_company:3195 |     AR: -3.58% (negative)
+2026-05-11 20:00:16 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 1/6
+2026-05-11 20:00:17 | INFO    | scrape_text_sections:1724 |     Strategy-2 Risk fallback: 3298 chars
+2026-05-11 20:00:17 | INFO    | scrape_text_sections:1733 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 20:00:17 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 20:00:17 | INFO    | process_company:3254 |     Metrics:38 | decum:False | sections:2
+2026-05-11 20:00:25 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 501 chars, 1 causal phrases
+2026-05-11 20:00:36 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=8, throttled=0, rpm_cap=40
+2026-05-11 20:00:36 | INFO    | process_company:3376 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True|llm=llm_calls=8, throttled=0, rpm_cap=40]
+2026-05-11 20:00:42 | DEBUG   | generate_analysis:2670 |     LLM single-stage OK (attempt 1/5) | llm_calls=9, throttled=0, rpm_cap=40
+2026-05-11 20:00:42 | INFO    | process_company:3400 |     ✓ Negative examples: 1 scenarios
+2026-05-11 20:00:42 | INFO    | process_company:3178 |   ▶ 10-K | 2023-12-31 | 0000200406-24-000013
+2026-05-11 20:00:43 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=+3.38% SPY=+1.67% abnormal=+1.71%
+2026-05-11 20:00:43 | INFO    | process_company:3195 |     AR: +1.71% (neutral)
+2026-05-11 20:00:46 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/6
+2026-05-11 20:00:46 | INFO    | scrape_text_sections:1733 |     Final sections: 4/6 | MD&A: poor (225 chars)
+2026-05-11 20:00:46 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 225 → 4274 chars
+2026-05-11 20:00:46 | INFO    | process_company:3254 |     Metrics:43 | decum:False | sections:4
+2026-05-11 20:00:50 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 421 chars, 0 causal phrases
+2026-05-11 20:00:59 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 705 chars, 1 causal phrases
+2026-05-11 20:01:07 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=12, throttled=0, rpm_cap=40
+2026-05-11 20:01:07 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=4 (need 3), missing=['ebitda']
+2026-05-11 20:01:17 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=13, throttled=0, rpm_cap=40
+2026-05-11 20:01:17 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 90 → 100
+2026-05-11 20:01:17 | INFO    | process_company:3376 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True|llm=llm_calls=13, throttled=0, rpm_cap=40]
+2026-05-11 20:01:17 | INFO    | process_company:3178 |   ▶ 10-K | 2024-12-29 | 0000200406-25-000038
+2026-05-11 20:01:18 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=+4.04% SPY=-1.61% abnormal=+5.64%
+2026-05-11 20:01:18 | INFO    | process_company:3195 |     AR: +5.64% (strong_positive)
+2026-05-11 20:01:23 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/6
+2026-05-11 20:01:23 | INFO    | scrape_text_sections:1733 |     Final sections: 4/6 | MD&A: poor (225 chars)
+2026-05-11 20:01:24 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 225 → 4274 chars
+2026-05-11 20:01:24 | INFO    | process_company:3254 |     Metrics:42 | decum:False | sections:4
+2026-05-11 20:01:34 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 819 chars, 2 causal phrases
+2026-05-11 20:01:50 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=15, throttled=0, rpm_cap=40
+2026-05-11 20:01:50 | INFO    | process_company:3376 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True|llm=llm_calls=15, throttled=0, rpm_cap=40]
+2026-05-11 20:02:02 | DEBUG   | generate_analysis:2670 |     LLM single-stage OK (attempt 1/5) | llm_calls=16, throttled=0, rpm_cap=40
+2026-05-11 20:02:02 | INFO    | process_company:3400 |     ✓ Negative examples: 1 scenarios
+2026-05-11 20:02:02 | INFO    | process_company:3178 |   ▶ 10-K | 2025-12-28 | 0000200406-26-000016
+2026-05-11 20:02:03 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=+2.51% SPY=-1.08% abnormal=+3.59%
+2026-05-11 20:02:03 | INFO    | process_company:3195 |     AR: +3.59% (positive)
+2026-05-11 20:02:06 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/6
+2026-05-11 20:02:06 | INFO    | scrape_text_sections:1733 |     Final sections: 4/6 | MD&A: poor (225 chars)
+2026-05-11 20:02:06 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 225 → 4274 chars
+2026-05-11 20:02:06 | INFO    | process_company:3254 |     Metrics:42 | decum:False | sections:4
+2026-05-11 20:02:08 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=17, throttled=0, rpm_cap=40
+2026-05-11 20:02:08 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=2 (need 3), missing=['capex']
+2026-05-11 20:02:21 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 610 chars, 1 causal phrases
+2026-05-11 20:02:26 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=19, throttled=0, rpm_cap=40
+2026-05-11 20:02:26 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 80 → 90
+2026-05-11 20:02:26 | INFO    | process_company:3376 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=False|qa=True|llm=llm_calls=19, throttled=0, rpm_cap=40]
+2026-05-11 20:02:26 | DEBUG   | process_company:3384 |     Elite rejections: ["REQ-2: missing ['capex']"]
+2026-05-11 20:02:34 | DEBUG   | generate_analysis:2670 |     LLM single-stage OK (attempt 1/5) | llm_calls=20, throttled=0, rpm_cap=40
+2026-05-11 20:02:34 | INFO    | process_company:3400 |     ✓ Negative examples: 1 scenarios
+2026-05-11 20:02:34 | INFO    | process_company:3178 |   ▶ 10-K | 2023-12-31 | 0000059478-24-000065
+2026-05-11 20:02:34 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=20, throttled=0, rpm_cap=40
+2026-05-11 20:02:34 | INFO    | process_company:3376 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True|llm=llm_calls=20, throttled=0, rpm_cap=40]
+2026-05-11 20:02:34 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=+1.57% SPY=+1.82% abnormal=-0.25%
+2026-05-11 20:02:34 | INFO    | process_company:3195 |     AR: -0.25% (neutral)
+2026-05-11 20:02:35 | INFO    | get_filings:1603 |   10-Q: 8 filings
+2026-05-11 20:02:36 | INFO    | process_company:3178 |   ▶ 10-Q | 2023-10-01 | 0000200406-23-000102
+2026-05-11 20:02:36 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=+3.94% SPY=+5.85% abnormal=-1.90%
+2026-05-11 20:02:36 | INFO    | process_company:3195 |     AR: -1.90% (neutral)
+2026-05-11 20:02:37 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 1/6
+2026-05-11 20:02:37 | INFO    | scrape_text_sections:1724 |     Strategy-2 Risk fallback: 2335 chars
+2026-05-11 20:02:37 | INFO    | scrape_text_sections:1733 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 20:02:37 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 20:02:38 | INFO    | process_company:3254 |     Metrics:36 | decum:False | sections:2
+2026-05-11 20:02:39 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 3/5
+2026-05-11 20:02:39 | INFO    | scrape_text_sections:1733 |     Final sections: 3/5 | MD&A: poor (93 chars)
+2026-05-11 20:02:39 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 93 → 2815 chars
+2026-05-11 20:02:39 | INFO    | process_company:3254 |     Metrics:41 | decum:False | sections:3
+2026-05-11 20:02:47 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 496 chars, 2 causal phrases
+2026-05-11 20:02:50 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 813 chars, 3 causal phrases
+2026-05-11 20:03:06 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=24, throttled=0, rpm_cap=40
+2026-05-11 20:03:06 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=2 (need 3), missing=['capex']
+2026-05-11 20:03:12 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=25, throttled=0, rpm_cap=40
+2026-05-11 20:03:12 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 80 → 90
+2026-05-11 20:03:12 | INFO    | process_company:3376 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=False|qa=True|llm=llm_calls=25, throttled=0, rpm_cap=40]
+2026-05-11 20:03:12 | DEBUG   | process_company:3384 |     Elite rejections: ["REQ-2: missing ['capex']"]
+2026-05-11 20:03:12 | INFO    | process_company:3178 |   ▶ 10-K | 2024-12-31 | 0000059478-25-000067
+2026-05-11 20:03:13 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=+5.53% SPY=-3.00% abnormal=+8.53%
+2026-05-11 20:03:13 | INFO    | process_company:3195 |     AR: +8.53% (strong_positive)
+2026-05-11 20:03:15 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 1/6
+2026-05-11 20:03:15 | INFO    | scrape_text_sections:1724 |     Strategy-2 Risk fallback: 4303 chars
+2026-05-11 20:03:15 | INFO    | scrape_text_sections:1733 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 20:03:15 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 20:03:15 | INFO    | process_company:3254 |     Metrics:35 | decum:False | sections:2
+2026-05-11 20:03:30 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 779 chars, 2 causal phrases
+2026-05-11 20:03:39 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=27, throttled=0, rpm_cap=40
+2026-05-11 20:03:39 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=2 (need 3), missing=['ebitda']
+2026-05-11 20:03:41 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=28, throttled=0, rpm_cap=40
+2026-05-11 20:03:41 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=2 (need 3), missing=['ebitda', 'gross_margin_delta']
+2026-05-11 20:03:52 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=29, throttled=0, rpm_cap=40
+2026-05-11 20:03:52 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 60 → 80
+2026-05-11 20:03:52 | INFO    | process_company:3376 |     ✓ [FULL|Q=80|tier=silver|gold=False|decum=False|qa=False|llm=llm_calls=29, throttled=0, rpm_cap=40]
+2026-05-11 20:03:52 | DEBUG   | process_company:3384 |     Elite rejections: ['REQ-7: invalid/incomplete signal']
+2026-05-11 20:03:52 | INFO    | process_company:3178 |   ▶ 10-Q | 2024-03-31 | 0000200406-24-000049
+2026-05-11 20:03:52 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=-1.48% SPY=+3.37% abnormal=-4.84%
+2026-05-11 20:03:52 | INFO    | process_company:3195 |     AR: -4.84% (negative)
+2026-05-11 20:03:54 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/5
+2026-05-11 20:03:54 | INFO    | scrape_text_sections:1733 |     Final sections: 4/5 | MD&A: poor (85 chars)
+2026-05-11 20:03:54 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 2809 chars
+2026-05-11 20:03:54 | INFO    | process_company:3254 |     Metrics:41 | decum:False | sections:4
+2026-05-11 20:03:54 | WARNING | process_company:3274 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-11 20:03:54 | WARNING | process_company:3406 |     ✗ LLM skipped — sanity BLOCK
+2026-05-11 20:03:54 | INFO    | process_company:3178 |   ▶ 10-Q | 2024-06-30 | 0000200406-24-000075
+2026-05-11 20:03:55 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=+0.70% SPY=+0.85% abnormal=-0.15%
+2026-05-11 20:03:55 | INFO    | process_company:3195 |     AR: -0.15% (neutral)
+2026-05-11 20:03:57 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=29, throttled=0, rpm_cap=40
+2026-05-11 20:03:57 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 60 → 80
+2026-05-11 20:03:57 | INFO    | process_company:3376 |     ✓ [FULL|Q=80|tier=silver|gold=False|decum=False|qa=True|llm=llm_calls=29, throttled=0, rpm_cap=40]
+2026-05-11 20:03:57 | DEBUG   | process_company:3384 |     Elite rejections: ['REQ-7: invalid/incomplete signal']
+2026-05-11 20:03:57 | INFO    | process_company:3178 |   ▶ 10-K | 2025-12-31 | 0000059478-26-000013
+2026-05-11 20:03:57 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/5
+2026-05-11 20:03:57 | INFO    | scrape_text_sections:1733 |     Final sections: 4/5 | MD&A: poor (85 chars)
+2026-05-11 20:03:57 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 2809 chars
+2026-05-11 20:03:57 | INFO    | process_company:3254 |     Metrics:40 | decum:True | sections:4
+2026-05-11 20:03:58 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=-2.61% SPY=+1.20% abnormal=-3.81%
+2026-05-11 20:03:58 | INFO    | process_company:3195 |     AR: -3.81% (negative)
+2026-05-11 20:04:00 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 521 chars, 0 causal phrases
+2026-05-11 20:04:00 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 1/6
+2026-05-11 20:04:00 | INFO    | scrape_text_sections:1724 |     Strategy-2 Risk fallback: 4593 chars
+2026-05-11 20:04:00 | INFO    | scrape_text_sections:1733 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 20:04:00 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 20:04:00 | INFO    | process_company:3254 |     Metrics:34 | decum:False | sections:2
+2026-05-11 20:04:06 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=32, throttled=1, rpm_cap=40
+2026-05-11 20:04:06 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=2 (need 3), missing=['ebitda']
+2026-05-11 20:04:09 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 787 chars, 1 causal phrases
+2026-05-11 20:04:21 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=34, throttled=1, rpm_cap=40
+2026-05-11 20:04:21 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=34, throttled=1, rpm_cap=40
+2026-05-11 20:04:21 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 70 → 80
+2026-05-11 20:04:21 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=3 (need 3), missing=['ebitda', 'capex', 'gross_margin_delta']
+2026-05-11 20:04:21 | INFO    | process_company:3376 |     ✓ [FULL|Q=80|tier=silver|gold=False|decum=True|qa=False|llm=llm_calls=34, throttled=1, rpm_cap=40]
+2026-05-11 20:04:21 | DEBUG   | process_company:3384 |     Elite rejections: ['REQ-7: invalid/incomplete signal']
+2026-05-11 20:04:38 | DEBUG   | generate_analysis:2670 |     LLM single-stage OK (attempt 1/5) | llm_calls=36, throttled=2, rpm_cap=40
+2026-05-11 20:04:38 | INFO    | process_company:3400 |     ✓ Negative examples: 1 scenarios
+2026-05-11 20:04:38 | INFO    | process_company:3178 |   ▶ 10-Q | 2024-09-29 | 0000200406-24-000096
+2026-05-11 20:04:39 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=-3.17% SPY=+0.35% abnormal=-3.51%
+2026-05-11 20:04:39 | INFO    | process_company:3195 |     AR: -3.51% (negative)
+2026-05-11 20:04:41 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/5
+2026-05-11 20:04:41 | INFO    | scrape_text_sections:1733 |     Final sections: 4/5 | MD&A: poor (85 chars)
+2026-05-11 20:04:41 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 2809 chars
+2026-05-11 20:04:41 | INFO    | process_company:3254 |     Metrics:40 | decum:True | sections:4
+2026-05-11 20:04:41 | WARNING | process_company:3274 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-11 20:04:41 | WARNING | process_company:3406 |     ✗ LLM skipped — sanity BLOCK
+2026-05-11 20:04:41 | INFO    | process_company:3178 |   ▶ 10-Q | 2025-03-30 | 0000200406-25-000119
+2026-05-11 20:04:41 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=36, throttled=2, rpm_cap=40
+2026-05-11 20:04:41 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 70 → 70
+2026-05-11 20:04:41 | INFO    | process_company:3376 |     ✓ [FULL|Q=70|tier=bronze|gold=False|decum=False|qa=True|llm=llm_calls=36, throttled=2, rpm_cap=40]
+2026-05-11 20:04:41 | DEBUG   | process_company:3384 |     Elite rejections: ["REQ-2: missing ['capex', 'gross_margin_delta']", 'REQ-7: invalid/incomplete signal']
+2026-05-11 20:04:41 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=+0.60% SPY=+3.57% abnormal=-2.97%
+2026-05-11 20:04:41 | INFO    | process_company:3195 |     AR: -2.97% (negative)
+2026-05-11 20:04:42 | INFO    | get_filings:1603 |   10-Q: 8 filings
+2026-05-11 20:04:42 | INFO    | process_company:3178 |   ▶ 10-Q | 2023-09-30 | 0000059478-23-000284
+2026-05-11 20:04:43 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=+1.90% SPY=+0.71% abnormal=+1.19%
+2026-05-11 20:04:43 | INFO    | process_company:3195 |     AR: +1.19% (neutral)
+2026-05-11 20:04:43 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/5
+2026-05-11 20:04:43 | INFO    | scrape_text_sections:1733 |     Final sections: 4/5 | MD&A: poor (85 chars)
+2026-05-11 20:04:43 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 2809 chars
+2026-05-11 20:04:43 | INFO    | process_company:3254 |     Metrics:40 | decum:False | sections:4
+2026-05-11 20:04:45 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 3/5
+2026-05-11 20:04:45 | INFO    | scrape_text_sections:1733 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 20:04:45 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 172 chars
+2026-05-11 20:04:45 | INFO    | process_company:3254 |     Metrics:36 | decum:False | sections:3
+2026-05-11 20:05:57 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 594 chars, 0 causal phrases
+2026-05-11 20:06:09 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=39, throttled=3, rpm_cap=40
+2026-05-11 20:06:09 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=3 (need 3), missing=['ebitda']
+2026-05-11 20:06:17 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=40, throttled=3, rpm_cap=40
+2026-05-11 20:06:17 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 90 → 100
+2026-05-11 20:06:17 | INFO    | process_company:3376 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=False|qa=True|llm=llm_calls=40, throttled=3, rpm_cap=40]
+2026-05-11 20:06:26 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 669 chars, 0 causal phrases
+2026-05-11 20:06:40 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=42, throttled=3, rpm_cap=40
+2026-05-11 20:06:40 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=3 (need 3), missing=['capex']
+2026-05-11 20:06:51 | DEBUG   | generate_analysis:2670 |     LLM single-stage OK (attempt 1/5) | llm_calls=43, throttled=3, rpm_cap=40
+2026-05-11 20:06:51 | INFO    | process_company:3400 |     ✓ Negative examples: 1 scenarios
+2026-05-11 20:06:51 | INFO    | process_company:3178 |   ▶ 10-Q | 2025-06-29 | 0000200406-25-000178
+2026-05-11 20:06:52 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=43, throttled=3, rpm_cap=40
+2026-05-11 20:06:52 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 70 → 70
+2026-05-11 20:06:52 | INFO    | process_company:3376 |     ✓ [FULL|Q=70|tier=bronze|gold=False|decum=False|qa=False|llm=llm_calls=43, throttled=3, rpm_cap=40]
+2026-05-11 20:06:52 | DEBUG   | process_company:3384 |     Elite rejections: ["REQ-2: missing ['capex']", 'REQ-7: invalid/incomplete signal']
+2026-05-11 20:06:52 | INFO    | process_company:3178 |   ▶ 10-Q | 2024-03-31 | 0000059478-24-000118
+2026-05-11 20:06:52 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=-2.84% SPY=-0.37% abnormal=-2.47%
+2026-05-11 20:06:52 | INFO    | process_company:3195 |     AR: -2.47% (negative)
+2026-05-11 20:06:52 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=-0.43% SPY=+3.02% abnormal=-3.45%
+2026-05-11 20:06:52 | INFO    | process_company:3195 |     AR: -3.45% (negative)
+2026-05-11 20:06:56 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 3/5
+2026-05-11 20:06:56 | INFO    | scrape_text_sections:1733 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 20:06:56 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 172 chars
+2026-05-11 20:06:56 | INFO    | process_company:3254 |     Metrics:36 | decum:False | sections:3
+2026-05-11 20:06:56 | WARNING | process_company:3274 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-11 20:06:56 | WARNING | process_company:3406 |     ✗ LLM skipped — sanity BLOCK
+2026-05-11 20:06:56 | INFO    | process_company:3178 |   ▶ 10-Q | 2024-06-30 | 0000059478-24-000187
+2026-05-11 20:06:56 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/5
+2026-05-11 20:06:56 | INFO    | scrape_text_sections:1733 |     Final sections: 4/5 | MD&A: poor (85 chars)
+2026-05-11 20:06:56 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 2809 chars
+2026-05-11 20:06:56 | INFO    | process_company:3254 |     Metrics:40 | decum:True | sections:4
+2026-05-11 20:06:57 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=+10.36% SPY=+4.22% abnormal=+6.13%
+2026-05-11 20:06:57 | INFO    | process_company:3195 |     AR: +6.13% (strong_positive)
+2026-05-11 20:06:58 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 3/5
+2026-05-11 20:06:58 | INFO    | scrape_text_sections:1733 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 20:06:58 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 172 chars
+2026-05-11 20:06:58 | INFO    | process_company:3254 |     Metrics:35 | decum:True | sections:3
+2026-05-11 20:07:02 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 622 chars, 0 causal phrases
+2026-05-11 20:07:02 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 348 chars, 0 causal phrases
+2026-05-11 20:07:19 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=47, throttled=4, rpm_cap=40
+2026-05-11 20:07:19 | INFO    | process_company:3376 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=True|qa=True|llm=llm_calls=47, throttled=4, rpm_cap=40]
+2026-05-11 20:07:19 | INFO    | process_company:3178 |   ▶ 10-Q | 2025-09-28 | 0000200406-25-000209
+2026-05-11 20:07:20 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=47, throttled=4, rpm_cap=40
+2026-05-11 20:07:20 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=-3.29% SPY=+2.93% abnormal=-6.22%
+2026-05-11 20:07:20 | INFO    | generate_analysis_v18:2614 |     V18-3 Self-correction: causal=2 (need 3), missing=['capex']
+2026-05-11 20:07:20 | INFO    | process_company:3195 |     AR: -6.22% (strong_negative)
+2026-05-11 20:07:23 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/5
+2026-05-11 20:07:23 | INFO    | scrape_text_sections:1733 |     Final sections: 4/5 | MD&A: poor (85 chars)
+2026-05-11 20:07:23 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 2809 chars
+2026-05-11 20:07:23 | INFO    | process_company:3254 |     Metrics:40 | decum:True | sections:4
+2026-05-11 20:07:29 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 383 chars, 0 causal phrases
+2026-05-11 20:07:33 | DEBUG   | _call_llm:2536 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=50, throttled=4, rpm_cap=40
+2026-05-11 20:07:33 | INFO    | generate_analysis_v18:2626 |     ✓ Self-correction improved: 80 → 90
+2026-05-11 20:07:33 | INFO    | process_company:3376 |     ✓ [FULL|Q=90|tier=gold|gold=True|decum=True|qa=False|llm=llm_calls=50, throttled=4, rpm_cap=40]
+2026-05-11 20:07:33 | DEBUG   | process_company:3384 |     Elite rejections: ["REQ-2: missing ['capex']"]
+2026-05-11 20:07:33 | INFO    | process_company:3178 |   ▶ 10-Q | 2024-09-30 | 0000059478-24-000245
+2026-05-11 20:07:34 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=-8.32% SPY=+1.90% abnormal=-10.22%
+2026-05-11 20:07:34 | INFO    | process_company:3195 |     AR: -10.22% (strong_negative)
+2026-05-11 20:07:36 | DEBUG   | _call_llm:2536 |     LLM OK — Stage-B attempt 1/5 | llm_calls=50, throttled=4, rpm_cap=40
+2026-05-11 20:07:36 | INFO    | process_company:3376 |     ✓ [FULL|Q=100|tier=gold|gold=True|decum=True|qa=True|llm=llm_calls=50, throttled=4, rpm_cap=40]
+2026-05-11 20:07:36 | INFO    | process_company:3178 |   ▶ 10-Q | 2026-03-29 | 0000200406-26-000087
+2026-05-11 20:07:37 | DEBUG   | fetch_abnormal_return:799 |   AR JNJ: stock=+0.55% SPY=+0.05% abnormal=+0.50%
+2026-05-11 20:07:37 | INFO    | process_company:3195 |     AR: +0.50% (neutral)
+2026-05-11 20:07:37 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 3/5
+2026-05-11 20:07:37 | INFO    | scrape_text_sections:1733 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 20:07:37 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 172 chars
+2026-05-11 20:07:37 | INFO    | process_company:3254 |     Metrics:35 | decum:True | sections:3
+2026-05-11 20:07:37 | WARNING | process_company:3274 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-11 20:07:37 | WARNING | process_company:3406 |     ✗ LLM skipped — sanity BLOCK
+2026-05-11 20:07:37 | INFO    | process_company:3178 |   ▶ 10-Q | 2025-03-31 | 0000059478-25-000132
+2026-05-11 20:07:38 | DEBUG   | fetch_abnormal_return:799 |   AR LLY: stock=-5.37% SPY=+1.18% abnormal=-6.55%
+2026-05-11 20:07:38 | INFO    | process_company:3195 |     AR: -6.55% (strong_negative)
+2026-05-11 20:07:42 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 4/5
+2026-05-11 20:07:42 | INFO    | scrape_text_sections:1733 |     Final sections: 4/5 | MD&A: poor (85 chars)
+2026-05-11 20:07:42 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 2809 chars
+2026-05-11 20:07:42 | INFO    | process_company:3254 |     Metrics:40 | decum:False | sections:4
+2026-05-11 20:07:42 | INFO    | scrape_text_sections:1714 |     Strategy-1 sections: 3/5
+2026-05-11 20:07:42 | INFO    | scrape_text_sections:1733 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 20:07:42 | INFO    | enrich_thin_mda:1279 |     V18-7 Deep enrichment: 85 → 172 chars
+2026-05-11 20:07:42 | INFO    | process_company:3254 |     Metrics:35 | decum:False | sections:3
+2026-05-11 20:07:46 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 392 chars, 0 causal phrases
+2026-05-11 20:07:47 | DEBUG   | generate_analysis_v18:2587 |     Stage A: 686 chars, 3 causal phrases
