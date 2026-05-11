@@ -1,0 +1,914 @@
+2026-05-11 23:02:05 | INFO    | build_dataset:4361 | Resume mode: 0 tickers done, 3 remaining, 0 accessions cached
+2026-05-11 23:02:05 | INFO    | process_company:3784 | ══ AAPL (Apple Inc) ══
+2026-05-11 23:02:05 | DEBUG   | ticker_to_cik:1989 |   CIK AAPL: found in TITAN_CIKS → 0000320193
+2026-05-11 23:02:05 | INFO    | process_company:3784 | ══ MSFT (Microsoft Corp) ══
+2026-05-11 23:02:05 | DEBUG   | ticker_to_cik:1989 |   CIK MSFT: found in TITAN_CIKS → 0000789019
+2026-05-11 23:02:07 | INFO    | load_xbrl_facts:2285 |   XBRL: 503 GAAP + 2 DEI
+2026-05-11 23:02:07 | INFO    | load_xbrl_facts:2285 |   XBRL: 544 GAAP + 3 DEI
+2026-05-11 23:02:08 | INFO    | get_filings:2076 |   10-K: 5 filings
+2026-05-11 23:02:08 | INFO    | process_company:3811 |   ▶ 10-K | 2021-09-25 | 0000320193-21-000105
+2026-05-11 23:02:08 | INFO    | get_filings:2076 |   10-K: 5 filings
+2026-05-11 23:02:09 | INFO    | process_company:3811 |   ▶ 10-K | 2021-06-30 | 0001564590-21-039151
+2026-05-11 23:02:10 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+1.14% SPY=+2.02% abnormal=-0.89%
+2026-05-11 23:02:10 | INFO    | process_company:3828 |     AR: -0.89% (neutral)
+2026-05-11 23:02:11 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=+1.05% SPY=+0.25% abnormal=+0.80%
+2026-05-11 23:02:11 | INFO    | process_company:3828 |     AR: +0.80% (neutral)
+2026-05-11 23:02:15 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:02:15 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 4763 chars
+2026-05-11 23:02:15 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:02:15 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:02:15 | INFO    | process_company:3898 |     Metrics:47 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:02:20 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:02:20 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 4844 chars
+2026-05-11 23:02:20 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:02:20 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:02:20 | INFO    | process_company:3898 |     Metrics:43 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:02:30 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 690 chars, 5 connectors
+2026-05-11 23:02:47 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 570 chars, 6 connectors
+2026-05-11 23:02:59 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=4, throttled=0, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:02:59 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=80, causal=6, missing=['net_income_yoy']
+2026-05-11 23:03:01 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=5, throttled=0, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:03:01 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=80, causal=9, missing=['gross_margin_delta']
+2026-05-11 23:03:16 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=6, throttled=1, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:03:16 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 9 violations | score_est=15
+2026-05-11 23:03:21 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=7, throttled=1, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:03:21 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 9 violations | score_est=18
+2026-05-11 23:03:37 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=8, throttled=1, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:03:37 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 75 < 80 — keeping original
+2026-05-11 23:03:37 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=6, missing=['net_income_yoy']
+2026-05-11 23:03:38 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=9, throttled=1, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:03:38 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 80 → 80
+2026-05-11 23:03:38 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=7, missing=['gross_margin_delta']
+2026-05-11 23:04:05 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=10, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:04:05 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 2 violations | score_est=30
+2026-05-11 23:04:09 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:04:09 | WARNING | generate_analysis_v19:3253 |     V19-3 Auditor cycle 2: empty report — skipping
+2026-05-11 23:04:09 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=7 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:04:23 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=12, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:04:23 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 80 → 80
+2026-05-11 23:04:23 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=80|tier=silver|auditor_cycles=2|causal=6]: 2070 chars
+2026-05-11 23:04:23 | INFO    | process_company:3811 |   ▶ 10-K | 2022-06-30 | 0001564590-22-026876
+2026-05-11 23:04:24 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=+2.62% SPY=+2.00% abnormal=+0.62%
+2026-05-11 23:04:24 | INFO    | process_company:3828 |     AR: +0.62% (neutral)
+2026-05-11 23:04:33 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:04:33 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 5094 chars
+2026-05-11 23:04:33 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:04:33 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:04:33 | INFO    | process_company:3898 |     Metrics:43 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:04:35 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 55 < 80 — keeping original
+2026-05-11 23:04:35 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=6 (need 3), missing=['net_income_yoy']
+2026-05-11 23:04:41 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=14, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:04:41 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 80 → 80
+2026-05-11 23:04:41 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=80|tier=silver|auditor_cycles=2|causal=6]: 2038 chars
+2026-05-11 23:04:41 | INFO    | process_company:3811 |   ▶ 10-K | 2022-09-24 | 0000320193-22-000108
+2026-05-11 23:04:42 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-11.00% SPY=-3.26% abnormal=-7.74%
+2026-05-11 23:04:42 | INFO    | process_company:3828 |     AR: -7.74% (strong_negative)
+2026-05-11 23:04:45 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:04:45 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 4854 chars
+2026-05-11 23:04:45 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:04:45 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:04:45 | INFO    | process_company:3898 |     Metrics:47 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:04:45 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.88 + Cash=$23.6B | Risk=HIGH
+2026-05-11 23:04:58 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 560 chars, 3 connectors
+2026-05-11 23:05:00 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 593 chars, 7 connectors
+2026-05-11 23:05:11 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=17, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:05:11 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:05:11 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=100|tier=gold|auditor_cycles=0|causal=7]: 2281 chars
+2026-05-11 23:05:11 | INFO    | process_company:3811 |   ▶ 10-K | 2023-09-30 | 0000320193-23-000106
+2026-05-11 23:05:12 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+5.66% SPY=+1.36% abnormal=+4.30%
+2026-05-11 23:05:12 | INFO    | process_company:3828 |     AR: +4.30% (positive)
+2026-05-11 23:05:15 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:05:15 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 5045 chars
+2026-05-11 23:05:15 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:05:15 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:05:15 | INFO    | process_company:3898 |     Metrics:47 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:05:15 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.99 + Cash=$30.0B | Risk=HIGH
+2026-05-11 23:05:17 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=18, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:05:17 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:05:18 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=100|tier=gold|auditor_cycles=0|causal=6]: 2227 chars
+2026-05-11 23:05:18 | INFO    | process_company:3811 |   ▶ 10-K | 2023-06-30 | 0000950170-23-035122
+2026-05-11 23:05:18 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-1.23% SPY=-0.81% abnormal=-0.42%
+2026-05-11 23:05:18 | INFO    | process_company:3828 |     AR: -0.42% (neutral)
+2026-05-11 23:05:28 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 645 chars, 6 connectors
+2026-05-11 23:05:31 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:05:31 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 4751 chars
+2026-05-11 23:05:31 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:05:31 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:05:31 | INFO    | process_company:3898 |     Metrics:44 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:05:41 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=20, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:05:41 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:05:41 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=100|tier=gold|auditor_cycles=0|causal=8]: 2507 chars
+2026-05-11 23:05:41 | INFO    | process_company:3811 |   ▶ 10-K | 2024-09-28 | 0000320193-24-000123
+2026-05-11 23:05:42 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+1.93% SPY=+4.75% abnormal=-2.83%
+2026-05-11 23:05:42 | INFO    | process_company:3828 |     AR: -2.83% (negative)
+2026-05-11 23:05:43 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:05:43 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 4897 chars
+2026-05-11 23:05:43 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:05:43 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:05:43 | INFO    | process_company:3898 |     Metrics:46 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:05:43 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.87 + Cash=$29.9B | Risk=HIGH
+2026-05-11 23:05:51 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:05:51 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 976 chars, 5 connectors
+2026-05-11 23:06:12 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=22, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:06:12 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:06:12 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=100|tier=gold|auditor_cycles=0|causal=6]: 2058 chars
+2026-05-11 23:06:12 | INFO    | process_company:3811 |   ▶ 10-K | 2024-06-30 | 0000950170-24-087843
+2026-05-11 23:06:12 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-5.51% SPY=-3.66% abnormal=-1.85%
+2026-05-11 23:06:12 | INFO    | process_company:3828 |     AR: -1.85% (neutral)
+2026-05-11 23:06:15 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 774 chars, 5 connectors
+2026-05-11 23:06:23 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:06:23 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 4733 chars
+2026-05-11 23:06:23 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:06:23 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:06:23 | INFO    | process_company:3898 |     Metrics:44 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:06:27 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=24, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:06:27 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:06:27 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=100|tier=gold|auditor_cycles=0|causal=9]: 2600 chars
+2026-05-11 23:06:27 | INFO    | process_company:3811 |   ▶ 10-K | 2025-09-27 | 0000320193-25-000079
+2026-05-11 23:06:28 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-0.70% SPY=-1.63% abnormal=+0.92%
+2026-05-11 23:06:28 | INFO    | process_company:3828 |     AR: +0.92% (neutral)
+2026-05-11 23:06:29 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:06:29 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 4798 chars
+2026-05-11 23:06:29 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:06:29 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:06:29 | INFO    | process_company:3898 |     Metrics:46 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:06:29 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.89 + Cash=$35.9B | Risk=HIGH
+2026-05-11 23:06:36 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 534 chars, 6 connectors
+2026-05-11 23:06:41 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 461 chars, 5 connectors
+2026-05-11 23:06:51 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=27, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:06:51 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:06:51 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=100|tier=gold|auditor_cycles=0|causal=10]: 2072 chars
+2026-05-11 23:06:54 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=28, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:06:54 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:06:54 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=100|tier=gold|auditor_cycles=0|causal=6]: 2391 chars
+2026-05-11 23:06:54 | INFO    | process_company:3811 |   ▶ 10-K | 2025-06-30 | 0000950170-25-100235
+2026-05-11 23:06:55 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=28, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:06:55 | INFO    | process_company:4113 |     ✓ Negative example [10-K]: 702 chars
+2026-05-11 23:06:55 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=+2.28% SPY=-0.27% abnormal=+2.54%
+2026-05-11 23:06:55 | INFO    | process_company:3828 |     AR: +2.54% (positive)
+2026-05-11 23:07:05 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:07:05 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 5421 chars
+2026-05-11 23:07:05 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:07:05 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:07:05 | INFO    | process_company:3898 |     Metrics:43 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:07:07 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=30, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:07:07 | INFO    | build_multiyear_records:3695 |     ✓ Multi-year (5 periods): 2233 chars
+2026-05-11 23:07:22 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:07:22 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 473 chars, 5 connectors
+2026-05-11 23:07:24 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=32, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:07:24 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2021-09-25→2023-09-30: 2011 chars
+2026-05-11 23:07:30 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=33, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:07:30 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:07:30 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=100|tier=gold|auditor_cycles=0|causal=10]: 2141 chars
+2026-05-11 23:07:40 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=34, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:07:40 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2022-09-24→2024-09-28: 2327 chars
+2026-05-11 23:07:52 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=35, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:07:52 | INFO    | build_multiyear_records:3695 |     ✓ Multi-year (5 periods): 2384 chars
+2026-05-11 23:07:59 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=36, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:07:59 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2023-09-30→2025-09-27: 1865 chars
+2026-05-11 23:08:00 | INFO    | get_filings:2076 |   10-Q: 8 filings
+2026-05-11 23:08:00 | INFO    | process_company:3811 |   ▶ 10-Q | 2023-12-30 | 0000320193-24-000006
+2026-05-11 23:08:01 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+1.74% SPY=+1.39% abnormal=+0.36%
+2026-05-11 23:08:01 | INFO    | process_company:3828 |     AR: +0.36% (neutral)
+2026-05-11 23:08:03 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/5
+2026-05-11 23:08:03 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 1586 chars
+2026-05-11 23:08:03 | INFO    | scrape_text_sections:2206 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-11 23:08:03 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 3720 chars
+2026-05-11 23:08:03 | INFO    | process_company:3898 |     Metrics:46 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:08:07 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=37, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:08:07 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2021-06-30→2023-06-30: 2037 chars
+2026-05-11 23:08:09 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 388 chars, 6 connectors
+2026-05-11 23:08:16 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=39, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:08:16 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2022-06-30→2024-06-30: 2695 chars
+2026-05-11 23:08:17 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=40, throttled=2, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:08:17 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=80, causal=8, missing=['gross_margin_delta']
+2026-05-11 23:08:26 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:08:26 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=41, throttled=3, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:08:26 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2023-06-30→2025-06-30: 2603 chars
+2026-05-11 23:08:27 | INFO    | get_filings:2076 |   10-Q: 8 filings
+2026-05-11 23:08:27 | INFO    | process_company:3811 |   ▶ 10-Q | 2023-12-31 | 0000950170-24-008814
+2026-05-11 23:08:28 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-0.76% SPY=+0.63% abnormal=-1.39%
+2026-05-11 23:08:28 | INFO    | process_company:3828 |     AR: -1.39% (neutral)
+2026-05-11 23:08:33 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:08:33 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 160 chars
+2026-05-11 23:08:33 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:08:33 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2294 chars
+2026-05-11 23:08:33 | INFO    | process_company:3898 |     Metrics:43 | decum:False | text_sourced:0 | sections:3
+2026-05-11 23:08:39 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 576 chars, 0 connectors
+2026-05-11 23:08:41 | WARNING | generate_analysis_v19:3253 |     V19-3 Auditor cycle 1: empty report — skipping
+2026-05-11 23:08:41 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=8 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:08:48 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=44, throttled=3, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:08:48 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor_cycles=1|causal=8]: 2215 chars
+2026-05-11 23:08:48 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-03-30 | 0000320193-24-000069
+2026-05-11 23:08:49 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-0.04% SPY=+1.87% abnormal=-1.91%
+2026-05-11 23:08:49 | INFO    | process_company:3828 |     AR: -1.91% (neutral)
+2026-05-11 23:08:49 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:08:49 | INFO    | scrape_text_sections:2206 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-11 23:08:49 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:08:49 | INFO    | process_company:3898 |     Metrics:46 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:08:50 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=45, throttled=3, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:08:50 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=80, causal=6, missing=['gross_margin_delta']
+2026-05-11 23:09:06 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 713 chars, 6 connectors
+2026-05-11 23:09:21 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=47, throttled=4, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:09:21 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 6 violations | score_est=35
+2026-05-11 23:09:28 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=48, throttled=4, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:09:28 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:09:28 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=7]: 2053 chars
+2026-05-11 23:09:28 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-06-29 | 0000320193-24-000081
+2026-05-11 23:09:28 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-1.65% SPY=+0.02% abnormal=-1.66%
+2026-05-11 23:09:28 | INFO    | process_company:3828 |     AR: -1.66% (neutral)
+2026-05-11 23:09:29 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=48, throttled=4, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:09:29 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 80 → 80
+2026-05-11 23:09:29 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=6, missing=['gross_margin_delta']
+2026-05-11 23:09:31 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:09:31 | INFO    | scrape_text_sections:2206 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-11 23:09:31 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:09:31 | INFO    | process_company:3898 |     Metrics:46 | decum:True | text_sourced:0 | sections:2
+2026-05-11 23:09:31 | WARNING | process_company:3922 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-11 23:09:31 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.95 + Cash=$25.6B | Risk=HIGH
+2026-05-11 23:09:31 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-12-28 | 0000320193-25-000008
+2026-05-11 23:09:31 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-3.55% SPY=-0.17% abnormal=-3.37%
+2026-05-11 23:09:31 | INFO    | process_company:3828 |     AR: -3.37% (negative)
+2026-05-11 23:09:32 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:09:32 | INFO    | scrape_text_sections:2206 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-11 23:09:32 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:09:32 | INFO    | process_company:3898 |     Metrics:46 | decum:True | text_sourced:0 | sections:2
+2026-05-11 23:09:32 | WARNING | process_company:3922 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-11 23:09:32 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.92 + Cash=$30.3B | Risk=HIGH
+2026-05-11 23:09:32 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-03-29 | 0000320193-25-000057
+2026-05-11 23:09:32 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-3.32% SPY=-0.43% abnormal=-2.89%
+2026-05-11 23:09:32 | INFO    | process_company:3828 |     AR: -2.89% (negative)
+2026-05-11 23:09:33 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:09:33 | INFO    | scrape_text_sections:2206 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-11 23:09:33 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:09:33 | INFO    | process_company:3898 |     Metrics:46 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:09:33 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.82 + Cash=$28.2B | Risk=HIGH
+2026-05-11 23:09:42 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 700 chars, 6 connectors
+2026-05-11 23:09:44 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:09:44 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=51, throttled=4, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:09:44 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 9 violations | score_est=15
+2026-05-11 23:09:57 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=52, throttled=5, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:09:57 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 80 → 90
+2026-05-11 23:09:57 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor_cycles=2|causal=7]: 3382 chars
+2026-05-11 23:09:57 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-03-31 | 0000950170-24-048288
+2026-05-11 23:09:57 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-0.30% SPY=+0.31% abnormal=-0.61%
+2026-05-11 23:09:57 | INFO    | process_company:3828 |     AR: -0.61% (neutral)
+2026-05-11 23:09:59 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=52, throttled=5, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:09:59 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:09:59 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=8]: 1917 chars
+2026-05-11 23:09:59 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-06-28 | 0000320193-25-000073
+2026-05-11 23:09:59 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+13.33% SPY=+2.49% abnormal=+10.84%
+2026-05-11 23:09:59 | INFO    | process_company:3828 |     AR: +10.84% (strong_positive)
+2026-05-11 23:10:01 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:10:01 | INFO    | scrape_text_sections:2206 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-11 23:10:01 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:10:01 | INFO    | process_company:3898 |     Metrics:46 | decum:True | text_sourced:0 | sections:2
+2026-05-11 23:10:01 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.87 + Cash=$36.3B | Risk=HIGH
+2026-05-11 23:10:04 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:10:04 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 160 chars
+2026-05-11 23:10:04 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:10:04 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2294 chars
+2026-05-11 23:10:04 | INFO    | process_company:3898 |     Metrics:43 | decum:False | text_sourced:0 | sections:3
+2026-05-11 23:10:14 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 464 chars, 4 connectors
+2026-05-11 23:10:18 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 425 chars, 4 connectors
+2026-05-11 23:10:29 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=56, throttled=5, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:10:29 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:10:29 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=8]: 2565 chars
+2026-05-11 23:10:29 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-12-27 | 0000320193-26-000006
+2026-05-11 23:10:29 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+7.18% SPY=-0.20% abnormal=+7.38%
+2026-05-11 23:10:29 | INFO    | process_company:3828 |     AR: +7.38% (strong_positive)
+2026-05-11 23:10:30 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:10:30 | INFO    | scrape_text_sections:2206 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-11 23:10:30 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:10:30 | INFO    | process_company:3898 |     Metrics:46 | decum:True | text_sourced:0 | sections:2
+2026-05-11 23:10:30 | INFO    | process_company:3932 |     ⚠ Liquidity paradox: CR=0.97 + Cash=$45.3B | Risk=HIGH
+2026-05-11 23:10:32 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=57, throttled=5, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:10:32 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=90, causal=7, missing=['ebitda']
+2026-05-11 23:11:01 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=58, throttled=5, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:11:01 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 9 violations | score_est=35
+2026-05-11 23:11:03 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 486 chars, 4 connectors
+2026-05-11 23:11:14 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=60, throttled=5, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:11:14 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 90 → 100
+2026-05-11 23:11:14 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 1 (gold_ready, no audit needed)
+2026-05-11 23:11:14 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=1|causal=6]: 2643 chars
+2026-05-11 23:11:14 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-09-30 | 0000950170-24-118967
+2026-05-11 23:11:14 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-2.85% SPY=+1.90% abnormal=-4.76%
+2026-05-11 23:11:14 | INFO    | process_company:3828 |     AR: -4.76% (negative)
+2026-05-11 23:11:19 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:11:19 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 204 chars
+2026-05-11 23:11:19 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:11:19 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2338 chars
+2026-05-11 23:11:19 | INFO    | process_company:3898 |     Metrics:43 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:11:19 | WARNING | process_company:3922 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-11 23:11:19 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-12-31 | 0000950170-25-010491
+2026-05-11 23:11:19 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:11:19 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=60, throttled=5, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:11:19 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:11:19 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=8]: 2057 chars
+2026-05-11 23:11:19 | INFO    | process_company:3811 |   ▶ 10-Q | 2026-03-28 | 0000320193-26-000013
+2026-05-11 23:11:20 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+4.71% SPY=+2.35% abnormal=+2.35%
+2026-05-11 23:11:20 | INFO    | process_company:3828 |     AR: +2.35% (positive)
+2026-05-11 23:11:20 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-6.57% SPY=+0.40% abnormal=-6.96%
+2026-05-11 23:11:20 | INFO    | process_company:3828 |     AR: -6.96% (strong_negative)
+2026-05-11 23:11:21 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:11:21 | INFO    | scrape_text_sections:2206 |     Final sections: 2/5 | MD&A: poor (85 chars)
+2026-05-11 23:11:21 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:11:21 | INFO    | process_company:3898 |     Metrics:46 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:11:26 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:11:26 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 160 chars
+2026-05-11 23:11:26 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:11:26 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2294 chars
+2026-05-11 23:11:26 | INFO    | process_company:3898 |     Metrics:43 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:11:27 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 643 chars, 6 connectors
+2026-05-11 23:11:51 | WARNING | process_company:4071 |     ✗ No analysis generated for AAPL 2026-03-28
+2026-05-11 23:11:53 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=64, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:11:53 | INFO    | process_company:4113 |     ✓ Negative example [10-Q]: 709 chars
+2026-05-11 23:12:04 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:12:26 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=66, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:12:26 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:12:26 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=7]: 2162 chars
+2026-05-11 23:12:26 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-03-31 | 0000950170-25-061046
+2026-05-11 23:12:27 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=+9.64% SPY=+1.19% abnormal=+8.45%
+2026-05-11 23:12:27 | INFO    | process_company:3828 |     AR: +8.45% (strong_positive)
+2026-05-11 23:12:32 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:12:32 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 160 chars
+2026-05-11 23:12:32 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:12:32 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2294 chars
+2026-05-11 23:12:32 | INFO    | process_company:3898 |     Metrics:43 | decum:False | text_sourced:0 | sections:3
+2026-05-11 23:12:34 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=67, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:12:34 | INFO    | build_multiyear_records:3695 |     ✓ Multi-year (8 periods): 3154 chars
+2026-05-11 23:12:57 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=68, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:12:57 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2023-12-30→2024-06-29: 2599 chars
+2026-05-11 23:13:18 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=69, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:13:18 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-03-30→2024-12-28: 2111 chars
+2026-05-11 23:13:28 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:13:55 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:13:55 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=71, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:13:55 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:13:55 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=6]: 2045 chars
+2026-05-11 23:13:55 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-09-30 | 0001193125-25-256321
+2026-05-11 23:13:56 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-6.35% SPY=-1.43% abnormal=-4.92%
+2026-05-11 23:13:56 | INFO    | process_company:3828 |     AR: -4.92% (negative)
+2026-05-11 23:14:01 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:14:01 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 204 chars
+2026-05-11 23:14:01 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:14:01 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2338 chars
+2026-05-11 23:14:01 | INFO    | process_company:3898 |     Metrics:43 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:14:04 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=72, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:14:04 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-06-29→2025-03-29: 2459 chars
+2026-05-11 23:14:16 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=73, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:14:16 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-12-28→2025-06-28: 2118 chars
+2026-05-11 23:14:36 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 724 chars, 5 connectors
+2026-05-11 23:14:57 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=75, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:14:57 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2025-03-29→2025-12-27: 2068 chars
+2026-05-11 23:15:01 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=76, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:15:01 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=90, causal=7, missing=['ebitda']
+2026-05-11 23:15:20 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=77, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:15:20 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 10 violations | score_est=35
+2026-05-11 23:15:24 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=78, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:15:24 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2025-06-28→2026-03-28: 2446 chars
+2026-05-11 23:15:25 | INFO    | get_filings:2076 |   8-K: 8 filings
+2026-05-11 23:15:25 | INFO    | process_company:3811 |   ▶ 8-K | 2025-07-31 | 0000320193-25-000071
+2026-05-11 23:15:26 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+6.00% SPY=+0.03% abnormal=+5.98%
+2026-05-11 23:15:26 | INFO    | process_company:3828 |     AR: +5.98% (strong_positive)
+2026-05-11 23:15:26 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/320193/000032019325000071/0000320193-25-000071-index.json
+2026-05-11 23:15:33 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 47 chars, 1 connectors
+2026-05-11 23:15:35 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=1, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:15:38 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:15:38 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=81, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:15:38 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 8 violations | score_est=0
+2026-05-11 23:15:48 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=82, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:15:48 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 90 → 90
+2026-05-11 23:15:48 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 1 (gold_ready, no audit needed)
+2026-05-11 23:15:48 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor_cycles=1|causal=7]: 2691 chars
+2026-05-11 23:15:48 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-12-31 | 0001193125-26-027207
+2026-05-11 23:15:49 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-14.00% SPY=-1.33% abnormal=-12.68%
+2026-05-11 23:15:49 | INFO    | process_company:3828 |     AR: -12.68% (strong_negative)
+2026-05-11 23:15:51 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=82, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:15:51 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 80
+2026-05-11 23:15:51 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=8, missing=['gross_margin_delta']
+2026-05-11 23:16:05 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:16:05 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 160 chars
+2026-05-11 23:16:05 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:16:05 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2294 chars
+2026-05-11 23:16:05 | INFO    | process_company:3898 |     Metrics:43 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:16:15 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 572 chars, 6 connectors
+2026-05-11 23:16:26 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=85, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:16:26 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:16:26 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=9]: 1987 chars
+2026-05-11 23:16:26 | INFO    | process_company:3811 |   ▶ 10-Q | 2026-03-31 | 0001193125-26-191507
+2026-05-11 23:16:27 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-2.47% SPY=+3.13% abnormal=-5.60%
+2026-05-11 23:16:27 | INFO    | process_company:3828 |     AR: -5.60% (strong_negative)
+2026-05-11 23:16:33 | WARNING | generate_analysis_v19:3253 |     V19-3 Auditor cycle 2: empty report — skipping
+2026-05-11 23:16:34 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=8 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:16:47 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 2/5
+2026-05-11 23:16:47 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 160 chars
+2026-05-11 23:16:47 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:16:47 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2294 chars
+2026-05-11 23:16:47 | INFO    | process_company:3898 |     Metrics:43 | decum:False | text_sourced:0 | sections:3
+2026-05-11 23:17:06 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 494 chars, 5 connectors
+2026-05-11 23:17:12 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=88, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:17:12 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 80 → 80
+2026-05-11 23:17:12 | INFO    | process_company:3854 |     ✓ 8-K [Q=80|tier=silver]: 2084 chars
+2026-05-11 23:17:12 | INFO    | process_company:3811 |   ▶ 8-K | 2025-10-30 | 0000320193-25-000077
+2026-05-11 23:17:13 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-0.60% SPY=-1.40% abnormal=+0.80%
+2026-05-11 23:17:13 | INFO    | process_company:3828 |     AR: +0.80% (neutral)
+2026-05-11 23:17:15 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/320193/000032019325000077/0000320193-25-000077-index.json
+2026-05-11 23:17:20 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 61 chars, 1 connectors
+2026-05-11 23:17:22 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:17:35 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:17:35 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=91, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:17:35 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 9 violations | score_est=0
+2026-05-11 23:17:37 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=92, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:17:37 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:17:37 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=5]: 1901 chars
+2026-05-11 23:17:49 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=93, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:17:49 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 40
+2026-05-11 23:17:49 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=40, causal=5, missing=['net_income_yoy', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:17:52 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=94, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:17:52 | INFO    | build_multiyear_records:3695 |     ✓ Multi-year (8 periods): 2410 chars
+2026-05-11 23:18:10 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=95, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:18:10 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 4 violations | score_est=70
+2026-05-11 23:18:22 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=96, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:18:22 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 40 → 50
+2026-05-11 23:18:22 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=5 (need 3), missing=['net_income_yoy', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:18:33 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=97, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:18:33 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 50 → 50
+2026-05-11 23:18:33 | INFO    | process_company:3854 |     ✓ 8-K [Q=50|tier=bronze]: 2243 chars
+2026-05-11 23:18:34 | INFO    | process_company:3811 |   ▶ 8-K | 2025-12-04 | 0001140361-25-044561
+2026-05-11 23:18:34 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-0.18% SPY=-0.57% abnormal=+0.39%
+2026-05-11 23:18:34 | INFO    | process_company:3828 |     AR: +0.39% (neutral)
+2026-05-11 23:18:34 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/320193/000114036125044561/0001140361-25-044561-index.json
+2026-05-11 23:18:37 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 100 chars, 1 connectors
+2026-05-11 23:18:40 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=99, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:18:40 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2023-12-31→2024-09-30: 2066 chars
+2026-05-11 23:18:43 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=100, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:18:43 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:18:55 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:18:55 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=101, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:18:55 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 8 violations | score_est=0
+2026-05-11 23:19:00 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=102, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:19:00 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-03-31→2024-12-31: 2587 chars
+2026-05-11 23:19:06 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=103, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:19:06 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 80
+2026-05-11 23:19:06 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=6, missing=['gross_margin_delta']
+2026-05-11 23:19:10 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=104, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:19:10 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-09-30→2025-03-31: 2706 chars
+2026-05-11 23:19:22 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=105, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:19:22 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 8 violations | score_est=20
+2026-05-11 23:19:28 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=106, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:19:28 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-12-31→2025-09-30: 2341 chars
+2026-05-11 23:19:45 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=107, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:19:45 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2025-03-31→2025-12-31: 1783 chars
+2026-05-11 23:19:52 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 80 → 80
+2026-05-11 23:19:52 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=6 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:20:04 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=109, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:20:04 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 80 → 80
+2026-05-11 23:20:04 | INFO    | process_company:3854 |     ✓ 8-K [Q=80|tier=silver]: 1576 chars
+2026-05-11 23:20:04 | INFO    | process_company:3811 |   ▶ 8-K | 2025-12-30 | 0001140361-26-000199
+2026-05-11 23:20:05 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-4.29% SPY=+1.60% abnormal=-5.89%
+2026-05-11 23:20:05 | INFO    | process_company:3828 |     AR: -5.89% (strong_negative)
+2026-05-11 23:20:05 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/320193/000114036126000199/0001140361-26-000199-index.json
+2026-05-11 23:20:05 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:20:05 | INFO    | process_company:3811 |   ▶ 8-K | 2026-01-29 | 0000320193-26-000005
+2026-05-11 23:20:06 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+6.83% SPY=-2.37% abnormal=+9.19%
+2026-05-11 23:20:06 | INFO    | process_company:3828 |     AR: +9.19% (strong_positive)
+2026-05-11 23:20:07 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/320193/000032019326000005/0000320193-26-000005-index.json
+2026-05-11 23:20:07 | DEBUG   | record_request:821 |   UA rotated → SECDatasetBuilder/1.1 (Academic use; ml-research@l
+2026-05-11 23:20:10 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:20:11 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:20:11 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=111, throttled=6, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:20:11 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2025-09-30→2026-03-31: 1881 chars
+2026-05-11 23:20:12 | INFO    | get_filings:2076 |   8-K: 8 filings
+2026-05-11 23:20:12 | INFO    | process_company:3811 |   ▶ 8-K | 2025-04-30 | 0000950170-25-061032
+2026-05-11 23:20:12 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=+9.64% SPY=+1.19% abnormal=+8.45%
+2026-05-11 23:20:12 | INFO    | process_company:3828 |     AR: +8.45% (strong_positive)
+2026-05-11 23:20:12 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:20:12 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/789019/000095017025061032/0000950170-25-061032-index.json
+2026-05-11 23:20:18 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:20:18 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=114, throttled=7, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:20:18 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 5 violations | score_est=0
+2026-05-11 23:20:24 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=115, throttled=8, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:20:24 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:20:33 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=116, throttled=8, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:20:33 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 48
+2026-05-11 23:20:33 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=48, causal=7, missing=['net_income_yoy', 'gross_margin_delta']
+2026-05-11 23:20:33 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=117, throttled=8, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:20:33 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 6 violations | score_est=10
+2026-05-11 23:20:45 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=118, throttled=9, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:20:45 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 90
+2026-05-11 23:20:45 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 1 (gold_ready, no audit needed)
+2026-05-11 23:20:45 | INFO    | process_company:3854 |     ✓ 8-K [Q=90|tier=gold]: 2771 chars
+2026-05-11 23:20:45 | INFO    | process_company:3811 |   ▶ 8-K | 2025-07-01 | 0001193125-25-154103
+2026-05-11 23:20:45 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=+2.33% SPY=+1.04% abnormal=+1.29%
+2026-05-11 23:20:45 | INFO    | process_company:3828 |     AR: +1.29% (neutral)
+2026-05-11 23:20:46 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/789019/000119312525154103/0001193125-25-154103-index.json
+2026-05-11 23:20:46 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:20:46 | INFO    | process_company:3811 |   ▶ 8-K | 2025-07-30 | 0000950170-25-100226
+2026-05-11 23:20:46 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=+2.28% SPY=-0.27% abnormal=+2.54%
+2026-05-11 23:20:46 | INFO    | process_company:3828 |     AR: +2.54% (positive)
+2026-05-11 23:20:46 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/789019/000095017025100226/0000950170-25-100226-index.json
+2026-05-11 23:20:50 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:20:56 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=120, throttled=9, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:20:56 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 6 violations | score_est=20
+2026-05-11 23:21:06 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:21:06 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=121, throttled=9, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:21:06 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 48 → 52
+2026-05-11 23:21:06 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=7 (need 3), missing=['net_income_yoy', 'gross_margin_delta']
+2026-05-11 23:21:09 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=122, throttled=9, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:21:09 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=90, causal=8, missing=['gross_margin_delta']
+2026-05-11 23:21:19 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=123, throttled=9, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:21:19 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 52 → 52
+2026-05-11 23:21:19 | INFO    | process_company:3854 |     ✓ 8-K [Q=52.5|tier=bronze]: 1723 chars
+2026-05-11 23:21:19 | INFO    | process_company:3811 |   ▶ 8-K | 2026-02-24 | 0001140361-26-006577
+2026-05-11 23:21:20 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-3.08% SPY=-1.02% abnormal=-2.06%
+2026-05-11 23:21:20 | INFO    | process_company:3828 |     AR: -2.06% (negative)
+2026-05-11 23:21:20 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/320193/000114036126006577/0001140361-26-006577-index.json
+2026-05-11 23:21:20 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:21:20 | INFO    | process_company:3811 |   ▶ 8-K | 2026-04-17 | 0001140361-26-015711
+2026-05-11 23:21:21 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=-1.99% SPY=+0.91% abnormal=-2.90%
+2026-05-11 23:21:21 | INFO    | process_company:3828 |     AR: -2.90% (negative)
+2026-05-11 23:21:21 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/320193/000114036126015711/0001140361-26-015711-index.json
+2026-05-11 23:21:21 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:21:21 | INFO    | process_company:3811 |   ▶ 8-K | 2026-04-30 | 0000320193-26-000011
+2026-05-11 23:21:22 | DEBUG   | fetch_abnormal_return:1146 |   AR AAPL: stock=+5.93% SPY=+1.80% abnormal=+4.13%
+2026-05-11 23:21:22 | INFO    | process_company:3828 |     AR: +4.13% (positive)
+2026-05-11 23:21:22 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/320193/000032019326000011/0000320193-26-000011-index.json
+2026-05-11 23:21:27 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 61 chars, 1 connectors
+2026-05-11 23:21:34 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=125, throttled=9, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:21:34 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:21:35 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=126, throttled=9, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:21:35 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 7 violations | score_est=30
+2026-05-11 23:21:48 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=127, throttled=10, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:21:48 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 12 violations | score_est=10
+2026-05-11 23:22:00 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 80 < 90 — keeping original
+2026-05-11 23:22:00 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=90, causal=8, missing=['gross_margin_delta']
+2026-05-11 23:22:07 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=129, throttled=10, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:22:07 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 80
+2026-05-11 23:22:07 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=6, missing=['net_income_yoy']
+2026-05-11 23:22:25 | WARNING | generate_analysis_v19:3253 |     V19-3 Auditor cycle 2: empty report — skipping
+2026-05-11 23:22:25 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=8 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:22:28 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:22:28 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=131, throttled=10, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:22:28 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 12 violations | score_est=18
+2026-05-11 23:22:33 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=132, throttled=10, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:22:33 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 90 → 90
+2026-05-11 23:22:33 | INFO    | process_company:3854 |     ✓ 8-K [Q=90|tier=gold]: 1509 chars
+2026-05-11 23:22:33 | INFO    | process_company:3811 |   ▶ 8-K | 2025-09-24 | 0001193125-25-225125
+2026-05-11 23:22:34 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=+1.16% SPY=+0.44% abnormal=+0.72%
+2026-05-11 23:22:34 | INFO    | process_company:3828 |     AR: +0.72% (neutral)
+2026-05-11 23:22:34 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/789019/000119312525225125/0001193125-25-225125-index.json
+2026-05-11 23:22:34 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:22:34 | INFO    | process_company:3811 |   ▶ 8-K | 2025-10-28 | 0001193125-25-256310
+2026-05-11 23:22:35 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-6.35% SPY=-1.43% abnormal=-4.92%
+2026-05-11 23:22:35 | INFO    | process_company:3828 |     AR: -4.92% (negative)
+2026-05-11 23:22:35 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/789019/000119312525256310/0001193125-25-256310-index.json
+2026-05-11 23:22:42 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 2 chars, 0 connectors
+2026-05-11 23:23:17 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=6 (need 3), missing=['net_income_yoy']
+2026-05-11 23:23:23 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=135, throttled=10, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:23:23 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 80 → 80
+2026-05-11 23:23:23 | INFO    | process_company:3854 |     ✓ 8-K [Q=80|tier=silver]: 2016 chars
+2026-05-11 23:23:23 | INFO    | process_company:4134 | ✓ AAPL: 34 records | total:34 | llm=llm_calls=135, throttled=10, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:23:23 | INFO    | process_company:3784 | ══ NVDA (NVIDIA Corp) ══
+2026-05-11 23:23:23 | DEBUG   | ticker_to_cik:1989 |   CIK NVDA: found in TITAN_CIKS → 0001045810
+2026-05-11 23:23:23 | INFO    | process_company:3811 |   ▶ 8-K | 2025-12-05 | 0001193125-25-311196
+2026-05-11 23:23:24 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-3.30% SPY=-0.42% abnormal=-2.88%
+2026-05-11 23:23:24 | INFO    | process_company:3828 |     AR: -2.88% (negative)
+2026-05-11 23:23:24 | INFO    | load_xbrl_facts:2285 |   XBRL: 625 GAAP + 2 DEI
+2026-05-11 23:23:24 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/789019/000119312525311196/0001193125-25-311196-index.json
+2026-05-11 23:23:25 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:23:25 | INFO    | process_company:3811 |   ▶ 8-K | 2026-01-28 | 0001193125-26-027198
+2026-05-11 23:23:25 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-14.00% SPY=-1.33% abnormal=-12.68%
+2026-05-11 23:23:25 | INFO    | process_company:3828 |     AR: -12.68% (strong_negative)
+2026-05-11 23:23:25 | INFO    | get_filings:2076 |   10-K: 5 filings
+2026-05-11 23:23:25 | INFO    | process_company:3811 |   ▶ 10-K | 2022-01-30 | 0001045810-22-000036
+2026-05-11 23:23:25 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/789019/000119312526027198/0001193125-26-027198-index.json
+2026-05-11 23:23:26 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+4.68% SPY=+1.84% abnormal=+2.85%
+2026-05-11 23:23:26 | INFO    | process_company:3828 |     AR: +2.85% (positive)
+2026-05-11 23:23:28 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:23:28 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 5702 chars
+2026-05-11 23:23:28 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:23:28 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:23:28 | INFO    | process_company:3898 |     Metrics:45 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:23:29 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 45 chars, 0 connectors
+2026-05-11 23:23:34 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=138, throttled=11, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:23:34 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:23:41 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=139, throttled=11, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:23:41 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 9 violations | score_est=5
+2026-05-11 23:23:51 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 169 chars, 2 connectors
+2026-05-11 23:23:56 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:23:56 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=141, throttled=11, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:23:56 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 100
+2026-05-11 23:23:56 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 1 (gold_ready, no audit needed)
+2026-05-11 23:23:56 | INFO    | process_company:3854 |     ✓ 8-K [Q=100|tier=gold]: 2917 chars
+2026-05-11 23:23:56 | INFO    | process_company:3811 |   ▶ 8-K | 2026-04-29 | 0001193125-26-191457
+2026-05-11 23:23:56 | DEBUG   | fetch_abnormal_return:1146 |   AR MSFT: stock=-2.47% SPY=+3.13% abnormal=-5.60%
+2026-05-11 23:23:56 | INFO    | process_company:3828 |     AR: -5.60% (strong_negative)
+2026-05-11 23:23:57 | DEBUG   | get:1901 | HTTP 404: s/edgar/data/789019/000119312526191457/0001193125-26-191457-index.json
+2026-05-11 23:24:03 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=142, throttled=11, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:24:03 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=70, causal=6, missing=['capex', 'gross_margin_delta']
+2026-05-11 23:24:03 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 18 chars, 0 connectors
+2026-05-11 23:24:12 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=144, throttled=12, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:24:12 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:24:19 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=145, throttled=12, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:24:19 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 6 violations | score_est=18
+2026-05-11 23:24:22 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=146, throttled=12, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:24:22 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 16 violations | score_est=10
+2026-05-11 23:24:35 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=147, throttled=12, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:24:35 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 75
+2026-05-11 23:24:35 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=75, causal=3, missing=['gross_margin_delta']
+2026-05-11 23:24:36 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=148, throttled=12, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:24:36 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 70 → 80
+2026-05-11 23:24:36 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=10, missing=['gross_margin_delta']
+2026-05-11 23:25:02 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=149, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:25:02 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 6 violations | score_est=30
+2026-05-11 23:25:04 | WARNING | generate_analysis_v19:3253 |     V19-3 Auditor cycle 2: empty report — skipping
+2026-05-11 23:25:04 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=10 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:25:11 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:25:11 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=151, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:25:11 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 80 → 80
+2026-05-11 23:25:11 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=80|tier=silver|auditor_cycles=2|causal=10]: 2032 chars
+2026-05-11 23:25:11 | INFO    | process_company:3811 |   ▶ 10-K | 2023-01-29 | 0001045810-23-000017
+2026-05-11 23:25:12 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+2.59% SPY=+1.97% abnormal=+0.62%
+2026-05-11 23:25:12 | INFO    | process_company:3828 |     AR: +0.62% (neutral)
+2026-05-11 23:25:13 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:25:13 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 3228 chars
+2026-05-11 23:25:13 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:25:13 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:25:13 | INFO    | process_company:3898 |     Metrics:45 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:25:18 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=152, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:25:18 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 70 < 75 — keeping original
+2026-05-11 23:25:18 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=3 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:25:27 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=153, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:25:27 | INFO    | process_company:3854 |     ✓ 8-K [Q=75|tier=silver]: 2294 chars
+2026-05-11 23:25:27 | INFO    | process_company:4134 | ✓ MSFT: 32 records | total:32 | llm=llm_calls=153, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:25:33 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 375 chars, 3 connectors
+2026-05-11 23:25:50 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=154, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:25:50 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:25:50 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=90|tier=gold|auditor_cycles=0|causal=6]: 1649 chars
+2026-05-11 23:25:50 | INFO    | process_company:3811 |   ▶ 10-K | 2024-01-28 | 0001045810-24-000029
+2026-05-11 23:25:50 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+15.10% SPY=+1.82% abnormal=+13.28%
+2026-05-11 23:25:50 | INFO    | process_company:3828 |     AR: +13.28% (strong_positive)
+2026-05-11 23:25:52 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:25:52 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 5664 chars
+2026-05-11 23:25:52 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:25:52 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:25:52 | INFO    | process_company:3898 |     Metrics:45 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:25:52 | WARNING | process_company:3922 |     ✗ SANITY BLOCK: 3 rule(s). Action: BLOCK.
+2026-05-11 23:25:52 | INFO    | process_company:3811 |   ▶ 10-K | 2025-01-26 | 0001045810-25-000023
+2026-05-11 23:25:52 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-10.65% SPY=-1.93% abnormal=-8.72%
+2026-05-11 23:25:52 | INFO    | process_company:3828 |     AR: -8.72% (strong_negative)
+2026-05-11 23:25:53 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:25:54 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 3260 chars
+2026-05-11 23:25:54 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:25:54 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:25:54 | INFO    | process_company:3898 |     Metrics:44 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:25:54 | WARNING | process_company:3922 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-11 23:25:54 | INFO    | process_company:3811 |   ▶ 10-K | 2026-01-25 | 0001045810-26-000021
+2026-05-11 23:25:54 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-6.40% SPY=-1.16% abnormal=-5.25%
+2026-05-11 23:25:54 | INFO    | process_company:3828 |     AR: -5.25% (strong_negative)
+2026-05-11 23:25:56 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-11 23:25:56 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 5631 chars
+2026-05-11 23:25:56 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-11 23:25:56 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-11 23:25:56 | INFO    | process_company:3898 |     Metrics:43 | decum:False | text_sourced:0 | sections:2
+2026-05-11 23:26:04 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 734 chars, 6 connectors
+2026-05-11 23:26:12 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=156, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:26:12 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=90, causal=5, missing=['capex']
+2026-05-11 23:26:32 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=157, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:26:32 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 7 violations | score_est=25
+2026-05-11 23:26:58 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=158, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:26:58 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 90 → 90
+2026-05-11 23:26:58 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 1 (gold_ready, no audit needed)
+2026-05-11 23:26:58 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=90|tier=gold|auditor_cycles=1|causal=7]: 2634 chars
+2026-05-11 23:27:11 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=159, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:27:11 | INFO    | build_multiyear_records:3695 |     ✓ Multi-year (5 periods): 2316 chars
+2026-05-11 23:27:22 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:27:22 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=160, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:27:22 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2022-01-30→2024-01-28: 1927 chars
+2026-05-11 23:27:37 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=161, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:27:37 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2023-01-29→2025-01-26: 2312 chars
+2026-05-11 23:27:48 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=162, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:27:48 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-01-28→2026-01-25: 1606 chars
+2026-05-11 23:27:49 | INFO    | get_filings:2076 |   10-Q: 8 filings
+2026-05-11 23:27:49 | INFO    | process_company:3811 |   ▶ 10-Q | 2023-07-30 | 0001045810-23-000175
+2026-05-11 23:27:49 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+3.66% SPY=+1.46% abnormal=+2.19%
+2026-05-11 23:27:49 | INFO    | process_company:3828 |     AR: +2.19% (positive)
+2026-05-11 23:27:51 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 3/5
+2026-05-11 23:27:51 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:27:51 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:27:51 | INFO    | process_company:3898 |     Metrics:45 | decum:False | text_sourced:0 | sections:3
+2026-05-11 23:28:03 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 562 chars, 3 connectors
+2026-05-11 23:28:13 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=164, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:28:13 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=70, causal=7, missing=['capex', 'gross_margin_delta']
+2026-05-11 23:28:51 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=165, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:28:51 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 7 violations | score_est=20
+2026-05-11 23:29:04 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=166, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:29:04 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 70 → 85
+2026-05-11 23:29:04 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=85, causal=4, missing=[]
+2026-05-11 23:29:31 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=167, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:29:31 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 10 violations | score_est=20
+2026-05-11 23:29:48 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=168, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:29:48 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 55 < 85 — keeping original
+2026-05-11 23:29:49 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=85|tier=silver|auditor_cycles=2|causal=4]: 3535 chars
+2026-05-11 23:29:49 | INFO    | process_company:3811 |   ▶ 10-Q | 2023-10-29 | 0001045810-23-000227
+2026-05-11 23:29:49 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-3.61% SPY=+0.30% abnormal=-3.91%
+2026-05-11 23:29:49 | INFO    | process_company:3828 |     AR: -3.91% (negative)
+2026-05-11 23:29:50 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 3/5
+2026-05-11 23:29:50 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:29:50 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2233 chars
+2026-05-11 23:29:50 | INFO    | process_company:3898 |     Metrics:45 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:30:13 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:30:30 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:30:30 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=170, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:30:30 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=90, causal=8, missing=['capex']
+2026-05-11 23:30:41 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=171, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:30:41 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 3 violations | score_est=55
+2026-05-11 23:30:49 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=172, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:30:49 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 90 → 100
+2026-05-11 23:30:49 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 1 (gold_ready, no audit needed)
+2026-05-11 23:30:49 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=1|causal=8]: 2580 chars
+2026-05-11 23:30:49 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-04-28 | 0001045810-24-000124
+2026-05-11 23:30:50 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+6.63% SPY=+1.63% abnormal=+5.00%
+2026-05-11 23:30:50 | INFO    | process_company:3828 |     AR: +5.00% (strong_positive)
+2026-05-11 23:30:51 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 3/5
+2026-05-11 23:30:51 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:30:51 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:30:51 | INFO    | process_company:3898 |     Metrics:45 | decum:False | text_sourced:0 | sections:3
+2026-05-11 23:31:05 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 574 chars, 6 connectors
+2026-05-11 23:31:22 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=174, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:31:22 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:31:22 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=9]: 2342 chars
+2026-05-11 23:31:22 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-07-28 | 0001045810-24-000264
+2026-05-11 23:31:22 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-14.65% SPY=-1.56% abnormal=-13.09%
+2026-05-11 23:31:22 | INFO    | process_company:3828 |     AR: -13.09% (strong_negative)
+2026-05-11 23:31:24 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 3/5
+2026-05-11 23:31:24 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:31:24 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:31:24 | INFO    | process_company:3898 |     Metrics:44 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:31:50 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:32:11 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=176, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:32:11 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:32:11 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=6]: 2075 chars
+2026-05-11 23:32:11 | INFO    | process_company:3811 |   ▶ 10-Q | 2024-10-27 | 0001045810-24-000316
+2026-05-11 23:32:11 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-7.23% SPY=+1.41% abnormal=-8.64%
+2026-05-11 23:32:11 | INFO    | process_company:3828 |     AR: -8.64% (strong_negative)
+2026-05-11 23:32:12 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 3/5
+2026-05-11 23:32:12 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:32:12 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:32:12 | INFO    | process_company:3898 |     Metrics:44 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:32:28 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 602 chars, 6 connectors
+2026-05-11 23:32:46 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=178, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:32:46 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:32:46 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=0|causal=7]: 2263 chars
+2026-05-11 23:32:46 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-04-27 | 0001045810-25-000116
+2026-05-11 23:32:47 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+5.27% SPY=+1.40% abnormal=+3.88%
+2026-05-11 23:32:47 | INFO    | process_company:3828 |     AR: +3.88% (positive)
+2026-05-11 23:32:48 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 3/5
+2026-05-11 23:32:48 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:32:48 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:32:48 | INFO    | process_company:3898 |     Metrics:44 | decum:False | text_sourced:0 | sections:3
+2026-05-11 23:33:16 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 482 chars, 0 connectors
+2026-05-11 23:33:34 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:33:34 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=180, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:33:34 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=90, causal=8, missing=['capex']
+2026-05-11 23:33:47 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=181, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:33:47 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 7 violations | score_est=20
+2026-05-11 23:34:07 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=182, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:34:07 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 90 → 100
+2026-05-11 23:34:07 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 1 (gold_ready, no audit needed)
+2026-05-11 23:34:07 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor_cycles=1|causal=5]: 3394 chars
+2026-05-11 23:34:07 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-07-27 | 0001045810-25-000209
+2026-05-11 23:34:08 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-5.47% SPY=+0.39% abnormal=-5.86%
+2026-05-11 23:34:08 | INFO    | process_company:3828 |     AR: -5.86% (strong_negative)
+2026-05-11 23:34:09 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 3/5
+2026-05-11 23:34:09 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:34:09 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:34:09 | INFO    | process_company:3898 |     Metrics:44 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:34:34 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:34:46 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=184, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:34:46 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=90, causal=6, missing=['capex']
+2026-05-11 23:35:07 | WARNING | generate_analysis_v19:3253 |     V19-3 Auditor cycle 1: empty report — skipping
+2026-05-11 23:35:07 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=6 (need 3), missing=['capex']
+2026-05-11 23:35:14 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=186, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:35:14 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 90 → 90
+2026-05-11 23:35:14 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor_cycles=1|causal=6]: 1816 chars
+2026-05-11 23:35:14 | INFO    | process_company:3811 |   ▶ 10-Q | 2025-10-26 | 0001045810-25-000230
+2026-05-11 23:35:15 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-3.36% SPY=+2.57% abnormal=-5.93%
+2026-05-11 23:35:15 | INFO    | process_company:3828 |     AR: -5.93% (strong_negative)
+2026-05-11 23:35:16 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 3/5
+2026-05-11 23:35:16 | INFO    | scrape_text_sections:2206 |     Final sections: 3/5 | MD&A: poor (85 chars)
+2026-05-11 23:35:16 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 2193 chars
+2026-05-11 23:35:16 | INFO    | process_company:3898 |     Metrics:44 | decum:True | text_sourced:0 | sections:3
+2026-05-11 23:35:30 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 471 chars, 4 connectors
+2026-05-11 23:35:41 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=188, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:35:41 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=90, causal=8, missing=['capex']
+2026-05-11 23:36:00 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=189, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:36:00 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 6 violations | score_est=25
+2026-05-11 23:36:15 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:36:15 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=190, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:36:15 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 75 < 90 — keeping original
+2026-05-11 23:36:15 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=90, causal=8, missing=['capex']
+2026-05-11 23:36:37 | WARNING | generate_analysis_v19:3271 |     V19-3 Auditor: malformed JSON response
+2026-05-11 23:37:04 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=192, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:37:04 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 75 < 90 — keeping original
+2026-05-11 23:37:04 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=8 (need 3), missing=['capex']
+2026-05-11 23:37:11 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=193, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:37:11 | INFO    | process_company:4064 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor_cycles=2|causal=8]: 2243 chars
+2026-05-11 23:37:28 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=194, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:37:28 | INFO    | build_multiyear_records:3695 |     ✓ Multi-year (8 periods): 2251 chars
+2026-05-11 23:38:18 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=195, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:38:18 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2023-07-30→2024-04-28: 2031 chars
+2026-05-11 23:38:35 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=196, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:38:35 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2023-10-29→2024-07-28: 2182 chars
+2026-05-11 23:38:47 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=197, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:38:47 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-04-28→2024-10-27: 2108 chars
+2026-05-11 23:38:58 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=198, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:38:58 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-07-28→2025-04-27: 2031 chars
+2026-05-11 23:39:15 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=199, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:39:15 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2024-10-27→2025-07-27: 1512 chars
+2026-05-11 23:39:23 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:39:23 | DEBUG   | _call_llm_once:3107 |     LLM OK — single-stage attempt 1/5 | llm_calls=200, throttled=13, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:39:23 | INFO    | build_multiyear_records:3717 |     ✓ 3yr 2025-04-27→2025-10-26: 1599 chars
+2026-05-11 23:39:24 | INFO    | get_filings:2076 |   8-K: 8 filings
+2026-05-11 23:39:24 | INFO    | process_company:3811 |   ▶ 8-K | 2025-07-31 | 0001045810-25-000197
+2026-05-11 23:39:26 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+2.75% SPY=+2.34% abnormal=+0.41%
+2026-05-11 23:39:26 | INFO    | process_company:3828 |     AR: +0.41% (neutral)
+2026-05-11 23:39:26 | DEBUG   | get:1901 | HTTP 404: /edgar/data/1045810/000104581025000197/0001045810-25-000197-index.json
+2026-05-11 23:39:26 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:39:26 | INFO    | process_company:3811 |   ▶ 8-K | 2025-08-27 | 0001045810-25-000207
+2026-05-11 23:39:27 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-5.47% SPY=+0.39% abnormal=-5.86%
+2026-05-11 23:39:27 | INFO    | process_company:3828 |     AR: -5.86% (strong_negative)
+2026-05-11 23:39:27 | DEBUG   | get:1901 | HTTP 404: /edgar/data/1045810/000104581025000207/0001045810-25-000207-index.json
+2026-05-11 23:39:29 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 88 chars, 0 connectors
+2026-05-11 23:39:34 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:39:39 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=203, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:39:39 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 9 violations | score_est=0
+2026-05-11 23:39:50 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=204, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:39:50 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 75
+2026-05-11 23:39:50 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=75, causal=3, missing=['gross_margin_delta']
+2026-05-11 23:40:05 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=205, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:40:05 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 11 violations | score_est=20
+2026-05-11 23:40:20 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=206, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:40:20 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 75 → 80
+2026-05-11 23:40:20 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=5 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:40:32 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=207, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:40:32 | INFO    | process_company:3854 |     ✓ 8-K [Q=80|tier=silver]: 2294 chars
+2026-05-11 23:40:32 | INFO    | process_company:3811 |   ▶ 8-K | 2025-11-19 | 0001045810-25-000228
+2026-05-11 23:40:32 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-3.36% SPY=+2.57% abnormal=-5.93%
+2026-05-11 23:40:32 | INFO    | process_company:3828 |     AR: -5.93% (strong_negative)
+2026-05-11 23:40:32 | DEBUG   | record_request:821 |   UA rotated → FinancialDataCollector/2.0 (Research; data@finrese
+2026-05-11 23:40:33 | DEBUG   | get:1901 | HTTP 404: /edgar/data/1045810/000104581025000228/0001045810-25-000228-index.json
+2026-05-11 23:40:36 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 179 chars, 0 connectors
+2026-05-11 23:40:38 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:40:42 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:40:42 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=210, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:40:42 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 6 violations | score_est=0
+2026-05-11 23:40:56 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=211, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:40:56 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 0 → 80
+2026-05-11 23:40:56 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=9, missing=['gross_margin_delta']
+2026-05-11 23:41:10 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=212, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:41:10 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 10 violations | score_est=20
+2026-05-11 23:41:49 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=213, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:41:49 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 75 < 80 — keeping original
+2026-05-11 23:41:49 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=9 (need 3), missing=['gross_margin_delta']
+2026-05-11 23:42:10 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=214, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:42:10 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 80 → 80
+2026-05-11 23:42:10 | INFO    | process_company:3854 |     ✓ 8-K [Q=80|tier=silver]: 2019 chars
+2026-05-11 23:42:10 | INFO    | process_company:3811 |   ▶ 8-K | 2026-01-20 | 0001045810-26-000003
+2026-05-11 23:42:11 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+1.84% SPY=+0.40% abnormal=+1.45%
+2026-05-11 23:42:11 | INFO    | process_company:3828 |     AR: +1.45% (neutral)
+2026-05-11 23:42:12 | DEBUG   | get:1901 | HTTP 404: /edgar/data/1045810/000104581026000003/0001045810-26-000003-index.json
+2026-05-11 23:42:12 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:42:12 | INFO    | process_company:3811 |   ▶ 8-K | 2026-02-25 | 0001045810-26-000019
+2026-05-11 23:42:12 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-6.40% SPY=-1.16% abnormal=-5.25%
+2026-05-11 23:42:12 | INFO    | process_company:3828 |     AR: -5.25% (strong_negative)
+2026-05-11 23:42:12 | DEBUG   | get:1901 | HTTP 404: /edgar/data/1045810/000104581026000019/0001045810-26-000019-index.json
+2026-05-11 23:42:21 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 126 chars, 1 connectors
+2026-05-11 23:42:32 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=216, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:42:32 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=0, causal=0, missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:42:58 | WARNING | generate_analysis_v19:3253 |     V19-3 Auditor cycle 1: empty report — skipping
+2026-05-11 23:42:58 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=0 (need 3), missing=['net_income_yoy', 'ebitda', 'capex', 'eps', 'gross_margin_delta']
+2026-05-11 23:43:11 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=218, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:43:11 | INFO    | generate_analysis_v19:3309 |     ✓ Self-correction improved: 0 → 35
+2026-05-11 23:43:11 | INFO    | process_company:3854 |     ✓ 8-K [Q=35.0|tier=bronze]: 1062 chars
+2026-05-11 23:43:11 | INFO    | process_company:3811 |   ▶ 8-K | 2026-03-02 | 0001045810-26-000024
+2026-05-11 23:43:12 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+1.37% SPY=-1.50% abnormal=+2.87%
+2026-05-11 23:43:12 | INFO    | process_company:3828 |     AR: +2.87% (positive)
+2026-05-11 23:43:12 | DEBUG   | get:1901 | HTTP 404: /edgar/data/1045810/000104581026000024/0001045810-26-000024-index.json
+2026-05-11 23:43:14 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 0 chars, 0 connectors
+2026-05-11 23:43:31 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-11 23:43:31 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=220, throttled=14, rpm=40/40, backoff=1.00, workers=2
+2026-05-11 23:43:31 | DEBUG   | generate_analysis_v19:3234 |     V19-3 Auditor: approved on cycle 0 (gold_ready, no audit needed)
+2026-05-11 23:43:31 | INFO    | process_company:3854 |     ✓ 8-K [Q=100|tier=gold]: 1214 chars
+2026-05-11 23:43:31 | INFO    | process_company:3811 |   ▶ 8-K | 2026-04-24 | 0001045810-26-000026
+2026-05-11 23:43:32 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=-8.37% SPY=+0.40% abnormal=-8.77%
+2026-05-11 23:43:32 | INFO    | process_company:3828 |     AR: -8.77% (strong_negative)
+2026-05-11 23:43:33 | DEBUG   | get:1901 | HTTP 404: /edgar/data/1045810/000104581026000026/0001045810-26-000026-index.json
+2026-05-11 23:43:33 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:43:33 | INFO    | process_company:3811 |   ▶ 8-K | 2026-05-07 | 0001045810-26-000028
+2026-05-11 23:43:34 | DEBUG   | fetch_abnormal_return:1146 |   AR NVDA: stock=+1.97% SPY=+0.23% abnormal=+1.74%
+2026-05-11 23:43:34 | INFO    | process_company:3828 |     AR: +1.74% (neutral)
+2026-05-11 23:43:34 | DEBUG   | get:1901 | HTTP 404: /edgar/data/1045810/000104581026000028/0001045810-26-000028-index.json
+2026-05-11 23:43:35 | DEBUG   | process_company:3859 |     8-K not material
+2026-05-11 23:43:35 | INFO    | process_company:4134 | ✓ NVDA: 32 records | total:32 | llm=llm_calls=220, throttled=14, rpm=40/40, backoff=1.00, workers=2
