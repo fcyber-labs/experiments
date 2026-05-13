@@ -1,49 +1,45 @@
-2026-05-12 18:01:36 | INFO    | build_dataset:4361 | Resume mode: 0 tickers done, 100 remaining, 0 accessions cached
-2026-05-12 18:01:36 | INFO    | process_company:3784 | ══ WAT (Waters Corp) ══
-2026-05-12 18:01:36 | DEBUG   | ticker_to_cik:1989 |   CIK WAT: found in TITAN_CIKS → 0001000697
-2026-05-12 18:01:36 | INFO    | process_company:3784 | ══ A (Agilent Technologies Inc) ══
-2026-05-12 18:01:36 | DEBUG   | ticker_to_cik:1989 |   CIK A: found in TITAN_CIKS → 0001090872
-2026-05-12 18:01:40 | INFO    | load_xbrl_facts:2285 |   XBRL: 768 GAAP + 2 DEI
-2026-05-12 18:01:40 | INFO    | load_xbrl_facts:2285 |   XBRL: 518 GAAP + 2 DEI
-2026-05-12 18:01:41 | INFO    | get_filings:2076 |   10-K: 5 filings
-2026-05-12 18:01:41 | INFO    | process_company:3811 |   ▶ 10-K | 2021-10-31 | 0001090872-21-000027
-2026-05-12 18:01:42 | INFO    | get_filings:2076 |   10-K: 5 filings
-2026-05-12 18:01:42 | INFO    | process_company:3811 |   ▶ 10-K | 2021-12-31 | 0001193125-22-051509
-2026-05-12 18:01:50 | DEBUG   | fetch_abnormal_return:1146 |   AR A: stock=+4.21% SPY=+2.33% abnormal=+1.88%
-2026-05-12 18:01:50 | INFO    | process_company:3828 |     AR: +1.88% (neutral)
-2026-05-12 18:01:52 | DEBUG   | fetch_abnormal_return:1146 |   AR WAT: stock=+2.90% SPY=+1.73% abnormal=+1.17%
-2026-05-12 18:01:52 | INFO    | process_company:3828 |     AR: +1.17% (neutral)
-2026-05-12 18:01:58 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
-2026-05-12 18:01:59 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 5459 chars
-2026-05-12 18:01:59 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
-2026-05-12 18:01:59 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
-2026-05-12 18:01:59 | INFO    | process_company:3898 |     Metrics:44 | decum:False | text_sourced:0 | sections:2
-2026-05-12 18:02:02 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 5/6
-2026-05-12 18:02:02 | INFO    | scrape_text_sections:2206 |     Final sections: 5/6 | MD&A: excellent (6000 chars)
-2026-05-12 18:02:02 | INFO    | process_company:3898 |     Metrics:35 | decum:False | text_sourced:0 | sections:5
-2026-05-12 18:02:21 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 679 chars, 0 connectors
-2026-05-12 18:02:22 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 838 chars, 5 connectors
-2026-05-12 18:02:44 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=4, throttled=1, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:02:44 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=80, causal=7, missing=['capex']
-2026-05-12 18:02:44 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=5, throttled=1, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:02:44 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=85, causal=4, missing=['gross_margin_delta']
-2026-05-12 18:03:02 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=6, throttled=2, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:03:02 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 12 violations | score_est=20
-2026-05-12 18:03:24 | WARNING | generate_analysis_v19:3271 |     V19-3 Auditor: malformed JSON response
-2026-05-12 18:03:33 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=8, throttled=2, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:03:33 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 80 → 80
-2026-05-12 18:03:33 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=7, missing=['capex']
-2026-05-12 18:03:45 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=9, throttled=2, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:03:45 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 85 → 90
-2026-05-12 18:03:45 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=90, causal=5, missing=['gross_margin_delta']
-2026-05-12 18:03:49 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=10, throttled=2, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:03:49 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 15 violations | score_est=20
-2026-05-12 18:03:58 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
-2026-05-12 18:03:58 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-2 attempt 1/5 | llm_calls=11, throttled=2, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:03:58 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 11 violations | score_est=20
-2026-05-12 18:04:08 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=12, throttled=2, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:04:08 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 80 → 80
-2026-05-12 18:04:08 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=7 (need 3), missing=['capex']
-2026-05-12 18:04:24 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-2 attempt 1/5 | llm_calls=13, throttled=2, rpm=40/40, backoff=1.00, workers=2
-2026-05-12 18:04:24 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 90 → 90
-2026-05-12 18:04:24 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=5 (need 3), missing=['gross_margin_delta']
+2026-05-13 15:47:17 | INFO    | build_dataset:4361 | Resume mode: 0 tickers done, 100 remaining, 0 accessions cached
+2026-05-13 15:47:17 | INFO    | process_company:3784 | ══ WAT (Waters Corp) ══
+2026-05-13 15:47:17 | DEBUG   | ticker_to_cik:1989 |   CIK WAT: found in TITAN_CIKS → 0001000697
+2026-05-13 15:47:17 | INFO    | process_company:3784 | ══ A (Agilent Technologies Inc) ══
+2026-05-13 15:47:17 | DEBUG   | ticker_to_cik:1989 |   CIK A: found in TITAN_CIKS → 0001090872
+2026-05-13 15:47:21 | INFO    | load_xbrl_facts:2285 |   XBRL: 768 GAAP + 2 DEI
+2026-05-13 15:47:21 | INFO    | load_xbrl_facts:2285 |   XBRL: 530 GAAP + 2 DEI
+2026-05-13 15:47:22 | INFO    | get_filings:2076 |   10-K: 5 filings
+2026-05-13 15:47:22 | INFO    | process_company:3811 |   ▶ 10-K | 2021-10-31 | 0001090872-21-000027
+2026-05-13 15:47:22 | INFO    | get_filings:2076 |   10-K: 5 filings
+2026-05-13 15:47:22 | INFO    | process_company:3811 |   ▶ 10-K | 2021-12-31 | 0001193125-22-051509
+2026-05-13 15:47:28 | DEBUG   | fetch_abnormal_return:1146 |   AR A: stock=+4.21% SPY=+2.33% abnormal=+1.88%
+2026-05-13 15:47:28 | INFO    | process_company:3828 |     AR: +1.88% (neutral)
+2026-05-13 15:47:32 | DEBUG   | fetch_abnormal_return:1146 |   AR WAT: stock=+2.90% SPY=+1.73% abnormal=+1.17%
+2026-05-13 15:47:32 | INFO    | process_company:3828 |     AR: +1.17% (neutral)
+2026-05-13 15:47:40 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 1/6
+2026-05-13 15:47:40 | INFO    | scrape_text_sections:2197 |     Strategy-2 Risk fallback: 5459 chars
+2026-05-13 15:47:40 | INFO    | scrape_text_sections:2206 |     Final sections: 2/6 | MD&A: poor (85 chars)
+2026-05-13 15:47:40 | INFO    | enrich_thin_mda:1655 |     V18-7 Deep enrichment: 85 → 4134 chars
+2026-05-13 15:47:40 | INFO    | process_company:3898 |     Metrics:44 | decum:False | text_sourced:0 | sections:2
+2026-05-13 15:47:43 | INFO    | scrape_text_sections:2187 |     Strategy-1 sections: 5/6
+2026-05-13 15:47:43 | INFO    | scrape_text_sections:2206 |     Final sections: 5/6 | MD&A: excellent (6000 chars)
+2026-05-13 15:47:43 | INFO    | process_company:3898 |     Metrics:35 | decum:False | text_sourced:0 | sections:5
+2026-05-13 15:47:47 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 929 chars, 7 connectors
+2026-05-13 15:47:49 | DEBUG   | generate_analysis_v19:3187 |     Stage A: 666 chars, 6 connectors
+2026-05-13 15:47:54 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=4, throttled=0, rpm=40/40, backoff=1.00, workers=2
+2026-05-13 15:47:54 | DEBUG   | _call_llm_once:3107 |     LLM OK — Stage-B attempt 1/5 | llm_calls=4, throttled=0, rpm=40/40, backoff=1.00, workers=2
+2026-05-13 15:47:54 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=80, causal=9, missing=['gross_margin_delta']
+2026-05-13 15:47:54 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 1: score=80, causal=7, missing=['capex']
+2026-05-13 15:48:01 | WARNING | generate_analysis_v19:3271 |     V19-3 Auditor: malformed JSON response
+2026-05-13 15:48:08 | DEBUG   | _call_llm_once:3107 |     LLM OK — Auditor-1 attempt 1/5 | llm_calls=7, throttled=1, rpm=40/40, backoff=1.00, workers=2
+2026-05-13 15:48:08 | INFO    | generate_analysis_v19:3263 |     V19-3 Auditor REJECTED: 25 violations | score_est=20
+2026-05-13 15:48:12 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 80 → 80
+2026-05-13 15:48:12 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=11, missing=['capex']
+2026-05-13 15:48:18 | WARNING | generate_analysis_v19:3271 |     V19-3 Auditor: malformed JSON response
+2026-05-13 15:48:20 | DEBUG   | _call_llm_once:3107 |     LLM OK — Rewrite-1 attempt 1/5 | llm_calls=10, throttled=1, rpm=40/40, backoff=1.00, workers=2
+2026-05-13 15:48:20 | INFO    | generate_analysis_v19:3281 |     V19-3 Rewrite improved: 80 → 80
+2026-05-13 15:48:20 | INFO    | generate_analysis_v19:3237 |     V19-3 Auditor cycle 2: score=80, causal=10, missing=[]
+2026-05-13 15:48:26 | DEBUG   | _step_up:717 |   AdaptiveLimiter: step-up → rpm=40, workers=2, backoff_coeff=1.00
+2026-05-13 15:48:26 | WARNING | generate_analysis_v19:3271 |     V19-3 Auditor: malformed JSON response
+2026-05-13 15:48:27 | DEBUG   | generate_analysis_v19:3287 |     V19-3 Rewrite not better: 75 < 80 — keeping original
+2026-05-13 15:48:27 | INFO    | generate_analysis_v19:3297 |     V18-3 Self-correction: causal=11 (need 3), missing=['capex']
+2026-05-13 15:48:32 | DEBUG   | _call_llm_once:3107 |     LLM OK — Self-Correction attempt 1/5 | llm_calls=13, throttled=1, rpm=40/40, backoff=1.00, workers=2
+2026-05-13 15:48:32 | INFO    | process_company:4064 |     ✓ FULL [10-K|Q=80|tier=silver|auditor_cycles=2|causal=11]: 4042 chars
+2026-05-13 15:48:32 | INFO    | process_company:3811 |   ▶ 10-K | 2022-12-31 | 0001193125-23-050827
