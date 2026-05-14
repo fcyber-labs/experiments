@@ -7195,3 +7195,13 @@
 2026-05-14 12:10:12 | INFO    | load_xbrl_facts:2747 |   XBRL: 891 GAAP + 2 DEI
 2026-05-14 12:10:15 | INFO    | get_filings:2614 |   10-K: 3 filings
 2026-05-14 12:10:15 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000070858-24-000122
+2026-05-14 12:10:15 | INFO    | process_company:4090 |     AR: -1.10% (neutral)
+2026-05-14 12:10:17 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=1|causal=22|segs=8|xref=OK]: 2625 chars
+2026-05-14 12:10:17 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0001141391-25-000172
+2026-05-14 12:10:18 | INFO    | process_company:4090 |     AR: -0.95% (neutral)
+2026-05-14 12:10:25 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:10:25 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Three Months Ended June', 'Six Months Ended June', 'Net', 'Personnel', 'Professional fees', 'Data processing and telecommunications', 'Foreign exchange activity']
+2026-05-14 12:10:25 | INFO    | process_company:4152 |     Metrics:33 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:10:35 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:10:35 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading', 'Includes investment and brokerage services revenue of', 'billion and']
+2026-05-14 12:10:35 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
