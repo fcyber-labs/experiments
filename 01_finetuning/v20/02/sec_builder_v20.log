@@ -1,0 +1,17 @@
+2026-05-14 12:05:18 | INFO    | build_dataset:4517 | Resume mode: 0 tickers done, 100 remaining, 0 accessions cached
+2026-05-14 12:05:18 | INFO    | process_company:4033 | ══ FITB (Fifth Third Bancorp) ══
+2026-05-14 12:05:18 | INFO    | process_company:4033 | ══ KEY (KeyCorp) ══
+2026-05-14 12:05:21 | INFO    | load_xbrl_facts:2747 |   XBRL: 819 GAAP + 2 DEI
+2026-05-14 12:05:21 | INFO    | load_xbrl_facts:2747 |   XBRL: 1031 GAAP + 2 DEI
+2026-05-14 12:05:23 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 12:05:23 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000035527-22-000119
+2026-05-14 12:05:23 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 12:05:23 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000091576-22-000029
+2026-05-14 12:05:25 | INFO    | process_company:4090 |     AR: -6.09% (strong_negative)
+2026-05-14 12:05:26 | INFO    | process_company:4090 |     AR: -9.56% (strong_negative)
+2026-05-14 12:06:03 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:06:04 | INFO    | process_company:4120 |     V20-3 Segments found: 5 — ['Note', 'Business Segment Reporting', 'Condensed Financial Information of the Parent Company', 'Revenue from Contracts with Customers', 'During']
+2026-05-14 12:06:04 | INFO    | process_company:4152 |     Metrics:29 | decum:False | text_sourced:0 | scaling:millions | segments:5 | sections:5
+2026-05-14 12:06:07 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:06:07 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Information', 'Average Balance Sheets', 'Investment Securities Portfolio', 'Loan and Lease Portfolio', 'Risk Elements of Loan and Lease Portfolio', 'Deposits', 'Return on Equity and Assets', 'Short-term Borrowings']
+2026-05-14 12:06:07 | INFO    | process_company:4152 |     Metrics:30 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
