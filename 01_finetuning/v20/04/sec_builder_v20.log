@@ -1,0 +1,14 @@
+2026-05-15 14:59:07 | INFO    | build_dataset:4656 | Resume mode: 0 tickers done, 100 remaining, 0 accessions cached
+2026-05-15 14:59:07 | INFO    | process_company:4172 | ══ KMB (Kimberly-Clark Corp) ══
+2026-05-15 14:59:07 | INFO    | process_company:4172 | ══ KHC (Kraft Heinz Co) ══
+2026-05-15 14:59:08 | INFO    | load_xbrl_facts:2886 |   XBRL: 600 GAAP + 2 DEI
+2026-05-15 14:59:08 | INFO    | load_xbrl_facts:2886 |   XBRL: 657 GAAP + 2 DEI
+2026-05-15 14:59:09 | INFO    | get_filings:2753 |   10-K: 5 filings
+2026-05-15 14:59:09 | INFO    | process_company:4211 |   ▶ 10-K | 2021-12-25 | 0001637459-22-000018
+2026-05-15 14:59:09 | INFO    | get_filings:2753 |   10-K: 5 filings
+2026-05-15 14:59:09 | INFO    | process_company:4211 |   ▶ 10-K | 2021-12-31 | 0000055785-22-000010
+2026-05-15 14:59:12 | INFO    | process_company:4229 |     AR: +4.98% (positive)
+2026-05-15 14:59:13 | INFO    | process_company:4229 |     AR: +3.25% (positive)
+2026-05-15 14:59:26 | DEBUG   | process_company:4252 |     V20-5 Scaling: millions
+2026-05-15 14:59:26 | INFO    | process_company:4259 |     V20-3 Segments found: 8 — ['Twelve Months Ended December', 'Reported', 'Cost of products sold', 'Gross Profit', 'research and general expenses', 'net', 'Operating Profit', 'Effective tax rate']
+2026-05-15 14:59:26 | INFO    | process_company:4291 |     Metrics:37 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2

@@ -7205,3 +7205,1303 @@
 2026-05-14 12:10:35 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
 2026-05-14 12:10:35 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading', 'Includes investment and brokerage services revenue of', 'billion and']
 2026-05-14 12:10:35 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:11:09 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=7|segs=8|xref=OK]: 2337 chars
+2026-05-14 12:11:09 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000070858-25-000139
+2026-05-14 12:11:10 | INFO    | process_company:4090 |     AR: +0.04% (neutral)
+2026-05-14 12:11:18 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=18|segs=8|xref=OK]: 2093 chars
+2026-05-14 12:11:18 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0001141391-25-000193
+2026-05-14 12:11:19 | INFO    | process_company:4090 |     AR: +1.33% (neutral)
+2026-05-14 12:11:26 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:11:26 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'decreased', 'Noninterest income increased', 'primarily due to the net', 'Noninterest expense decreased', 'primarily due to the', 'The income tax benefit was', 'compared to']
+2026-05-14 12:11:26 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:11:27 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:11:27 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Three Months Ended September', 'Nine Months Ended September', 'Net', 'Personnel', 'Professional fees', 'Data processing and telecommunications', 'Foreign exchange activity']
+2026-05-14 12:11:27 | INFO    | process_company:4152 |     Metrics:33 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:12:04 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=70|tier=bronze|auditor=2|causal=29|segs=8|xref=OK]: 2171 chars
+2026-05-14 12:12:04 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000070858-26-000157
+2026-05-14 12:12:05 | INFO    | process_company:4090 |     AR: -1.53% (neutral)
+2026-05-14 12:12:11 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=19|segs=8|xref=OK]: 1867 chars
+2026-05-14 12:12:11 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0001141391-26-000031
+2026-05-14 12:12:13 | INFO    | process_company:4090 |     AR: -2.19% (negative)
+2026-05-14 12:12:18 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:12:18 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Three Months Ended March', 'Net', 'Personnel', 'Professional fees', 'Data processing and telecommunications', 'Foreign exchange activity', 'Advertising and marketing', 'Depreciation and amortization']
+2026-05-14 12:12:18 | INFO    | process_company:4152 |     Metrics:33 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:12:18 | INFO    | process_company:4207 |     ⚠ Liquidity paradox: CR=0.98 + Cash=$7.9B | Risk=HIGH
+2026-05-14 12:12:30 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:12:31 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading', 'Includes investment and brokerage services revenue of', 'billion and']
+2026-05-14 12:12:31 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:13:16 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=26|segs=8|xref=OK]: 2113 chars
+2026-05-14 12:13:26 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2203 chars
+2026-05-14 12:13:37 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2267 chars
+2026-05-14 12:13:43 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 2062 chars
+2026-05-14 12:13:49 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 1877 chars
+2026-05-14 12:14:00 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2226 chars
+2026-05-14 12:14:13 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 2432 chars
+2026-05-14 12:14:23 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 1756 chars
+2026-05-14 12:14:23 | INFO    | process_company:4440 | ✓ MA: 24 records | llm=llm_calls=4837, throttled=841, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:14:23 | INFO    | process_company:4033 | ══ WFC (Wells Fargo & Co) ══
+2026-05-14 12:14:24 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=95|tier=gold|auditor=2|causal=20|segs=8|xref=OK]: 11956 chars
+2026-05-14 12:14:24 | INFO    | load_xbrl_facts:2747 |   XBRL: 937 GAAP + 2 DEI
+2026-05-14 12:14:27 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 12:14:27 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000072971-22-000096
+2026-05-14 12:14:28 | INFO    | process_company:4090 |     AR: -9.12% (strong_negative)
+2026-05-14 12:14:30 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:14:30 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['The', 'At December', 'we had', 'with approximately', 'Our global workforce was', 'female and', 'workforce was', 'white and']
+2026-05-14 12:14:30 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:14:36 | INFO    | process_company:4422 |     ✓ Negative example [10-K]: 927 chars
+2026-05-14 12:14:42 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 2132 chars
+2026-05-14 12:14:44 | INFO    | get_filings:2614 |   10-Q: 7 filings
+2026-05-14 12:14:44 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000070858-24-000156
+2026-05-14 12:14:45 | INFO    | process_company:4090 |     AR: -0.78% (neutral)
+2026-05-14 12:14:52 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:14:53 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Three Months Ended March', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading', 'Includes investment and brokerage services revenue of']
+2026-05-14 12:14:53 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:14:54 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=1|causal=20|segs=8|xref=OK]: 2693 chars
+2026-05-14 12:14:54 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0000072971-23-000071
+2026-05-14 12:14:54 | INFO    | process_company:4090 |     AR: +1.85% (neutral)
+2026-05-14 12:14:56 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:14:56 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['The', 'At December', 'we had approximately', 'with approximately', 'since', 'showed that women at Wells Fargo earn more than', 'cents for every', 'ethnically diverse earn more than']
+2026-05-14 12:14:56 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:15:38 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=85|tier=silver|auditor=2|causal=36|segs=8|xref=OK]: 5293 chars
+2026-05-14 12:15:38 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000070858-24-000208
+2026-05-14 12:15:39 | INFO    | process_company:4090 |     AR: -6.90% (strong_negative)
+2026-05-14 12:15:40 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=24|segs=8|xref=OK]: 1983 chars
+2026-05-14 12:15:40 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000072971-24-000064
+2026-05-14 12:15:41 | INFO    | process_company:4090 |     AR: +3.83% (positive)
+2026-05-14 12:15:46 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:15:46 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['The', 'At December', 'we had approximately', 'with approximately', 'The year-end', 'cents for every', 'ethnically diverse earn more than', 'Our Head of']
+2026-05-14 12:15:46 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:15:59 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:16:00 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Three Months Ended June', 'Six Months Ended June', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading']
+2026-05-14 12:16:00 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:16:32 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=15|segs=8|xref=OK]: 2823 chars
+2026-05-14 12:16:32 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000072971-25-000066
+2026-05-14 12:16:32 | INFO    | process_company:4090 |     AR: -0.63% (neutral)
+2026-05-14 12:16:34 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:16:34 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['The', 'At December', 'we had approximately', 'with approximately', 'Our global workforce was', 'female and', 'workforce was', 'and']
+2026-05-14 12:16:34 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:17:00 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=27|segs=8|xref=OK]: 2122 chars
+2026-05-14 12:17:00 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000070858-24-000280
+2026-05-14 12:17:00 | INFO    | process_company:4090 |     AR: -0.66% (neutral)
+2026-05-14 12:17:08 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:17:08 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'decreased', 'to a net loss of', 'compared to net income of', 'Revenue decreased', 'primarily due to a charge of', 'Noninterest expense decreased', 'The income tax benefit decreased']
+2026-05-14 12:17:08 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:17:16 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=70|tier=bronze|auditor=2|causal=55|segs=8|xref=OK]: 3901 chars
+2026-05-14 12:17:16 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000072971-26-000133
+2026-05-14 12:17:17 | INFO    | process_company:4090 |     AR: -1.39% (neutral)
+2026-05-14 12:17:17 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:17:17 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['The', 'At December', 'we had approximately', 'with approximately', 'Our global workforce was', 'female and', 'and', 'During']
+2026-05-14 12:17:17 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:17:25 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=0|causal=13|segs=8|xref=OK]: 1876 chars
+2026-05-14 12:17:36 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 3313 chars
+2026-05-14 12:17:49 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 4049 chars
+2026-05-14 12:17:49 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=23|segs=8|xref=OK]: 2115 chars
+2026-05-14 12:17:49 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000070858-25-000200
+2026-05-14 12:17:49 | INFO    | process_company:4090 |     AR: +1.44% (neutral)
+2026-05-14 12:17:56 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:17:56 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 2265 chars
+2026-05-14 12:17:56 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Three Months Ended March', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading', 'Includes investment and brokerage services revenue of']
+2026-05-14 12:17:56 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:18:02 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 1971 chars
+2026-05-14 12:18:05 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 12:18:05 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0000072971-23-000170
+2026-05-14 12:18:06 | INFO    | process_company:4090 |     AR: -0.37% (neutral)
+2026-05-14 12:18:13 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:18:13 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'Quarter ended September', 'Net interest income', 'Noninterest income', 'Provision for credit losses', 'Noninterest expense', 'before noncontrolling interests']
+2026-05-14 12:18:13 | INFO    | process_company:4152 |     Metrics:24 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:18:48 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=24|segs=8|xref=OK]: 1997 chars
+2026-05-14 12:18:48 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000070858-25-000268
+2026-05-14 12:18:48 | INFO    | process_company:4090 |     AR: -5.00% (negative)
+2026-05-14 12:19:01 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:19:01 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Three Months Ended June', 'Six Months Ended June', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading']
+2026-05-14 12:19:01 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:19:31 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=38|segs=8|xref=OK]: 3597 chars
+2026-05-14 12:19:31 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000072971-24-000129
+2026-05-14 12:19:32 | INFO    | process_company:4090 |     AR: +0.01% (neutral)
+2026-05-14 12:19:38 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:19:38 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'Quarter ended March', 'Net interest income', 'Noninterest income', 'Provision for credit losses', 'Noninterest expense', 'before noncontrolling interests']
+2026-05-14 12:19:38 | INFO    | process_company:4152 |     Metrics:24 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:19:51 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=70|tier=bronze|auditor=2|causal=24|segs=8|xref=OK]: 2243 chars
+2026-05-14 12:19:51 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000070858-25-000405
+2026-05-14 12:19:52 | INFO    | process_company:4090 |     AR: +1.16% (neutral)
+2026-05-14 12:20:00 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=1|causal=29|segs=8|xref=OK]: 3224 chars
+2026-05-14 12:20:00 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000072971-24-000185
+2026-05-14 12:20:01 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:20:01 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Three Months Ended September', 'Nine Months Ended September', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading']
+2026-05-14 12:20:01 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:20:01 | INFO    | process_company:4090 |     AR: -4.97% (negative)
+2026-05-14 12:20:10 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:20:10 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'Quarter ended June', 'Net interest income', 'Noninterest income', 'Provision for credit losses', 'Noninterest expense', 'before noncontrolling interests']
+2026-05-14 12:20:10 | INFO    | process_company:4152 |     Metrics:24 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:20:50 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=34|segs=8|xref=OK]: 3223 chars
+2026-05-14 12:20:50 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000070858-26-000249
+2026-05-14 12:20:51 | INFO    | process_company:4090 |     AR: -5.98% (strong_negative)
+2026-05-14 12:20:58 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=23|segs=8|xref=OK]: 2142 chars
+2026-05-14 12:20:58 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000072971-24-000243
+2026-05-14 12:20:58 | INFO    | process_company:4090 |     AR: +2.81% (positive)
+2026-05-14 12:21:00 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:21:00 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Three Months Ended March', 'Interest rate risk', 'Foreign exchange risk', 'Equity risk', 'Credit risk', 'Total sales and trading', 'Includes investment and brokerage services revenue of']
+2026-05-14 12:21:00 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:21:09 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:21:09 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'Quarter ended September', 'Net interest income', 'Noninterest income', 'Provision for credit losses', 'Noninterest expense', 'before noncontrolling interests']
+2026-05-14 12:21:09 | INFO    | process_company:4152 |     Metrics:23 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:22:13 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=35|segs=8|xref=OK]: 3857 chars
+2026-05-14 12:22:15 | INFO    | process_company:4422 |     ✓ Negative example [10-Q]: 674 chars
+2026-05-14 12:22:21 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (7 periods): 2207 chars
+2026-05-14 12:22:27 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 1889 chars
+2026-05-14 12:22:27 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=34|segs=8|xref=OK]: 3742 chars
+2026-05-14 12:22:27 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000072971-25-000129
+2026-05-14 12:22:28 | INFO    | process_company:4090 |     AR: +2.54% (positive)
+2026-05-14 12:22:32 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 1697 chars
+2026-05-14 12:22:34 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:22:34 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'Quarter ended March', 'Net interest income', 'Noninterest income', 'Provision for credit losses', 'Noninterest expense', 'before noncontrolling interests']
+2026-05-14 12:22:34 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:22:39 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2073 chars
+2026-05-14 12:22:47 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 2093 chars
+2026-05-14 12:22:54 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 1542 chars
+2026-05-14 12:22:54 | INFO    | process_company:4440 | ✓ BAC: 19 records | llm=llm_calls=4954, throttled=862, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:22:54 | INFO    | process_company:4033 | ══ GS (Goldman Sachs Group Inc) ══
+2026-05-14 12:22:55 | INFO    | load_xbrl_facts:2747 |   XBRL: 638 GAAP + 2 DEI
+2026-05-14 12:22:57 | INFO    | get_filings:2614 |   10-K: 2 filings
+2026-05-14 12:22:57 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000886982-25-000005
+2026-05-14 12:22:58 | INFO    | process_company:4090 |     AR: -4.06% (negative)
+2026-05-14 12:23:05 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:23:05 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'The increase in net interest income within FICC for', 'compared with', 'in billions', 'Announced mergers and acquisitions', 'Completed mergers and acquisitions', 'Equity and equity-related offerings', 'Debt offerings']
+2026-05-14 12:23:05 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:23:15 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=27|segs=8|xref=OK]: 2076 chars
+2026-05-14 12:23:15 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000072971-25-000201
+2026-05-14 12:23:15 | INFO    | process_company:4090 |     AR: +0.20% (neutral)
+2026-05-14 12:23:22 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:23:22 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'Quarter ended June', 'Net interest income', 'Noninterest income', 'Provision for credit losses', 'Noninterest expense', 'Net income before noncontrolling interests']
+2026-05-14 12:23:22 | INFO    | process_company:4152 |     Metrics:23 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:24:02 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=24|segs=8|xref=OK]: 2098 chars
+2026-05-14 12:24:02 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000886982-26-000091
+2026-05-14 12:24:02 | INFO    | process_company:4090 |     AR: -4.22% (negative)
+2026-05-14 12:24:05 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=85|tier=silver|auditor=2|causal=63|segs=8|xref=OK]: 5767 chars
+2026-05-14 12:24:05 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000072971-25-000253
+2026-05-14 12:24:05 | INFO    | process_company:4090 |     AR: +1.08% (neutral)
+2026-05-14 12:24:14 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:24:14 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'compared with', 'in billions', 'Announced mergers and acquisitions', 'Completed mergers and acquisitions', 'Equity and equity-related offerings', 'Debt offerings', 'Equity and equity-related offerings includes Rule']
+2026-05-14 12:24:14 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:24:17 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:24:18 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'Quarter ended September', 'Net interest income', 'Noninterest income', 'Provision for credit losses', 'Noninterest expense', 'before noncontrolling interests']
+2026-05-14 12:24:18 | INFO    | process_company:4152 |     Metrics:23 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:25:04 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=16|segs=8|xref=OK]: 2023 chars
+2026-05-14 12:25:06 | INFO    | get_filings:2614 |   10-Q: 6 filings
+2026-05-14 12:25:06 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000886982-24-000022
+2026-05-14 12:25:07 | INFO    | process_company:4090 |     AR: +4.15% (positive)
+2026-05-14 12:25:11 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=85|tier=silver|auditor=2|causal=37|segs=8|xref=OK]: 6416 chars
+2026-05-14 12:25:11 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000072971-26-000217
+2026-05-14 12:25:11 | INFO    | process_company:4090 |     AR: -4.46% (negative)
+2026-05-14 12:25:22 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:25:22 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'compared with the second quarter of', 'in billions', 'Announced mergers and acquisitions', 'Completed mergers and acquisitions', 'Equity and equity-related offerings', 'Debt offerings', 'Equity and equity-related offerings includes Rule']
+2026-05-14 12:25:22 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:25:25 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:25:25 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'Quarter ended March', 'Net interest income', 'Noninterest income', 'Provision for credit losses', 'Noninterest expense', 'Net income before noncontrolling interests']
+2026-05-14 12:25:25 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:25:59 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=75|tier=silver|auditor=2|causal=49|segs=8|xref=OK]: 5461 chars
+2026-05-14 12:26:06 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2545 chars
+2026-05-14 12:26:12 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 1954 chars
+2026-05-14 12:26:14 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=44|segs=8|xref=OK]: 3537 chars
+2026-05-14 12:26:14 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000886982-24-000025
+2026-05-14 12:26:15 | INFO    | process_company:4090 |     AR: +12.69% (strong_positive)
+2026-05-14 12:26:18 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 2049 chars
+2026-05-14 12:26:24 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:26:24 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'compared with the third quarter of', 'in billions', 'Announced mergers and acquisitions', 'Completed mergers and acquisitions', 'Equity and equity-related offerings', 'Debt offerings', 'Equity and equity-related offerings includes Rule']
+2026-05-14 12:26:24 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:26:24 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 1880 chars
+2026-05-14 12:26:31 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2033 chars
+2026-05-14 12:26:36 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 2252 chars
+2026-05-14 12:26:43 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 2020 chars
+2026-05-14 12:26:43 | INFO    | process_company:4440 | ✓ WFC: 24 records | llm=llm_calls=5005, throttled=873, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:26:43 | INFO    | process_company:4033 | ══ MS (Morgan Stanley) ══
+2026-05-14 12:26:43 | INFO    | load_xbrl_facts:2747 |   XBRL: 914 GAAP + 2 DEI
+2026-05-14 12:26:46 | INFO    | get_filings:2614 |   10-K: 2 filings
+2026-05-14 12:26:46 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000895421-25-000304
+2026-05-14 12:26:47 | INFO    | process_company:4090 |     AR: +2.04% (positive)
+2026-05-14 12:26:55 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:26:55 | INFO    | process_company:4120 |     V20-3 Segments found: 3 — ['Note', 'December', 'Form']
+2026-05-14 12:26:56 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:1 | scaling:millions | segments:3 | sections:2
+2026-05-14 12:27:19 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=1|causal=58|segs=3|xref=OK]: 3852 chars
+2026-05-14 12:27:19 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000895421-26-000086
+2026-05-14 12:27:20 | INFO    | process_company:4090 |     AR: +1.08% (neutral)
+2026-05-14 12:27:24 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=14|segs=8|xref=OK]: 2047 chars
+2026-05-14 12:27:24 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000886982-25-000009
+2026-05-14 12:27:24 | INFO    | process_company:4090 |     AR: +0.60% (neutral)
+2026-05-14 12:27:32 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:27:32 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:1 | scaling:millions | segments:0 | sections:2
+2026-05-14 12:27:36 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:27:36 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Goldman Sachs March', 'Form', 'in millions', 'Non-interest', 'Net interest income', 'Provision for credit losses', 'Compensation and benefits expenses']
+2026-05-14 12:27:36 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:27:39 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=0|causal=9|segs=0|xref=OK]: 1812 chars
+2026-05-14 12:27:42 | INFO    | get_filings:2614 |   10-Q: 5 filings
+2026-05-14 12:27:42 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000895421-24-000491
+2026-05-14 12:27:42 | INFO    | process_company:4090 |     AR: +9.88% (strong_positive)
+2026-05-14 12:27:44 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=15|segs=8|xref=OK]: 2211 chars
+2026-05-14 12:27:44 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000886982-25-000022
+2026-05-14 12:27:44 | INFO    | process_company:4090 |     AR: -0.84% (neutral)
+2026-05-14 12:27:57 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:27:57 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'September', 'in millions', 'Advisory', 'Equity', 'Fixed Income']
+2026-05-14 12:27:57 | INFO    | process_company:4152 |     Metrics:24 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:28:00 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:28:00 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Goldman Sachs June', 'Form', 'in millions', 'Non-interest', 'Net interest income', 'Provision for credit losses', 'Compensation and benefits expenses']
+2026-05-14 12:28:00 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:28:19 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=17|segs=8|xref=OK]: 2175 chars
+2026-05-14 12:28:19 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000886982-25-001411
+2026-05-14 12:28:19 | INFO    | process_company:4090 |     AR: +1.24% (neutral)
+2026-05-14 12:28:27 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:28:27 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Goldman Sachs September', 'Form', 'in millions', 'Non-interest', 'Net interest income', 'Provision for credit losses', 'Compensation and benefits expenses']
+2026-05-14 12:28:27 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:28:34 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=12|segs=8|xref=OK]: 1983 chars
+2026-05-14 12:28:34 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000886982-26-000118
+2026-05-14 12:28:34 | INFO    | process_company:4090 |     AR: -0.97% (neutral)
+2026-05-14 12:28:41 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:28:41 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Goldman Sachs March', 'Form', 'in millions', 'Non-interest', 'Net interest income', 'Provision for credit losses', 'Compensation and benefits expenses']
+2026-05-14 12:28:41 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:28:47 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=14|segs=8|xref=OK]: 1911 chars
+2026-05-14 12:28:54 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (6 periods): 2304 chars
+2026-05-14 12:29:00 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 2242 chars
+2026-05-14 12:29:08 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2328 chars
+2026-05-14 12:29:13 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 1729 chars
+2026-05-14 12:29:18 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 2035 chars
+2026-05-14 12:29:18 | INFO    | process_company:4440 | ✓ GS: 13 records | llm=llm_calls=5035, throttled=877, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:29:18 | INFO    | process_company:4033 | ══ C (Citigroup Inc) ══
+2026-05-14 12:29:19 | INFO    | load_xbrl_facts:2747 |   XBRL: 796 GAAP + 2 DEI
+2026-05-14 12:29:20 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=70|tier=bronze|auditor=2|causal=17|segs=8|xref=OK]: 2116 chars
+2026-05-14 12:29:20 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000895421-25-000343
+2026-05-14 12:29:21 | INFO    | process_company:4090 |     AR: +2.78% (positive)
+2026-05-14 12:29:21 | INFO    | get_filings:2614 |   10-K: 2 filings
+2026-05-14 12:29:21 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000831001-25-000067
+2026-05-14 12:29:22 | INFO    | process_company:4090 |     AR: +1.34% (neutral)
+2026-05-14 12:29:33 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:29:33 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'March', 'in millions', 'Advisory', 'Equity', 'Fixed Income']
+2026-05-14 12:29:33 | INFO    | process_company:4152 |     Metrics:24 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:29:42 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:29:42 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=15|segs=8|xref=OK]: 2913 chars
+2026-05-14 12:29:42 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000895421-25-000440
+2026-05-14 12:29:42 | INFO    | process_company:4120 |     V20-3 Segments found: 7 — ['Note', 'are deferred and amortized on a straight-line basis over a', 'See Note', 'The Company recognized', 'million and', 'and', 'In millions of dollars']
+2026-05-14 12:29:42 | INFO    | process_company:4152 |     Metrics:30 | decum:False | text_sourced:2 | scaling:millions | segments:7 | sections:2
+2026-05-14 12:29:43 | INFO    | process_company:4090 |     AR: +1.03% (neutral)
+2026-05-14 12:29:49 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:29:49 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'June', 'in millions', 'Advisory', 'Equity', 'Fixed Income']
+2026-05-14 12:29:49 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:2 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:30:42 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=17|segs=7|xref=OK]: 2058 chars
+2026-05-14 12:30:42 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000831001-26-000011
+2026-05-14 12:30:43 | INFO    | process_company:4090 |     AR: -4.51% (negative)
+2026-05-14 12:30:51 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=12|segs=8|xref=OK]: 2091 chars
+2026-05-14 12:30:51 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000895421-25-000539
+2026-05-14 12:30:52 | INFO    | process_company:4090 |     AR: +1.13% (neutral)
+2026-05-14 12:30:58 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:30:58 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Business Segments', 'OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS', 'Executive Summary', 's Multiyear Transformation', 'Recent Developments', 'Summary of Selected Financial Data', 'Balance Sheet Overview', 'Services']
+2026-05-14 12:30:58 | INFO    | process_company:4152 |     Metrics:29 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:31:03 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:31:03 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'September', 'in millions', 'Advisory', 'Equity', 'Fixed Income']
+2026-05-14 12:31:03 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:2 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:31:35 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=1|causal=18|segs=8|xref=OK]: 2539 chars
+2026-05-14 12:31:35 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000895421-26-000121
+2026-05-14 12:31:36 | INFO    | process_company:4090 |     AR: -0.60% (neutral)
+2026-05-14 12:31:41 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:31:41 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'March', 'in millions', 'Advisory', 'Equity', 'Fixed Income']
+2026-05-14 12:31:41 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:31:47 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=23|segs=8|xref=OK]: 2077 chars
+2026-05-14 12:31:50 | INFO    | get_filings:2614 |   10-Q: 6 filings
+2026-05-14 12:31:50 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000831001-24-000100
+2026-05-14 12:31:50 | INFO    | process_company:4090 |     AR: -0.64% (neutral)
+2026-05-14 12:32:01 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:32:01 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'for segment results and Note', 'Form', 'Three Months Ended June', 'Six Months Ended June', 'In millions of dollars', 'Interchange fees', 'Card-related loan fees']
+2026-05-14 12:32:01 | INFO    | process_company:4152 |     Metrics:31 | decum:False | text_sourced:2 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:33:02 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=18|segs=8|xref=OK]: 2060 chars
+2026-05-14 12:33:02 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000831001-24-000134
+2026-05-14 12:33:03 | INFO    | process_company:4090 |     AR: +0.44% (neutral)
+2026-05-14 12:33:13 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:33:13 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'for segment results and Note', 'Form', 'Three Months Ended September', 'Nine Months Ended September', 'In millions of dollars', 'Interchange fees', 'Card-related loan fees']
+2026-05-14 12:33:13 | INFO    | process_company:4152 |     Metrics:30 | decum:True | text_sourced:2 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:33:13 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:33:13 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000831001-25-000086
+2026-05-14 12:33:14 | INFO    | process_company:4090 |     AR: +1.53% (neutral)
+2026-05-14 12:33:23 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:33:23 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'for segment results and Note', 'Form', 'Three Months Ended March', 'In millions of dollars', 'Card-related loan fees', 'Loan servicing', 'The Company recognized']
+2026-05-14 12:33:23 | INFO    | process_company:4152 |     Metrics:30 | decum:False | text_sourced:2 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:34:17 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=1|causal=46|segs=8|xref=OK]: 3548 chars
+2026-05-14 12:34:17 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000831001-25-000131
+2026-05-14 12:34:18 | INFO    | process_company:4090 |     AR: +0.71% (neutral)
+2026-05-14 12:34:21 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=55|tier=bronze|auditor=2|causal=25|segs=8|xref=OK]: 4823 chars
+2026-05-14 12:34:27 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2017 chars
+2026-05-14 12:34:30 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:34:30 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'for segment results and Note', 'Form', 'Three Months Ended June', 'Six Months Ended June', 'In millions of dollars', 'Card-related loan fees', 'Loan servicing']
+2026-05-14 12:34:30 | INFO    | process_company:4152 |     Metrics:30 | decum:True | text_sourced:2 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:34:32 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2034 chars
+2026-05-14 12:34:39 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 2315 chars
+2026-05-14 12:34:40 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=20|segs=8|xref=OK]: 2244 chars
+2026-05-14 12:34:40 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000831001-25-000154
+2026-05-14 12:34:40 | INFO    | process_company:4090 |     AR: -0.44% (neutral)
+2026-05-14 12:34:43 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 1656 chars
+2026-05-14 12:34:43 | INFO    | process_company:4440 | ✓ MS: 11 records | llm=llm_calls=5087, throttled=890, rpm=37/40, backoff=1.35, workers=2
+2026-05-14 12:34:43 | INFO    | process_company:4033 | ══ AXP (American Express Co) ══
+2026-05-14 12:34:44 | INFO    | process_company:4440 | ✓ AXP: 0 records | llm=llm_calls=5087, throttled=890, rpm=37/40, backoff=1.35, workers=2
+2026-05-14 12:34:44 | INFO    | process_company:4033 | ══ BLK (BlackRock Inc) ══
+2026-05-14 12:34:45 | INFO    | load_xbrl_facts:2747 |   XBRL: 557 GAAP + 2 DEI
+2026-05-14 12:34:48 | INFO    | get_filings:2614 |   10-K: 3 filings
+2026-05-14 12:34:48 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0001564590-22-007117
+2026-05-14 12:34:49 | INFO    | process_company:4090 |     AR: -5.34% (strong_negative)
+2026-05-14 12:34:56 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:34:57 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'for segment results and Note', 'Form', 'Three Months Ended September', 'Nine Months Ended September', 'In millions of dollars', 'Card-related loan fees', 'Loan servicing']
+2026-05-14 12:34:57 | INFO    | process_company:4152 |     Metrics:29 | decum:True | text_sourced:1 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:35:02 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:35:02 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['The following table illustrates total revenue for', 'and', 'Revenue', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'Long-lived Assets']
+2026-05-14 12:35:02 | INFO    | process_company:4152 |     Metrics:34 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:35:09 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=14|segs=8|xref=OK]: 2036 chars
+2026-05-14 12:35:09 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000831001-26-000019
+2026-05-14 12:35:10 | INFO    | process_company:4090 |     AR: -5.33% (strong_negative)
+2026-05-14 12:35:19 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:35:19 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'for segment results and Note', 'Form', 'Three Months Ended March', 'In millions of dollars', 'Interchange fees', 'Card-related loan fees', 'Loan servicing']
+2026-05-14 12:35:19 | INFO    | process_company:4138 |     V20-2 Pass-1: 3 metrics < 20 — running force-fetch-all with ±20-day window
+2026-05-14 12:35:19 | INFO    | process_company:4145 |     V20-2 Pass-2 result: 3 metrics
+2026-05-14 12:35:19 | INFO    | process_company:4152 |     Metrics:4 | decum:False | text_sourced:3 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:35:19 | WARNING | process_company:4237 |     V20-2 Numerical gate: 4/15 — total raw metrics: 3/25
+2026-05-14 12:35:19 | WARNING | process_company:4257 |     V20-2 Gate still not met (4/15) — proceeding with reduced confidence
+2026-05-14 12:35:19 | WARNING | process_company:4382 |     ✗ Insufficient metrics (4) for C 2026-03-31
+2026-05-14 12:35:26 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2795 chars
+2026-05-14 12:35:36 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 2602 chars
+2026-05-14 12:35:43 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2560 chars
+2026-05-14 12:35:49 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 1925 chars
+2026-05-14 12:35:49 | INFO    | process_company:4440 | ✓ C: 12 records | llm=llm_calls=5100, throttled=893, rpm=40/40, backoff=1.22, workers=2
+2026-05-14 12:35:49 | INFO    | process_company:4033 | ══ SCHW (Charles Schwab Corp) ══
+2026-05-14 12:35:50 | INFO    | load_xbrl_facts:2747 |   XBRL: 789 GAAP + 2 DEI
+2026-05-14 12:35:51 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 12:35:51 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000316709-22-000009
+2026-05-14 12:35:52 | INFO    | process_company:4090 |     AR: -3.63% (negative)
+2026-05-14 12:35:53 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=13|segs=8|xref=OK]: 2075 chars
+2026-05-14 12:35:53 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0000950170-23-004343
+2026-05-14 12:35:53 | INFO    | process_company:4090 |     AR: -0.24% (neutral)
+2026-05-14 12:35:58 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:35:58 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Year Ended December', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees', 'Expenses Excluding Interest', 'Income before taxes on income']
+2026-05-14 12:35:58 | INFO    | process_company:4152 |     Metrics:31 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:36:05 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:36:05 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['The following table illustrates total revenue for', 'and', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'Total long-lived assets', 'In January']
+2026-05-14 12:36:05 | INFO    | process_company:4152 |     Metrics:34 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:36:22 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=1|causal=30|segs=8|xref=OK]: 3207 chars
+2026-05-14 12:36:22 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000950170-24-019271
+2026-05-14 12:36:22 | INFO    | process_company:4090 |     AR: -0.83% (neutral)
+2026-05-14 12:36:30 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:36:30 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['The following table illustrates total revenue for', 'and', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'Total long-lived assets', 'In January']
+2026-05-14 12:36:30 | INFO    | process_company:4152 |     Metrics:34 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:36:50 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=16|segs=8|xref=OK]: 2244 chars
+2026-05-14 12:36:50 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0000316709-23-000009
+2026-05-14 12:36:51 | INFO    | process_company:4090 |     AR: -5.93% (strong_negative)
+2026-05-14 12:36:53 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=0|causal=11|segs=8|xref=OK]: 2435 chars
+2026-05-14 12:36:56 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:36:56 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Year Ended December', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees', 'Expenses Excluding Interest', 'Income before taxes on income']
+2026-05-14 12:36:56 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:37:02 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2523 chars
+2026-05-14 12:37:04 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 12:37:04 | INFO    | process_company:4072 |   ▶ 10-Q | 2022-03-31 | 0001564590-22-018505
+2026-05-14 12:37:05 | INFO    | process_company:4090 |     AR: +0.23% (neutral)
+2026-05-14 12:37:09 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:37:09 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['and', 'March', 'Revenue', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'and December']
+2026-05-14 12:37:09 | INFO    | process_company:4152 |     Metrics:32 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:37:17 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=26|segs=8|xref=OK]: 2285 chars
+2026-05-14 12:37:17 | INFO    | process_company:4072 |   ▶ 10-Q | 2022-06-30 | 0001564590-22-028139
+2026-05-14 12:37:17 | INFO    | process_company:4090 |     AR: +4.74% (positive)
+2026-05-14 12:37:24 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:37:24 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['and', 'June', 'Revenue', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'and December']
+2026-05-14 12:37:24 | INFO    | process_company:4152 |     Metrics:32 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:37:56 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=12|segs=8|xref=OK]: 2172 chars
+2026-05-14 12:37:56 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000316709-24-000018
+2026-05-14 12:37:56 | INFO    | process_company:4090 |     AR: +2.17% (positive)
+2026-05-14 12:38:01 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:38:01 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Year Ended December', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees', 'Expenses Excluding Interest', 'Income before taxes on income']
+2026-05-14 12:38:01 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:38:07 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=0|causal=15|segs=8|xref=OK]: 2136 chars
+2026-05-14 12:38:07 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000316709-25-000010
+2026-05-14 12:38:08 | INFO    | process_company:4090 |     AR: -0.56% (neutral)
+2026-05-14 12:38:13 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:38:13 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Year Ended December', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees', 'Compensation and benefits', 'Professional services']
+2026-05-14 12:38:13 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:38:18 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=36|segs=8|xref=OK]: 4515 chars
+2026-05-14 12:38:18 | INFO    | process_company:4072 |   ▶ 10-Q | 2022-09-30 | 0000950170-22-022155
+2026-05-14 12:38:19 | INFO    | process_company:4090 |     AR: +12.19% (strong_positive)
+2026-05-14 12:38:22 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=0|causal=8|segs=8|xref=OK]: 2034 chars
+2026-05-14 12:38:22 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000316709-26-000009
+2026-05-14 12:38:23 | INFO    | process_company:4090 |     AR: +1.88% (neutral)
+2026-05-14 12:38:30 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:38:30 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Year Ended December', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees', 'Compensation and benefits', 'Professional services']
+2026-05-14 12:38:30 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:38:32 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:38:32 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['nine months ended September', 'and', 'September', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'and December']
+2026-05-14 12:38:32 | INFO    | process_company:4152 |     Metrics:32 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:39:12 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=14|segs=8|xref=OK]: 1827 chars
+2026-05-14 12:39:12 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=18|segs=8|xref=OK]: 2014 chars
+2026-05-14 12:39:12 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-03-31 | 0000950170-23-018214
+2026-05-14 12:39:13 | INFO    | process_company:4090 |     AR: +0.35% (neutral)
+2026-05-14 12:39:13 | INFO    | process_company:4422 |     ✓ Negative example [10-K]: 865 chars
+2026-05-14 12:39:14 | INFO    | process_company:4422 |     ✓ Negative example [10-K]: 763 chars
+2026-05-14 12:39:18 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:39:19 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['three months ended March', 'and', 'March', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'and December']
+2026-05-14 12:39:19 | INFO    | process_company:4152 |     Metrics:32 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:39:20 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2790 chars
+2026-05-14 12:39:28 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2862 chars
+2026-05-14 12:39:34 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 3008 chars
+2026-05-14 12:39:40 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 1472 chars
+2026-05-14 12:39:41 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 12:39:41 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0000316709-23-000062
+2026-05-14 12:39:42 | INFO    | process_company:4090 |     AR: -0.23% (neutral)
+2026-05-14 12:39:46 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:39:46 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'See Note', 'ASC', 'and totaled', 'and', 'at September', 'and December', 'At September']
+2026-05-14 12:39:46 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:40:17 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=20|segs=8|xref=OK]: 2888 chars
+2026-05-14 12:40:17 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-06-30 | 0000950170-23-038497
+2026-05-14 12:40:17 | INFO    | process_company:4090 |     AR: -1.80% (neutral)
+2026-05-14 12:40:24 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=2|causal=14|segs=8|xref=OK]: 2060 chars
+2026-05-14 12:40:24 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000316709-24-000044
+2026-05-14 12:40:25 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:40:25 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['six months ended June', 'and', 'June', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'and December']
+2026-05-14 12:40:25 | INFO    | process_company:4152 |     Metrics:32 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:40:25 | INFO    | process_company:4090 |     AR: +1.81% (neutral)
+2026-05-14 12:40:28 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:40:28 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'ASC', 'and totaled', 'and', 'at March', 'and December', 'The Company had net contract assets of', 'For additional discussion of the']
+2026-05-14 12:40:28 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:40:28 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:40:28 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000316709-24-000060
+2026-05-14 12:40:29 | INFO    | process_company:4090 |     AR: +0.09% (neutral)
+2026-05-14 12:40:32 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:40:33 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'ASC', 'and totaled', 'and', 'at June', 'and December', 'The Company had net contract assets of', 'For additional discussion of the']
+2026-05-14 12:40:33 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:40:34 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=13|segs=8|xref=OK]: 2015 chars
+2026-05-14 12:40:34 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0000950170-23-059279
+2026-05-14 12:40:35 | INFO    | process_company:4090 |     AR: +0.23% (neutral)
+2026-05-14 12:40:42 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:40:42 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['nine months ended September', 'and', 'September', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'and December']
+2026-05-14 12:40:42 | INFO    | process_company:4152 |     Metrics:32 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:40:49 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=11|segs=8|xref=OK]: 2345 chars
+2026-05-14 12:40:49 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000950170-24-054148
+2026-05-14 12:40:50 | INFO    | process_company:4090 |     AR: +1.63% (neutral)
+2026-05-14 12:40:55 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:40:55 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['three months ended March', 'and', 'March', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'and December']
+2026-05-14 12:40:55 | INFO    | process_company:4152 |     Metrics:32 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:41:08 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=85|tier=silver|auditor=2|causal=54|segs=8|xref=OK]: 4929 chars
+2026-05-14 12:41:08 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000316709-24-000069
+2026-05-14 12:41:09 | INFO    | process_company:4090 |     AR: +11.20% (strong_positive)
+2026-05-14 12:41:13 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:41:13 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'ASC', 'and totaled', 'and', 'at September', 'and December', 'The Company had net contract assets of', 'For additional discussion of the']
+2026-05-14 12:41:13 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:41:13 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:41:13 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000316709-25-000023
+2026-05-14 12:41:14 | INFO    | process_company:4090 |     AR: -0.29% (neutral)
+2026-05-14 12:41:17 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:41:17 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'Ended March', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees']
+2026-05-14 12:41:17 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:41:29 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=28|segs=8|xref=OK]: 2542 chars
+2026-05-14 12:41:29 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000950170-24-091706
+2026-05-14 12:41:30 | INFO    | process_company:4090 |     AR: -2.19% (negative)
+2026-05-14 12:41:38 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:41:38 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['six months ended June', 'and', 'June', 'Americas', 'Europe', 'Asia-Pacific', 'See Note', 'and December']
+2026-05-14 12:41:38 | INFO    | process_company:4152 |     Metrics:32 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:41:48 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=12|segs=8|xref=OK]: 2021 chars
+2026-05-14 12:41:50 | INFO    | process_company:4422 |     ✓ Negative example [10-Q]: 688 chars
+2026-05-14 12:41:55 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2673 chars
+2026-05-14 12:41:55 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=12|segs=8|xref=OK]: 2011 chars
+2026-05-14 12:41:55 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000316709-25-000039
+2026-05-14 12:41:56 | INFO    | process_company:4090 |     AR: -1.98% (neutral)
+2026-05-14 12:42:00 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:42:00 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'Ended June', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees']
+2026-05-14 12:42:00 | INFO    | process_company:4152 |     Metrics:25 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:42:01 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-03-31→2022-09-30: 2575 chars
+2026-05-14 12:42:08 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-06-30→2023-03-31: 2262 chars
+2026-05-14 12:42:14 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-09-30→2023-06-30: 1625 chars
+2026-05-14 12:42:19 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-03-31→2023-09-30: 1961 chars
+2026-05-14 12:42:23 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-06-30→2024-03-31: 2042 chars
+2026-05-14 12:42:28 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2010 chars
+2026-05-14 12:42:28 | INFO    | process_company:4440 | ✓ BLK: 20 records | llm=llm_calls=5205, throttled=918, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:42:28 | INFO    | process_company:4033 | ══ SPGI (S&P Global Inc) ══
+2026-05-14 12:42:29 | INFO    | load_xbrl_facts:2747 |   XBRL: 622 GAAP + 2 DEI
+2026-05-14 12:42:30 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 12:42:30 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000064040-22-000055
+2026-05-14 12:42:31 | INFO    | process_company:4090 |     AR: -2.35% (negative)
+2026-05-14 12:42:34 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:42:34 | INFO    | process_company:4120 |     V20-3 Segments found: 7 — ['are included in Note', 'to the consolidated financial statements under Item', 'in this Annual Report on Form', 'As of December', 'we had approximately', 'including around', 'and']
+2026-05-14 12:42:34 | INFO    | process_company:4152 |     Metrics:41 | decum:False | text_sourced:1 | scaling:millions | segments:7 | sections:6
+2026-05-14 12:43:13 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=1|causal=34|segs=7|xref=OK]: 3370 chars
+2026-05-14 12:43:13 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0000064040-23-000058
+2026-05-14 12:43:13 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=14|segs=8|xref=OK]: 2019 chars
+2026-05-14 12:43:13 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000316709-25-000051
+2026-05-14 12:43:13 | INFO    | process_company:4090 |     AR: -0.64% (neutral)
+2026-05-14 12:43:14 | INFO    | process_company:4090 |     AR: -0.75% (neutral)
+2026-05-14 12:43:20 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:43:20 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['reportable segments', 'Corporate Unallocated expense', 'Equity in Income on unconsolidated subsidiaries', 'Total operating profit', 'Operating profit for the year ended December', 'includes a gain on dispositions of', 'employee severance charges of', 'IHS Markit merger costs of']
+2026-05-14 12:43:20 | INFO    | process_company:4152 |     Metrics:41 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:6
+2026-05-14 12:43:22 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:43:22 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'Ended September', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees']
+2026-05-14 12:43:22 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:1 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:43:58 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=43|segs=8|xref=OK]: 4737 chars
+2026-05-14 12:43:58 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000064040-24-000071
+2026-05-14 12:43:59 | INFO    | process_company:4090 |     AR: -2.93% (negative)
+2026-05-14 12:44:00 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=44|segs=8|xref=OK]: 4070 chars
+2026-05-14 12:44:00 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000316709-26-000019
+2026-05-14 12:44:01 | INFO    | process_company:4090 |     AR: +2.25% (positive)
+2026-05-14 12:44:07 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:44:07 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['reportable segments', 'Corporate Unallocated expense', 'Equity in income on unconsolidated subsidiaries', 'Total operating profit', 'Operating profit for the year ended December', 'includes employee severance charges of', 'acquisition-related costs of', 'IHS Markit merger costs of']
+2026-05-14 12:44:07 | INFO    | process_company:4152 |     Metrics:41 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:6
+2026-05-14 12:44:08 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:44:08 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'in the', 'Form', 'Ended March', 'Net interest', 'Asset management and administration fees', 'Trading', 'Bank deposit account fees']
+2026-05-14 12:44:08 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:44:16 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=14|segs=8|xref=OK]: 2181 chars
+2026-05-14 12:44:22 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2543 chars
+2026-05-14 12:44:27 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2087 chars
+2026-05-14 12:44:32 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 1853 chars
+2026-05-14 12:44:36 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=15|segs=8|xref=OK]: 3217 chars
+2026-05-14 12:44:36 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000064040-25-000052
+2026-05-14 12:44:37 | INFO    | process_company:4090 |     AR: -0.85% (neutral)
+2026-05-14 12:44:38 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 1789 chars
+2026-05-14 12:44:41 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:44:41 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['are included in Note', 'to the consolidated financial statements under Item', 'in this Annual Report on Form', 'As of December', 'we had approximately', 'including around', 'and', 'Quarterly Reports on Form']
+2026-05-14 12:44:41 | INFO    | process_company:4152 |     Metrics:40 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:6
+2026-05-14 12:44:46 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2892 chars
+2026-05-14 12:44:52 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 1894 chars
+2026-05-14 12:44:56 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 1867 chars
+2026-05-14 12:44:56 | INFO    | process_company:4440 | ✓ SCHW: 26 records | llm=llm_calls=5245, throttled=930, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:44:56 | INFO    | process_company:4033 | ══ ICE (Intercontinental Exchange Inc) ══
+2026-05-14 12:44:57 | INFO    | process_company:4440 | ✓ ICE: 0 records | llm=llm_calls=5245, throttled=930, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:44:57 | INFO    | process_company:4033 | ══ MCO (Moody's Corp) ══
+2026-05-14 12:44:58 | INFO    | load_xbrl_facts:2747 |   XBRL: 704 GAAP + 2 DEI
+2026-05-14 12:44:59 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 12:44:59 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0001059556-22-000012
+2026-05-14 12:45:00 | INFO    | process_company:4090 |     AR: -0.09% (neutral)
+2026-05-14 12:45:04 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:45:04 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'Year Ended December', 'SG&A', 'Adjusted Operating Income', 'Depreciation and amortization', 'Operating Income', 'Restructuring', 'Captive insurance company settlement']
+2026-05-14 12:45:04 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:45:21 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=24|segs=8|xref=OK]: 2566 chars
+2026-05-14 12:45:21 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000064040-26-000013
+2026-05-14 12:45:21 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=1|causal=28|segs=8|xref=OK]: 4242 chars
+2026-05-14 12:45:21 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0001059556-23-000016
+2026-05-14 12:45:22 | INFO    | process_company:4090 |     AR: -1.69% (neutral)
+2026-05-14 12:45:23 | INFO    | process_company:4090 |     AR: +7.71% (strong_positive)
+2026-05-14 12:45:31 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:45:31 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['are included in Note', 'to the consolidated financial statements under Item', 'in this Annual Report on Form', 'As of December', 'we had approximately', 'including around', 'and', 'Quarterly Reports on Form']
+2026-05-14 12:45:31 | INFO    | process_company:4152 |     Metrics:40 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:6
+2026-05-14 12:45:32 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:45:32 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'Year Ended December', 'Total external', 'Revenue', 'SG&A', 'Adjusted Operating Income', 'Depreciation and amortization', 'Restructuring']
+2026-05-14 12:45:32 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:45:42 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=0|causal=19|segs=8|xref=OK]: 2862 chars
+2026-05-14 12:45:42 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0001059556-24-000017
+2026-05-14 12:45:43 | INFO    | process_company:4090 |     AR: +2.65% (positive)
+2026-05-14 12:45:46 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:45:47 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'Year Ended December', 'Total external', 'Revenue', 'SG&A', 'Adjusted Operating Income', 'Depreciation and amortization', 'Restructuring']
+2026-05-14 12:45:47 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:45:52 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=0|causal=22|segs=8|xref=OK]: 2128 chars
+2026-05-14 12:45:52 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0001059556-25-000025
+2026-05-14 12:45:53 | INFO    | process_company:4090 |     AR: -2.71% (negative)
+2026-05-14 12:45:57 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:45:57 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Year Ended December', 'Total external', 'Revenue', 'Compensation expense', 'Non-compensation expense', 'Intersegment expense', 'SG&A', 'Adjusted Operating Income']
+2026-05-14 12:45:57 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:46:06 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=0|causal=10|segs=8|xref=OK]: 2241 chars
+2026-05-14 12:46:06 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0001628280-26-009136
+2026-05-14 12:46:06 | INFO    | process_company:4090 |     AR: +1.80% (neutral)
+2026-05-14 12:46:10 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:46:11 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Year Ended December', 'Total external', 'Revenue', 'Compensation expense', 'Non-compensation expense', 'Intersegment expense', 'SG&A', 'Adjusted Operating Income']
+2026-05-14 12:46:11 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:46:15 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=53|segs=8|xref=OK]: 4233 chars
+2026-05-14 12:46:24 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2998 chars
+2026-05-14 12:46:31 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 1772 chars
+2026-05-14 12:46:37 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 2128 chars
+2026-05-14 12:46:44 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 2565 chars
+2026-05-14 12:46:44 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 12:46:44 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0000064040-23-000193
+2026-05-14 12:46:45 | INFO    | process_company:4090 |     AR: +2.41% (positive)
+2026-05-14 12:46:48 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:46:48 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['reportable segments', 'Corporate Unallocated expense', 'Equity in Income on Unconsolidated Subsidiaries', 'Total operating profit', 'for the three and nine months ended September', 'includes employee severance charges of', 'and', 'IHS Markit merger costs of']
+2026-05-14 12:46:48 | INFO    | process_company:4152 |     Metrics:37 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:46:54 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=1|causal=33|segs=8|xref=OK]: 3119 chars
+2026-05-14 12:46:59 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2671 chars
+2026-05-14 12:47:07 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2535 chars
+2026-05-14 12:47:11 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 2055 chars
+2026-05-14 12:47:15 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=1|causal=39|segs=8|xref=OK]: 3996 chars
+2026-05-14 12:47:15 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000064040-24-000125
+2026-05-14 12:47:16 | INFO    | process_company:4090 |     AR: +0.04% (neutral)
+2026-05-14 12:47:17 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:47:17 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['reportable segments', 'Corporate Unallocated expense', 'Equity in Income on Unconsolidated Subsidiaries', 'Total operating profit', 'Operating profit for', 'includes employee severance charges of', 'IHS Markit merger costs of', 'and acquisition-related costs of']
+2026-05-14 12:47:17 | INFO    | process_company:4152 |     Metrics:38 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:47:17 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:47:17 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000064040-24-000150
+2026-05-14 12:47:18 | INFO    | process_company:4090 |     AR: +1.81% (neutral)
+2026-05-14 12:47:18 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 2365 chars
+2026-05-14 12:47:19 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 12:47:19 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0001059556-23-000102
+2026-05-14 12:47:20 | INFO    | process_company:4090 |     AR: +0.98% (neutral)
+2026-05-14 12:47:21 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:47:21 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['reportable segments', 'Corporate Unallocated expense', 'Equity in Income on Unconsolidated Subsidiaries', 'Total operating profit', 'Operating profit for the three and six months ended June', 'includes a net acquisition-related benefit of', 'and', 'IHS Markit merger costs of']
+2026-05-14 12:47:21 | INFO    | process_company:4152 |     Metrics:37 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:47:24 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:47:24 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'Three Months Ended September', 'Total external', 'Revenue', 'SG&A', 'Adjusted Operating Income', 'amortization', 'Restructuring']
+2026-05-14 12:47:24 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:48:10 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=52|segs=8|xref=OK]: 3913 chars
+2026-05-14 12:48:10 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000064040-24-000178
+2026-05-14 12:48:11 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=1|causal=22|segs=8|xref=OK]: 4416 chars
+2026-05-14 12:48:11 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0001059556-24-000090
+2026-05-14 12:48:12 | INFO    | process_company:4090 |     AR: -0.11% (neutral)
+2026-05-14 12:48:12 | INFO    | process_company:4090 |     AR: +3.68% (positive)
+2026-05-14 12:48:16 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:48:16 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['reportable segments', 'Corporate Unallocated expense', 'Equity in Income on Unconsolidated Subsidiaries', 'Total operating profit', 'includes a gain on disposition of', 'and IHS Markit merger costs of', 'and', 'Operating profit for the nine months ended September']
+2026-05-14 12:48:16 | INFO    | process_company:4152 |     Metrics:37 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:48:16 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:48:16 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000064040-25-000126
+2026-05-14 12:48:17 | INFO    | process_company:4090 |     AR: +1.24% (neutral)
+2026-05-14 12:48:18 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:48:18 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'Three Months Ended March', 'Total external', 'Revenue', 'SG&A', 'Adjusted Operating Income', 'amortization', 'Restructuring']
+2026-05-14 12:48:18 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:48:18 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:48:18 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0001059556-24-000128
+2026-05-14 12:48:18 | INFO    | process_company:4090 |     AR: +3.46% (positive)
+2026-05-14 12:48:20 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:48:20 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Operating results for the three months ended March', 'Revenue from external customers', 'Revenue', 'segment expenses', 'other segment items', 'Segment operating profit', 'Corporate Unallocated expense', 'Operating profit']
+2026-05-14 12:48:20 | INFO    | process_company:4152 |     Metrics:37 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:48:23 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:48:23 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'Three Months Ended June', 'Total external', 'Revenue', 'SG&A', 'Adjusted Operating Income', 'amortization', 'Restructuring']
+2026-05-14 12:48:23 | INFO    | process_company:4152 |     Metrics:42 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:48:30 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=20|segs=8|xref=OK]: 2083 chars
+2026-05-14 12:48:30 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0001059556-24-000184
+2026-05-14 12:48:31 | INFO    | process_company:4090 |     AR: -2.46% (negative)
+2026-05-14 12:48:34 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:48:34 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'Three Months Ended September', 'Total external', 'Revenue', 'SG&A', 'Adjusted Operating Income', 'amortization', 'Restructuring']
+2026-05-14 12:48:34 | INFO    | process_company:4152 |     Metrics:42 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:48:34 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:48:34 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0001059556-25-000121
+2026-05-14 12:48:35 | INFO    | process_company:4090 |     AR: +1.62% (neutral)
+2026-05-14 12:48:37 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:48:37 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Three Months Ended March', 'Total external', 'Revenue', 'Compensation expense', 'Non-compensation expense', 'Intersegment expense', 'SG&A', 'Adjusted Operating Income']
+2026-05-14 12:48:37 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:49:10 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=13|segs=8|xref=OK]: 2338 chars
+2026-05-14 12:49:10 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000064040-25-000147
+2026-05-14 12:49:11 | INFO    | process_company:4090 |     AR: -0.43% (neutral)
+2026-05-14 12:49:11 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=33|segs=8|xref=OK]: 2084 chars
+2026-05-14 12:49:11 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0001059556-25-000169
+2026-05-14 12:49:12 | INFO    | process_company:4090 |     AR: +0.88% (neutral)
+2026-05-14 12:49:15 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:49:15 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Operating results for the periods ended June', 'Three Months Ended June', 'Revenue from external customers', 'Revenue', 'segment expenses', 'other segment items', 'Segment operating profit', 'Corporate Unallocated expense']
+2026-05-14 12:49:15 | INFO    | process_company:4152 |     Metrics:36 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:49:18 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:49:18 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Three Months Ended June', 'Total external', 'Revenue', 'Compensation expense', 'Non-compensation expense', 'Intersegment expense', 'SG&A', 'Adjusted Operating Income']
+2026-05-14 12:49:18 | INFO    | process_company:4152 |     Metrics:42 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:49:58 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=1|causal=17|segs=8|xref=OK]: 2444 chars
+2026-05-14 12:49:58 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000064040-25-000167
+2026-05-14 12:49:59 | INFO    | process_company:4090 |     AR: +1.08% (neutral)
+2026-05-14 12:50:01 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:50:01 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Operating results for the periods ended September', 'Three Months Ended September', 'Revenue from external customers', 'Revenue', 'segment expenses', 'other segment items', 'Segment operating profit', 'Corporate Unallocated expense']
+2026-05-14 12:50:01 | INFO    | process_company:4152 |     Metrics:36 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:50:39 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=15|segs=8|xref=OK]: 2359 chars
+2026-05-14 12:50:39 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000064040-26-000024
+2026-05-14 12:50:40 | INFO    | process_company:4090 |     AR: -3.91% (negative)
+2026-05-14 12:50:42 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:50:42 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Operating results for the three months ended March', 'Revenue from external customers', 'Revenue', 'segment expenses', 'other segment items', 'Segment operating profit', 'Corporate Unallocated expense', 'Operating profit']
+2026-05-14 12:50:42 | INFO    | process_company:4152 |     Metrics:36 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:50:43 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=27|segs=8|xref=OK]: 2050 chars
+2026-05-14 12:50:43 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0001628280-25-046118
+2026-05-14 12:50:44 | INFO    | process_company:4090 |     AR: -1.27% (neutral)
+2026-05-14 12:50:47 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:50:47 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Three Months Ended September', 'Total external', 'Revenue', 'Compensation expense', 'Non-compensation expense', 'Intersegment expense', 'SG&A', 'Adjusted Operating Income']
+2026-05-14 12:50:47 | INFO    | process_company:4152 |     Metrics:42 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:51:01 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=1|causal=22|segs=8|xref=OK]: 2369 chars
+2026-05-14 12:51:07 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 1803 chars
+2026-05-14 12:51:14 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2011 chars
+2026-05-14 12:51:31 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 1785 chars
+2026-05-14 12:51:39 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 1497 chars
+2026-05-14 12:51:45 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 1911 chars
+2026-05-14 12:51:51 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 1650 chars
+2026-05-14 12:51:57 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 1726 chars
+2026-05-14 12:51:57 | INFO    | process_company:4440 | ✓ SPGI: 24 records | llm=llm_calls=5344, throttled=954, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:51:57 | INFO    | process_company:4033 | ══ CME (CME Group Inc) ══
+2026-05-14 12:51:58 | INFO    | load_xbrl_facts:2747 |   XBRL: 673 GAAP + 2 DEI
+2026-05-14 12:51:59 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 12:51:59 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0001156375-22-000076
+2026-05-14 12:51:59 | INFO    | process_company:4090 |     AR: +3.10% (positive)
+2026-05-14 12:52:02 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:52:02 | INFO    | process_company:4120 |     V20-3 Segments found: 2 — ['The company did not adopt new accounting policies in', 'Table of Contents']
+2026-05-14 12:52:02 | INFO    | process_company:4152 |     Metrics:35 | decum:False | text_sourced:0 | scaling:millions | segments:2 | sections:2
+2026-05-14 12:52:09 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=28|segs=8|xref=OK]: 2440 chars
+2026-05-14 12:52:09 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0001628280-26-026848
+2026-05-14 12:52:09 | INFO    | process_company:4090 |     AR: +0.66% (neutral)
+2026-05-14 12:52:13 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:52:13 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Three Months Ended March', 'Total external', 'Revenue', 'Compensation expense', 'Non-compensation expense', 'Intersegment expense', 'Adjusted Operating Income', 'amortization']
+2026-05-14 12:52:13 | INFO    | process_company:4152 |     Metrics:42 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:52:21 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=16|segs=8|xref=OK]: 2270 chars
+2026-05-14 12:52:22 | INFO    | process_company:4422 |     ✓ Negative example [10-Q]: 675 chars
+2026-05-14 12:52:30 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2092 chars
+2026-05-14 12:52:36 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2278 chars
+2026-05-14 12:52:41 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 2620 chars
+2026-05-14 12:52:45 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 1946 chars
+2026-05-14 12:52:48 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=21|segs=2|xref=OK]: 2074 chars
+2026-05-14 12:52:48 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0001156375-23-000020
+2026-05-14 12:52:49 | INFO    | process_company:4090 |     AR: -1.28% (neutral)
+2026-05-14 12:52:50 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:52:51 | INFO    | process_company:4120 |     V20-3 Segments found: 3 — ['The company adopted the following accounting policies during', 'In August', 'The company adopted this guidance on January']
+2026-05-14 12:52:51 | INFO    | process_company:4152 |     Metrics:35 | decum:False | text_sourced:0 | scaling:millions | segments:3 | sections:2
+2026-05-14 12:52:53 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2324 chars
+2026-05-14 12:52:58 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 1831 chars
+2026-05-14 12:53:00 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=0|causal=13|segs=3|xref=OK]: 2209 chars
+2026-05-14 12:53:00 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0001156375-24-000010
+2026-05-14 12:53:01 | INFO    | process_company:4090 |     AR: -1.21% (neutral)
+2026-05-14 12:53:03 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:53:04 | INFO    | process_company:4120 |     V20-3 Segments found: 6 — ['The following accounting pronouncements were issued during', 'In November', 'K for the fiscal year ended December', 'In December', 'The guidance is effective for annual periods beginning in', 'The minimal remaining']
+2026-05-14 12:53:04 | INFO    | process_company:4152 |     Metrics:35 | decum:False | text_sourced:0 | scaling:millions | segments:6 | sections:2
+2026-05-14 12:53:04 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 1552 chars
+2026-05-14 12:53:04 | INFO    | process_company:4440 | ✓ MCO: 25 records | llm=llm_calls=5365, throttled=959, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:53:04 | INFO    | process_company:4033 | ══ PNC (PNC Financial Services Group Inc) ══
+2026-05-14 12:53:05 | INFO    | load_xbrl_facts:2747 |   XBRL: 964 GAAP + 2 DEI
+2026-05-14 12:53:06 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 12:53:06 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000713676-22-000019
+2026-05-14 12:53:07 | INFO    | process_company:4090 |     AR: -7.51% (strong_negative)
+2026-05-14 12:53:11 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=0|causal=17|segs=6|xref=OK]: 2187 chars
+2026-05-14 12:53:11 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0001156375-25-000021
+2026-05-14 12:53:12 | INFO    | process_company:4090 |     AR: +3.79% (positive)
+2026-05-14 12:53:18 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:53:18 | INFO    | process_company:4120 |     V20-3 Segments found: 2 — ['Table of Contents', 'Stock awards']
+2026-05-14 12:53:18 | INFO    | process_company:4152 |     Metrics:35 | decum:False | text_sourced:0 | scaling:millions | segments:2 | sections:2
+2026-05-14 12:53:20 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:53:20 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Business Segments Review section of this Item', 'Table', 'Year ended December', 'Dollars in millions', 'Personnel', 'Occupancy', 'Equipment', 'Marketing']
+2026-05-14 12:53:20 | INFO    | process_company:4138 |     V20-2 Pass-1: 19 metrics < 20 — running force-fetch-all with ±20-day window
+2026-05-14 12:53:20 | INFO    | process_company:4145 |     V20-2 Pass-2 result: 19 metrics
+2026-05-14 12:53:20 | INFO    | process_company:4152 |     Metrics:20 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:53:52 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=45|segs=2|xref=OK]: 2597 chars
+2026-05-14 12:53:52 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0001156375-26-000009
+2026-05-14 12:53:55 | INFO    | process_company:4090 |     AR: +1.27% (neutral)
+2026-05-14 12:54:02 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=18|segs=8|xref=OK]: 2257 chars
+2026-05-14 12:54:02 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0000713676-23-000020
+2026-05-14 12:54:03 | INFO    | process_company:4090 |     AR: +0.26% (neutral)
+2026-05-14 12:54:12 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:54:13 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['In December', 'The Company adopted this standard on January', 'See Note', 'In July', 'This guidance is effective beginning in', 'In September', 'The guidance is effective beginning in', 'Table of Contents']
+2026-05-14 12:54:13 | INFO    | process_company:4152 |     Metrics:35 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 12:54:29 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:54:29 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['This Annual Report on Form', 'the Report or Form', 'you should review our Risk Factors discussion in Item', 'and Note', 'See page', 'ITEM', 'At December', 'equity were']
+2026-05-14 12:54:29 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:54:50 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=85|tier=silver|auditor=2|causal=37|segs=8|xref=OK]: 4875 chars
+2026-05-14 12:54:58 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2556 chars
+2026-05-14 12:55:03 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2138 chars
+2026-05-14 12:55:07 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 1998 chars
+2026-05-14 12:55:12 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 1893 chars
+2026-05-14 12:55:13 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 12:55:13 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0001156375-23-000190
+2026-05-14 12:55:15 | INFO    | process_company:4090 |     AR: -2.68% (negative)
+2026-05-14 12:55:26 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=70|tier=bronze|auditor=2|causal=32|segs=8|xref=OK]: 4626 chars
+2026-05-14 12:55:26 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000713676-24-000028
+2026-05-14 12:55:26 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:55:26 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:0 | sections:3
+2026-05-14 12:55:27 | INFO    | process_company:4090 |     AR: -2.42% (negative)
+2026-05-14 12:55:45 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:55:45 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['This Annual Report on Form', 'Form', 'you should review our Risk Factors discussion in Item', 'and Note', 'See page', 'ITEM', 'At December', 'equity were']
+2026-05-14 12:55:45 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:56:17 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=12|segs=0|xref=OK]: 2064 chars
+2026-05-14 12:56:17 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0001156375-24-000072
+2026-05-14 12:56:18 | INFO    | process_company:4090 |     AR: -1.55% (neutral)
+2026-05-14 12:56:23 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:56:23 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:0 | sections:3
+2026-05-14 12:56:23 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:56:23 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0001156375-24-000149
+2026-05-14 12:56:24 | INFO    | process_company:4090 |     AR: +1.68% (neutral)
+2026-05-14 12:56:30 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:56:30 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:0 | scaling:millions | segments:0 | sections:3
+2026-05-14 12:56:35 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=20|segs=8|xref=OK]: 2509 chars
+2026-05-14 12:56:35 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000713676-25-000027
+2026-05-14 12:56:36 | INFO    | process_company:4090 |     AR: +3.02% (positive)
+2026-05-14 12:56:46 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:56:47 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Results', 'Reconciliation of Business Segment Results to Consolidated', 'This Annual Report on Form', 'Form', 'you should review our Risk Factors discussion in Item', 'and Note', 'See page', 'ITEM']
+2026-05-14 12:56:47 | INFO    | process_company:4152 |     Metrics:22 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:57:08 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=16|segs=0|xref=OK]: 2144 chars
+2026-05-14 12:57:08 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0001156375-24-000200
+2026-05-14 12:57:10 | INFO    | process_company:4090 |     AR: +1.91% (neutral)
+2026-05-14 12:57:17 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:57:17 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:0 | scaling:millions | segments:0 | sections:3
+2026-05-14 12:57:17 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 12:57:17 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0001156375-25-000103
+2026-05-14 12:57:18 | INFO    | process_company:4090 |     AR: +1.60% (neutral)
+2026-05-14 12:57:22 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=70|tier=bronze|auditor=2|causal=30|segs=8|xref=OK]: 2188 chars
+2026-05-14 12:57:22 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000713676-26-000020
+2026-05-14 12:57:22 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:57:22 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Table of Contents', 'On April', 'our', 's investment in OSTTRA was', 'including approximately', 'The transaction is expected to close in the second half of', 'ITEM', 'Q and our Annual Report on Form']
+2026-05-14 12:57:22 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:57:22 | INFO    | process_company:4090 |     AR: -8.35% (strong_negative)
+2026-05-14 12:57:28 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=15|segs=8|xref=OK]: 2312 chars
+2026-05-14 12:57:28 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0001156375-25-000182
+2026-05-14 12:57:29 | INFO    | process_company:4090 |     AR: +2.85% (positive)
+2026-05-14 12:57:35 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:57:35 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Table of Contents', 'ITEM', 'Q and our Annual Report on Form', 'K for the year ended December', 'filed with the SEC on February', 'June', 'Change', 'Total expenses']
+2026-05-14 12:57:35 | INFO    | process_company:4152 |     Metrics:28 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:57:40 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:57:40 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Results', 'Reconciliation of Business Segment Results to Consolidated', 'This Annual Report on Form', 'Form', 'you should review our Risk Factors discussion in Item', 'and Note', 'See page', 'ITEM']
+2026-05-14 12:57:40 | INFO    | process_company:4152 |     Metrics:22 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:57:55 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=1|causal=25|segs=8|xref=OK]: 3185 chars
+2026-05-14 12:57:55 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0001156375-25-000206
+2026-05-14 12:57:56 | INFO    | process_company:4090 |     AR: -2.21% (negative)
+2026-05-14 12:57:59 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:57:59 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Table of Contents', 'On October', 'our', 's investment in OSTTRA was', 'at September', 'The total enterprise value of OSTTRA was', 'The company expects to recognize a net gain of approximately', 'in the fourth quarter of']
+2026-05-14 12:57:59 | INFO    | process_company:4152 |     Metrics:28 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:58:27 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=60|tier=bronze|auditor=2|causal=9|segs=8|xref=OK]: 2172 chars
+2026-05-14 12:58:29 | INFO    | process_company:4422 |     ✓ Negative example [10-K]: 803 chars
+2026-05-14 12:58:31 | INFO    | process_company:4422 |     ✓ Negative example [10-K]: 687 chars
+2026-05-14 12:58:43 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 3460 chars
+2026-05-14 12:58:43 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=38|segs=8|xref=OK]: 4080 chars
+2026-05-14 12:58:43 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0001156375-26-000020
+2026-05-14 12:58:44 | INFO    | process_company:4090 |     AR: +0.63% (neutral)
+2026-05-14 12:58:45 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:58:45 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['discretionary share-based', 'ITEM', 'Q and our Annual Report on Form', 'K for the year ended December', 'filed with the SEC on February', 'March', 'Total expenses', 'Operating margin']
+2026-05-14 12:58:45 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:58:48 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2113 chars
+2026-05-14 12:59:02 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 3226 chars
+2026-05-14 12:59:07 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 2206 chars
+2026-05-14 12:59:08 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 12:59:08 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0000713676-23-000079
+2026-05-14 12:59:09 | INFO    | process_company:4090 |     AR: -1.12% (neutral)
+2026-05-14 12:59:15 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 12:59:15 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Segment Reporting', 'Fee-based Revenue from Contracts with Customers', 'Regulatory Matters', 'Subsequent Events', 'Average Consolidated Balance Sheet And Net Interest Analysis', 'Glossary', 'Defined Terms']
+2026-05-14 12:59:15 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 12:59:22 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=23|segs=8|xref=OK]: 2225 chars
+2026-05-14 12:59:26 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2345 chars
+2026-05-14 12:59:30 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 1634 chars
+2026-05-14 12:59:37 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 2610 chars
+2026-05-14 12:59:40 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 2154 chars
+2026-05-14 12:59:45 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 1976 chars
+2026-05-14 12:59:50 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 1935 chars
+2026-05-14 12:59:57 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 2150 chars
+2026-05-14 12:59:57 | INFO    | process_company:4440 | ✓ CME: 24 records | llm=llm_calls=5469, throttled=981, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 12:59:58 | INFO    | process_company:4033 | ══ USB (US Bancorp) ══
+2026-05-14 12:59:58 | INFO    | load_xbrl_facts:2747 |   XBRL: 909 GAAP + 2 DEI
+2026-05-14 13:00:00 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 13:00:00 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0001193125-22-048709
+2026-05-14 13:00:00 | INFO    | process_company:4090 |     AR: -6.91% (strong_negative)
+2026-05-14 13:00:01 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:00:02 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Corporate and Commercial Banking contributed', 's net income in', 'a decrease of', 'compared with', 'Consumer and Business Banking contributed', 'Wealth Management and Investment Services contributed', 'Payment Services contributed', 'an increase of']
+2026-05-14 13:00:02 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:00:07 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=0|causal=9|segs=8|xref=OK]: 2021 chars
+2026-05-14 13:00:07 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0001193125-23-050691
+2026-05-14 13:00:08 | INFO    | process_company:4090 |     AR: -2.66% (negative)
+2026-05-14 13:00:08 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:00:08 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Corporate and Commercial Banking contributed', 's net income in', 'an increase of', 'compared with', 'Consumer and Business Banking contributed', 'a decrease of', 'Wealth Management and Investment Services contributed', 'Payment Services contributed']
+2026-05-14 13:00:08 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:00:46 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=15|segs=8|xref=OK]: 2047 chars
+2026-05-14 13:00:46 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000713676-24-000046
+2026-05-14 13:00:46 | INFO    | process_company:4090 |     AR: -2.07% (negative)
+2026-05-14 13:00:50 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:00:50 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Segment Reporting', 'Fee-based Revenue from Contracts with Customers', 'Subsequent Events', 'Average Consolidated Balance Sheet And Net Interest Analysis', 'Glossary', 'Defined Terms', 'Acronyms']
+2026-05-14 13:00:50 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:00:50 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 13:00:50 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000713676-24-000068
+2026-05-14 13:00:51 | INFO    | process_company:4090 |     AR: -0.06% (neutral)
+2026-05-14 13:00:56 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:00:56 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Segment Reporting', 'Fee-based Revenue from Contracts with Customers', 'Subsequent Events', 'Average Consolidated Balance Sheet And Net Interest Analysis', 'Glossary', 'Defined Terms', 'Acronyms']
+2026-05-14 13:00:56 | INFO    | process_company:4152 |     Metrics:22 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:01:53 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=85|tier=silver|auditor=2|causal=26|segs=8|xref=OK]: 4878 chars
+2026-05-14 13:01:53 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000713676-24-000081
+2026-05-14 13:01:54 | INFO    | process_company:4090 |     AR: +4.23% (positive)
+2026-05-14 13:01:59 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:01:59 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Segment Reporting', 'Fee-based Revenue from Contracts with Customers', 'Subsequent Events', 'Average Consolidated Balance Sheet And Net Interest Analysis', 'Glossary', 'Defined Terms', 'Acronyms']
+2026-05-14 13:01:59 | INFO    | process_company:4152 |     Metrics:22 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:01:59 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 13:01:59 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0001628280-25-021752
+2026-05-14 13:02:00 | INFO    | process_company:4090 |     AR: +0.97% (neutral)
+2026-05-14 13:02:02 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=7|segs=8|xref=OK]: 2064 chars
+2026-05-14 13:02:02 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000036104-24-000018
+2026-05-14 13:02:03 | INFO    | process_company:4090 |     AR: -1.49% (neutral)
+2026-05-14 13:02:05 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:02:05 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Commercial and Institutional Banking contributed', 's net income in', 'an increase of', 'compared with', 'Consumer and Business Banking contributed', 'Payment Services contributed', 'a decrease of', 'Treasury and Corporate Support recorded a net loss of']
+2026-05-14 13:02:05 | INFO    | process_company:4152 |     Metrics:24 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:02:06 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:02:06 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Segment Reporting', 'Fee-based Revenue from Contracts with Customers', 'Glossary', 'Defined Terms', 'Acronyms', 'Item', 'Financial Review']
+2026-05-14 13:02:06 | INFO    | process_company:4152 |     Metrics:22 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:02:47 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=19|segs=8|xref=OK]: 3545 chars
+2026-05-14 13:02:47 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000036104-25-000016
+2026-05-14 13:02:48 | INFO    | process_company:4090 |     AR: +3.21% (positive)
+2026-05-14 13:02:49 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:02:49 | INFO    | process_company:4120 |     V20-3 Segments found: 3 — ['s business segments can be found on pages', 'As of December', 'the Company employed a total of']
+2026-05-14 13:02:49 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:3 | sections:3
+2026-05-14 13:02:58 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=27|segs=8|xref=OK]: 2183 chars
+2026-05-14 13:02:58 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000713676-25-000060
+2026-05-14 13:02:59 | INFO    | process_company:4090 |     AR: -0.41% (neutral)
+2026-05-14 13:03:04 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:03:04 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Segment Reporting', 'Fee-based Revenue from Contracts with Customers', 'Subsequent Events', 'Glossary', 'Defined Terms', 'Acronyms', 'Item']
+2026-05-14 13:03:04 | INFO    | process_company:4152 |     Metrics:22 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:03:47 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=21|segs=8|xref=OK]: 2052 chars
+2026-05-14 13:03:47 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000713676-25-000132
+2026-05-14 13:03:47 | INFO    | process_company:4090 |     AR: +1.56% (neutral)
+2026-05-14 13:03:52 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:03:52 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Segment Reporting', 'Fee-based Revenue from Contracts with Customers', 'Glossary', 'Defined Terms', 'Acronyms', 'Item', 'Financial Review']
+2026-05-14 13:03:52 | INFO    | process_company:4152 |     Metrics:22 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:03:59 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=27|segs=3|xref=OK]: 3431 chars
+2026-05-14 13:03:59 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000036104-26-000011
+2026-05-14 13:03:59 | INFO    | process_company:4090 |     AR: -2.70% (negative)
+2026-05-14 13:04:01 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:04:01 | INFO    | process_company:4120 |     V20-3 Segments found: 4 — ['mobile', 's business segments can be found on pages', 'As of December', 'the Company employed a total of']
+2026-05-14 13:04:01 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:4 | sections:3
+2026-05-14 13:04:46 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=39|segs=4|xref=OK]: 4433 chars
+2026-05-14 13:04:47 | INFO    | process_company:4422 |     ✓ Negative example [10-K]: 730 chars
+2026-05-14 13:04:57 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 3860 chars
+2026-05-14 13:05:02 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2487 chars
+2026-05-14 13:05:06 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=23|segs=8|xref=OK]: 2091 chars
+2026-05-14 13:05:06 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000713676-26-000038
+2026-05-14 13:05:08 | INFO    | process_company:4090 |     AR: -4.89% (negative)
+2026-05-14 13:05:09 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 3048 chars
+2026-05-14 13:05:12 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:05:12 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Reporting', 'Note', 'Fee-based Revenue from Contracts with Customers', 'Subsequent Events', 'Glossary', 'Defined Terms', 'Acronyms', 'Item']
+2026-05-14 13:05:12 | INFO    | process_company:4152 |     Metrics:22 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:05:14 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 2046 chars
+2026-05-14 13:05:15 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 13:05:15 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0001193125-23-268341
+2026-05-14 13:05:16 | INFO    | process_company:4090 |     AR: +4.87% (positive)
+2026-05-14 13:05:23 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:05:23 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:0 | sections:4
+2026-05-14 13:05:23 | WARNING | validate:1486 |   V20-5 CrossRef: NI table=1500000 vs XBRL=4582000000 Δ=100.0% → using table
+2026-05-14 13:05:52 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=70|tier=bronze|auditor=2|causal=28|segs=8|xref=OK]: 2083 chars
+2026-05-14 13:05:54 | INFO    | process_company:4422 |     ✓ Negative example [10-Q]: 824 chars
+2026-05-14 13:05:59 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2784 chars
+2026-05-14 13:06:04 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2468 chars
+2026-05-14 13:06:08 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 2366 chars
+2026-05-14 13:06:17 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 2753 chars
+2026-05-14 13:06:21 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2024 chars
+2026-05-14 13:06:29 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 1763 chars
+2026-05-14 13:06:33 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 1812 chars
+2026-05-14 13:06:33 | INFO    | process_company:4440 | ✓ PNC: 27 records | llm=llm_calls=5555, throttled=996, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 13:06:33 | INFO    | process_company:4033 | ══ TFC (Truist Financial Corp) ══
+2026-05-14 13:06:34 | INFO    | load_xbrl_facts:2747 |   XBRL: 629 GAAP + 2 DEI
+2026-05-14 13:06:36 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 13:06:36 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000092122-22-000003
+2026-05-14 13:06:37 | INFO    | process_company:4090 |     AR: +0.51% (neutral)
+2026-05-14 13:06:53 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=14|segs=0|xref=OVERRIDDEN]: 2018 chars
+2026-05-14 13:06:53 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000036104-24-000037
+2026-05-14 13:06:54 | INFO    | process_company:4090 |     AR: -1.81% (neutral)
+2026-05-14 13:07:08 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:07:08 | INFO    | process_company:4120 |     V20-3 Segments found: 3 — ['During', 'and', 'Bancorp']
+2026-05-14 13:07:08 | INFO    | process_company:4152 |     Metrics:23 | decum:False | text_sourced:0 | scaling:millions | segments:3 | sections:4
+2026-05-14 13:07:08 | WARNING | validate:1486 |   V20-5 CrossRef: NI table=1300000 vs XBRL=1319000000 Δ=99.9% → using table
+2026-05-14 13:07:08 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 3 rule(s). Action: BLOCK.
+2026-05-14 13:07:08 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000036104-24-000052
+2026-05-14 13:07:09 | INFO    | process_company:4090 |     AR: -2.06% (negative)
+2026-05-14 13:07:17 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:07:19 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Information', 'Gas distribution operations', 'Gas pipeline investments', 'Wholesale gas services', 'Gas marketing services', 'net income increased', 'compared to', 'Operating revenues increased']
+2026-05-14 13:07:19 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:07:25 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:07:25 | INFO    | process_company:4120 |     V20-3 Segments found: 2 — ['During', 'and']
+2026-05-14 13:07:25 | INFO    | process_company:4152 |     Metrics:22 | decum:True | text_sourced:0 | scaling:millions | segments:2 | sections:4
+2026-05-14 13:07:25 | WARNING | validate:1486 |   V20-5 CrossRef: NI table=1600000 vs XBRL=1603000000 Δ=99.9% → using table
+2026-05-14 13:08:04 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=70|tier=bronze|auditor=2|causal=13|segs=2|xref=OVERRIDDEN]: 2093 chars
+2026-05-14 13:08:04 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000036104-24-000072
+2026-05-14 13:08:05 | INFO    | process_company:4090 |     AR: +3.11% (positive)
+2026-05-14 13:08:08 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:08:08 | INFO    | process_company:4120 |     V20-3 Segments found: 2 — ['During', 'and']
+2026-05-14 13:08:08 | INFO    | process_company:4152 |     Metrics:22 | decum:True | text_sourced:0 | scaling:millions | segments:2 | sections:4
+2026-05-14 13:08:08 | WARNING | validate:1486 |   V20-5 CrossRef: NI table=1700000 vs XBRL=1714000000 Δ=99.9% → using table
+2026-05-14 13:08:08 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 3 rule(s). Action: BLOCK.
+2026-05-14 13:08:08 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000036104-25-000028
+2026-05-14 13:08:09 | INFO    | process_company:4090 |     AR: +3.25% (positive)
+2026-05-14 13:08:12 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:08:12 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'During', 'and', 'Commercial and Institutional Banking contributed', 's net income in the first quarter of', 'or an increase of', 'compared with the first quarter of', 'Net revenue decreased']
+2026-05-14 13:08:12 | INFO    | process_company:4152 |     Metrics:22 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:4
+2026-05-14 13:08:12 | WARNING | validate:1486 |   V20-5 CrossRef: NI table=1700000 vs XBRL=1709000000 Δ=99.9% → using table
+2026-05-14 13:08:27 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=2|causal=9|segs=8|xref=OK]: 1970 chars
+2026-05-14 13:08:27 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0000092122-23-000012
+2026-05-14 13:08:27 | INFO    | process_company:4090 |     AR: +1.08% (neutral)
+2026-05-14 13:08:43 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:08:43 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Information', 'Gas distribution operations', 'Gas pipeline investments', 'Gas marketing services', 'wholesale gas services was no longer a reportable segment in', 'See Note', 'net income increased', 'compared to']
+2026-05-14 13:08:43 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:08:50 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=21|segs=8|xref=OVERRIDDEN]: 2308 chars
+2026-05-14 13:08:50 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000036104-25-000055
+2026-05-14 13:08:50 | INFO    | process_company:4090 |     AR: +4.21% (positive)
+2026-05-14 13:08:55 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:08:55 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'During', 'and', 'Commercial and Institutional Banking contributed', 's net income in the second quarter and', 'in the first six months of', 'or decreases of', 'compared with the same periods of']
+2026-05-14 13:08:55 | INFO    | process_company:4152 |     Metrics:22 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:4
+2026-05-14 13:08:55 | WARNING | validate:1486 |   V20-5 CrossRef: NI table=1800000 vs XBRL=1815000000 Δ=99.9% → using table
+2026-05-14 13:09:14 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=16|segs=8|xref=OK]: 2082 chars
+2026-05-14 13:09:14 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000092122-24-000009
+2026-05-14 13:09:14 | INFO    | process_company:4090 |     AR: -4.16% (negative)
+2026-05-14 13:09:27 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:09:28 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Information', 'Gas distribution operations', 'Gas pipeline investments', 'Gas marketing services', 'See Note', 'net income decreased', 'compared to', 'Operating revenues decreased']
+2026-05-14 13:09:28 | INFO    | process_company:4152 |     Metrics:30 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:09:45 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=32|segs=8|xref=OVERRIDDEN]: 5647 chars
+2026-05-14 13:09:45 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000036104-25-000064
+2026-05-14 13:09:46 | INFO    | process_company:4090 |     AR: +1.60% (neutral)
+2026-05-14 13:09:51 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:09:51 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'During', 'and', 'Commercial and Institutional Banking contributed', 's net income in the third quarter and', 'in the first nine months of', 'or decreases of', 'compared with the same periods of']
+2026-05-14 13:09:51 | INFO    | process_company:4152 |     Metrics:22 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:4
+2026-05-14 13:09:51 | WARNING | validate:1486 |   V20-5 CrossRef: NI table=2000000 vs XBRL=2001000000 Δ=99.9% → using table
+2026-05-14 13:10:38 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=43|segs=8|xref=OVERRIDDEN]: 4164 chars
+2026-05-14 13:10:38 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000036104-26-000024
+2026-05-14 13:10:39 | INFO    | process_company:4090 |     AR: -4.32% (negative)
+2026-05-14 13:10:42 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:10:42 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Refer to Note', 'During', 'Commercial and Institutional Banking contributed', 's net income in the first quarter of', 'or an increase of', 'compared with the first quarter of', 'Net revenue increased', 'in the first quarter of']
+2026-05-14 13:10:42 | INFO    | process_company:4152 |     Metrics:22 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:4
+2026-05-14 13:10:42 | WARNING | validate:1486 |   V20-5 CrossRef: NI table=1900000 vs XBRL=1945000000 Δ=99.9% → using table
+2026-05-14 13:10:44 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=20|segs=8|xref=OK]: 2148 chars
+2026-05-14 13:10:44 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000092122-25-000018
+2026-05-14 13:10:45 | INFO    | process_company:4090 |     AR: +2.13% (positive)
+2026-05-14 13:10:59 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:10:59 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Information', 'Gas distribution operations', 'Gas pipeline investments', 'Gas marketing services', 'See Note', 'net income increased', 'compared to', 'Operating revenues decreased']
+2026-05-14 13:10:59 | INFO    | process_company:4152 |     Metrics:30 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:11:05 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=0|causal=15|segs=8|xref=OK]: 2118 chars
+2026-05-14 13:11:05 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000092122-26-000006
+2026-05-14 13:11:06 | INFO    | process_company:4090 |     AR: -1.25% (neutral)
+2026-05-14 13:11:24 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:11:25 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Segment Information', 'Gas distribution operations', 'Gas pipeline investments', 'Gas marketing services', 'See Note', 'net income increased', 'as compared to', 'Operating revenues increased']
+2026-05-14 13:11:25 | INFO    | process_company:4152 |     Metrics:30 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:11:40 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=0|causal=17|segs=8|xref=OK]: 2161 chars
+2026-05-14 13:11:54 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2382 chars
+2026-05-14 13:12:00 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2452 chars
+2026-05-14 13:12:04 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 2337 chars
+2026-05-14 13:12:08 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 1860 chars
+2026-05-14 13:12:09 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 13:12:09 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0000092122-23-000101
+2026-05-14 13:12:10 | INFO    | process_company:4090 |     AR: -1.76% (neutral)
+2026-05-14 13:12:17 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:12:17 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Gas distribution operations', 'Gas pipeline investments', 'Gas marketing services', 'See Note', 'in Item', 'of the Form', 'In the third quarter', 'net income increased']
+2026-05-14 13:12:17 | INFO    | process_company:4152 |     Metrics:24 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:12:22 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=21|segs=8|xref=OK]: 2105 chars
+2026-05-14 13:12:22 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000092122-24-000042
+2026-05-14 13:12:22 | INFO    | process_company:4090 |     AR: +0.32% (neutral)
+2026-05-14 13:12:27 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:12:27 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Gas distribution operations', 'Gas pipeline investments', 'Gas marketing services', 'including weather changes within typical', 'See Note', 'in Item', 'of the Form', 'first quarter']
+2026-05-14 13:12:27 | INFO    | process_company:4152 |     Metrics:24 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:12:27 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 13:12:27 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000092122-24-000075
+2026-05-14 13:12:27 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=17|segs=8|xref=OVERRIDDEN]: 2336 chars
+2026-05-14 13:12:28 | INFO    | process_company:4090 |     AR: -0.68% (neutral)
+2026-05-14 13:12:28 | INFO    | process_company:4422 |     ✓ Negative example [10-Q]: 785 chars
+2026-05-14 13:12:30 | INFO    | process_company:4422 |     ✓ Negative example [10-Q]: 713 chars
+2026-05-14 13:12:33 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:12:33 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Gas distribution operations', 'Gas pipeline investments', 'Gas marketing services', 'See Note', 'in Item', 'of the Form', 'In the second quarter', 'net income increased']
+2026-05-14 13:12:33 | INFO    | process_company:4152 |     Metrics:29 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:12:35 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2764 chars
+2026-05-14 13:12:40 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2435 chars
+2026-05-14 13:12:41 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=19|segs=8|xref=OK]: 2226 chars
+2026-05-14 13:12:41 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000092122-24-000089
+2026-05-14 13:12:42 | INFO    | process_company:4090 |     AR: +2.57% (positive)
+2026-05-14 13:12:45 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 2831 chars
+2026-05-14 13:12:47 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:12:47 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Gas distribution operations', 'Gas pipeline investments', 'Gas marketing services', 'See Note', 'in Item', 'of the Form', 'In the third quarter', 'net income decreased']
+2026-05-14 13:12:47 | INFO    | process_company:4152 |     Metrics:29 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:12:47 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 13:12:47 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000092122-25-000042
+2026-05-14 13:12:48 | INFO    | process_company:4090 |     AR: +1.33% (neutral)
+2026-05-14 13:12:49 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 2135 chars
+2026-05-14 13:12:53 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:12:53 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 1814 chars
+2026-05-14 13:12:53 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['segment information for the three months ended March', 'and', 'Three Months Ended March', 'Operating', 'Rate RSE expenses', 'Rate CNP Compliance expenses', 'Total utility operations and maintenance', 'Depreciation and amortization']
+2026-05-14 13:12:53 | INFO    | process_company:4152 |     Metrics:29 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:12:57 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 1757 chars
+2026-05-14 13:13:01 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 1885 chars
+2026-05-14 13:13:01 | INFO    | process_company:4440 | ✓ USB: 27 records | llm=llm_calls=5633, throttled=1012, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 13:13:01 | INFO    | process_company:4033 | ══ COF (Capital One Financial Corp) ══
+2026-05-14 13:13:02 | INFO    | load_xbrl_facts:2747 |   XBRL: 1040 GAAP + 2 DEI
+2026-05-14 13:13:03 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 13:13:03 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000927628-22-000106
+2026-05-14 13:13:03 | INFO    | process_company:4090 |     AR: -11.40% (strong_negative)
+2026-05-14 13:13:10 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:13:10 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the years ended December', 'and', 'Year Ended December', 'Credit Card', 'Consumer Banking', 'calculated using the federal statutory tax rate of']
+2026-05-14 13:13:10 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:13:21 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=17|segs=8|xref=OK]: 2413 chars
+2026-05-14 13:13:21 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000092122-25-000076
+2026-05-14 13:13:21 | INFO    | process_company:4090 |     AR: -2.00% (neutral)
+2026-05-14 13:13:27 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:13:27 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['and', 'for the', 'three and six months ended June', 'for the three and six months ended June', 'attributable to noncontrolling interests and totaled', 'For the three and six months ended June', 'herein and Note', 'in Item']
+2026-05-14 13:13:27 | INFO    | process_company:4152 |     Metrics:29 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:13:52 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=10|segs=8|xref=OK]: 1942 chars
+2026-05-14 13:13:52 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0000927628-23-000117
+2026-05-14 13:13:52 | INFO    | process_company:4090 |     AR: -1.84% (neutral)
+2026-05-14 13:13:55 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=16|segs=8|xref=OK]: 2101 chars
+2026-05-14 13:13:55 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000092122-25-000084
+2026-05-14 13:13:55 | INFO    | process_company:4090 |     AR: +0.66% (neutral)
+2026-05-14 13:14:03 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:14:03 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the years ended December', 'and', 'Item', 'Year Ended December', 'Credit Card', 'Consumer Banking']
+2026-05-14 13:14:03 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:14:06 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:14:06 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['and', 'Three Months Ended September', 'Nine Months Ended September', 'Operating', 'Interest expense', 'Income taxes', 'For the three and nine months ended September', 'includes accelerated depreciation of']
+2026-05-14 13:14:06 | INFO    | process_company:4152 |     Metrics:29 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:14:38 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=31|segs=8|xref=OK]: 2640 chars
+2026-05-14 13:14:38 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000092122-26-000034
+2026-05-14 13:14:39 | INFO    | process_company:4090 |     AR: -5.21% (strong_negative)
+2026-05-14 13:14:43 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:14:43 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['segment information for the three months ended March', 'and', 'Three Months Ended March', 'Operating', 'Rate RSE expenses', 'Rate CNP Compliance expenses', 'Total utility operations and maintenance', 'Depreciation and amortization']
+2026-05-14 13:14:43 | INFO    | process_company:4152 |     Metrics:29 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:2
+2026-05-14 13:14:52 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=21|segs=8|xref=OK]: 2070 chars
+2026-05-14 13:14:52 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000927628-24-000094
+2026-05-14 13:14:53 | INFO    | process_company:4090 |     AR: -0.06% (neutral)
+2026-05-14 13:14:58 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:14:58 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the years ended December', 'and', 'Item', 'Year Ended December', 'Credit Card', 'Consumer Banking']
+2026-05-14 13:14:58 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:15:06 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=0|causal=18|segs=8|xref=OK]: 2636 chars
+2026-05-14 13:15:06 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000927628-25-000092
+2026-05-14 13:15:06 | INFO    | process_company:4090 |     AR: +0.07% (neutral)
+2026-05-14 13:15:13 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:15:13 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the years ended December', 'and', 'Item', 'Year Ended December', 'Credit Card', 'Consumer Banking']
+2026-05-14 13:15:13 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:15:18 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=0|causal=17|segs=8|xref=OK]: 2101 chars
+2026-05-14 13:15:18 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000927628-26-000024
+2026-05-14 13:15:18 | INFO    | process_company:4090 |     AR: +0.96% (neutral)
+2026-05-14 13:15:21 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=34|segs=8|xref=OK]: 3971 chars
+2026-05-14 13:15:22 | INFO    | process_company:4422 |     ✓ Negative example [10-Q]: 656 chars
+2026-05-14 13:15:26 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:15:26 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the years ended December', 'and', 'Item', 'Year Ended December', 'Credit Card', 'Consumer Banking']
+2026-05-14 13:15:26 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:15:29 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2744 chars
+2026-05-14 13:15:34 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2677 chars
+2026-05-14 13:15:40 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 2994 chars
+2026-05-14 13:15:44 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 1951 chars
+2026-05-14 13:15:49 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2650 chars
+2026-05-14 13:15:53 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 2422 chars
+2026-05-14 13:15:59 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 2085 chars
+2026-05-14 13:15:59 | INFO    | process_company:4440 | ✓ TFC: 25 records | llm=llm_calls=5693, throttled=1026, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 13:15:59 | INFO    | process_company:4033 | ══ BK (Bank of New York Mellon Corp) ══
+2026-05-14 13:16:01 | INFO    | get_filings:2614 |   10-K: 0 filings
+2026-05-14 13:16:02 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=40|segs=8|xref=OK]: 4560 chars
+2026-05-14 13:16:02 | INFO    | get_filings:2614 |   10-Q: 0 filings
+2026-05-14 13:16:02 | INFO    | process_company:4440 | ✓ BK: 0 records | llm=llm_calls=5694, throttled=1026, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 13:16:02 | INFO    | process_company:4033 | ══ STT (State Street Corp) ══
+2026-05-14 13:16:04 | INFO    | load_xbrl_facts:2747 |   XBRL: 866 GAAP + 2 DEI
+2026-05-14 13:16:04 | INFO    | process_company:4422 |     ✓ Negative example [10-K]: 809 chars
+2026-05-14 13:16:05 | INFO    | process_company:4422 |     ✓ Negative example [10-K]: 689 chars
+2026-05-14 13:16:06 | INFO    | get_filings:2614 |   10-K: 5 filings
+2026-05-14 13:16:06 | INFO    | process_company:4072 |   ▶ 10-K | 2021-12-31 | 0000093751-22-000424
+2026-05-14 13:16:06 | INFO    | process_company:4090 |     AR: -5.40% (strong_negative)
+2026-05-14 13:16:09 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2142 chars
+2026-05-14 13:16:13 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:16:13 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'to the consolidated financial statements in this Form', 'with approximately', 'and', 'as of December', 'and December', 'is provided in Note', 'TABLE']
+2026-05-14 13:16:13 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:16:14 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2633 chars
+2026-05-14 13:16:20 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 1933 chars
+2026-05-14 13:16:20 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=0|causal=25|segs=8|xref=OK]: 2294 chars
+2026-05-14 13:16:20 | INFO    | process_company:4072 |   ▶ 10-K | 2022-12-31 | 0000093751-23-000489
+2026-05-14 13:16:20 | INFO    | process_company:4090 |     AR: -3.62% (negative)
+2026-05-14 13:16:23 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 1793 chars
+2026-05-14 13:16:24 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 13:16:24 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0000927628-23-000296
+2026-05-14 13:16:25 | INFO    | process_company:4090 |     AR: -0.87% (neutral)
+2026-05-14 13:16:29 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:16:29 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:0 | sections:3
+2026-05-14 13:16:33 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:16:33 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the third quarter and first nine months of', 'and', 'Three Months Ended September', 'Credit Card', 'Consumer Banking', 'Nine Months Ended September']
+2026-05-14 13:16:33 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:16:44 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=1|causal=31|segs=0|xref=OK]: 2876 chars
+2026-05-14 13:16:44 | INFO    | process_company:4072 |   ▶ 10-K | 2023-12-31 | 0000093751-24-000498
+2026-05-14 13:16:45 | INFO    | process_company:4090 |     AR: -0.41% (neutral)
+2026-05-14 13:16:52 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:16:52 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Topic', 'Annual reporting for period ending December', 'and for interim reporting in', 'but not yet adopted as of December', 'Note', 'level', 'Level', 'Our level']
+2026-05-14 13:16:52 | INFO    | process_company:4152 |     Metrics:26 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:17:28 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=22|segs=8|xref=OK]: 2080 chars
+2026-05-14 13:17:28 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000927628-24-000174
+2026-05-14 13:17:28 | INFO    | process_company:4090 |     AR: -2.52% (negative)
+2026-05-14 13:17:41 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=100|tier=gold|auditor=2|causal=19|segs=8|xref=OK]: 2024 chars
+2026-05-14 13:17:41 | INFO    | process_company:4072 |   ▶ 10-K | 2024-12-31 | 0000093751-25-000111
+2026-05-14 13:17:42 | INFO    | process_company:4090 |     AR: +1.28% (neutral)
+2026-05-14 13:17:42 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:17:42 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the first quarters of', 'and', 'Three Months Ended March', 'Credit Card', 'Consumer Banking', 'calculated using the federal statutory tax rate of']
+2026-05-14 13:17:42 | INFO    | process_company:4152 |     Metrics:28 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:17:42 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 13:17:42 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000927628-24-000264
+2026-05-14 13:17:43 | INFO    | process_company:4090 |     AR: -4.34% (negative)
+2026-05-14 13:18:00 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:18:00 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Topic', 'effective December', 'Refer to Note', 'but not yet adopted as of December', 'ASU', 'Subtopic', 'Annual reporting for period ending December', 'and for interim reporting in']
+2026-05-14 13:18:00 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:18:01 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:18:01 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the second quarter and first six months of', 'and', 'Three Months Ended June', 'Credit Card', 'Consumer Banking', 'Six Months Ended June']
+2026-05-14 13:18:01 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:18:39 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=80|tier=silver|auditor=2|causal=8|segs=8|xref=OK]: 2193 chars
+2026-05-14 13:18:39 | INFO    | process_company:4072 |   ▶ 10-K | 2025-12-31 | 0000093751-26-000124
+2026-05-14 13:18:40 | INFO    | process_company:4090 |     AR: +2.74% (positive)
+2026-05-14 13:18:41 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=24|segs=8|xref=OK]: 2213 chars
+2026-05-14 13:18:41 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000927628-24-000306
+2026-05-14 13:18:41 | INFO    | process_company:4090 |     AR: +8.79% (strong_positive)
+2026-05-14 13:19:20 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:19:20 | INFO    | process_company:4152 |     Metrics:24 | decum:False | text_sourced:0 | scaling:millions | segments:0 | sections:3
+2026-05-14 13:19:23 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:19:23 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the third quarter and first nine months of', 'and', 'Three Months Ended September', 'Credit Card', 'Consumer Banking', 'Nine Months Ended September']
+2026-05-14 13:19:23 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:19:23 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 13:19:23 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000927628-25-000141
+2026-05-14 13:19:24 | INFO    | process_company:4090 |     AR: +1.02% (neutral)
+2026-05-14 13:19:35 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:19:35 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the first quarters of', 'and', 'Three Months Ended March', 'Credit Card', 'Consumer Banking', 'calculated using the federal statutory tax rate of']
+2026-05-14 13:19:35 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:19:47 | INFO    | process_company:4370 |     ✓ FULL [10-K|Q=90|tier=gold|auditor=2|causal=10|segs=0|xref=OK]: 2093 chars
+2026-05-14 13:19:52 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (5 periods): 2133 chars
+2026-05-14 13:19:56 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2021-12-31→2023-12-31: 2285 chars
+2026-05-14 13:20:00 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2022-12-31→2024-12-31: 2274 chars
+2026-05-14 13:20:06 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-12-31→2025-12-31: 2726 chars
+2026-05-14 13:20:08 | INFO    | get_filings:2614 |   10-Q: 8 filings
+2026-05-14 13:20:08 | INFO    | process_company:4072 |   ▶ 10-Q | 2023-09-30 | 0000093751-23-000694
+2026-05-14 13:20:09 | INFO    | process_company:4090 |     AR: +1.83% (neutral)
+2026-05-14 13:20:22 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:20:22 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'to the consolidated financial statements in this Form', 'with approximately', 'and', 'as of September', 'and December', 'is provided in Note', 'TABLE']
+2026-05-14 13:20:22 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:20:39 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=15|segs=8|xref=OK]: 2088 chars
+2026-05-14 13:20:39 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000927628-25-000247
+2026-05-14 13:20:40 | INFO    | process_company:4090 |     AR: -3.61% (negative)
+2026-05-14 13:20:48 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:20:48 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the second quarter and first six months of', 'and', 'Three Months Ended June', 'Credit Card', 'Consumer Banking', 'Six Months Ended June']
+2026-05-14 13:20:48 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:20:54 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=33|segs=8|xref=OK]: 2819 chars
+2026-05-14 13:20:54 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000927628-25-000276
+2026-05-14 13:20:55 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=30|segs=8|xref=OK]: 2330 chars
+2026-05-14 13:20:55 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-03-31 | 0000093751-24-000587
+2026-05-14 13:20:55 | INFO    | process_company:4090 |     AR: -0.33% (neutral)
+2026-05-14 13:20:56 | INFO    | process_company:4090 |     AR: +1.18% (neutral)
+2026-05-14 13:21:09 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:21:09 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Topic', 'Annual reporting for period ending December', 'and for interim reporting in', 'but not yet adopted as of March', 'Note', 'refer to pages', 'in Note', 'to the consolidated financial statements included under Item']
+2026-05-14 13:21:09 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:1 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:21:09 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 13:21:09 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-06-30 | 0000093751-24-000665
+2026-05-14 13:21:10 | INFO    | process_company:4090 |     AR: -4.75% (negative)
+2026-05-14 13:21:15 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:21:15 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the third quarter and first nine months of', 'and', 'Three Months Ended September', 'Credit Card', 'Consumer Banking', 'Nine Months Ended September']
+2026-05-14 13:21:15 | INFO    | process_company:4152 |     Metrics:27 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:21:20 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:21:20 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Topic', 'Annual reporting for period ending December', 'and for interim reporting in', 'but not yet adopted as of June', 'Note', 'refer to pages', 'in Note', 'to the consolidated financial statements included under Item']
+2026-05-14 13:21:20 | INFO    | process_company:4152 |     Metrics:26 | decum:True | text_sourced:1 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:21:22 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=13|segs=8|xref=OK]: 2438 chars
+2026-05-14 13:21:22 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000927628-26-000048
+2026-05-14 13:21:23 | INFO    | process_company:4090 |     AR: -7.21% (strong_negative)
+2026-05-14 13:21:26 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=0|causal=18|segs=8|xref=OK]: 2234 chars
+2026-05-14 13:21:26 | INFO    | process_company:4072 |   ▶ 10-Q | 2024-09-30 | 0000093751-24-000909
+2026-05-14 13:21:27 | INFO    | process_company:4090 |     AR: -2.24% (negative)
+2026-05-14 13:21:32 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:21:32 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Note', 'Table', 'for the first quarters of', 'and', 'Three Months Ended March', 'Credit Card', 'Consumer Banking', 'in the first quarters of']
+2026-05-14 13:21:32 | INFO    | process_company:4152 |     Metrics:27 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:21:37 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:21:37 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['Topic', 'Annual reporting for period ending December', 'and for interim reporting in', 'but not yet adopted as of September', 'Note', 'refer to pages', 'in Note', 'to the consolidated financial statements included under Item']
+2026-05-14 13:21:37 | INFO    | process_company:4152 |     Metrics:25 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:21:37 | WARNING | process_company:4194 |     ✗ SANITY BLOCK: 2 rule(s). Action: BLOCK.
+2026-05-14 13:21:37 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-03-31 | 0000093751-25-000226
+2026-05-14 13:21:37 | INFO    | process_company:4090 |     AR: +4.83% (positive)
+2026-05-14 13:21:44 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:21:44 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['refer to pages', 'in Note', 'to the consolidated financial statements included under Item', 'in our', 'Form', 'Three Months Ended March', 'Servicing fees', 'Foreign exchange trading services']
+2026-05-14 13:21:44 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:22:17 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=80|tier=silver|auditor=2|causal=17|segs=8|xref=OK]: 2047 chars
+2026-05-14 13:22:22 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 2315 chars
+2026-05-14 13:22:28 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2917 chars
+2026-05-14 13:22:32 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 1639 chars
+2026-05-14 13:22:40 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 2780 chars
+2026-05-14 13:22:47 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=2|causal=62|segs=8|xref=OK]: 3963 chars
+2026-05-14 13:22:47 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-06-30 | 0000093751-25-000425
+2026-05-14 13:22:47 | INFO    | process_company:4090 |     AR: -1.75% (neutral)
+2026-05-14 13:22:49 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 3140 chars
+2026-05-14 13:22:54 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:22:54 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['refer to pages', 'in Note', 'to the consolidated financial statements included under Item', 'in our', 'Form', 'Three Months Ended June', 'Servicing fees', 'Foreign exchange trading services']
+2026-05-14 13:22:54 | INFO    | process_company:4152 |     Metrics:25 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:22:56 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 2320 chars
+2026-05-14 13:23:00 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=11|segs=8|xref=OK]: 1938 chars
+2026-05-14 13:23:00 | INFO    | process_company:4072 |   ▶ 10-Q | 2025-09-30 | 0000093751-25-000575
+2026-05-14 13:23:00 | INFO    | process_company:4090 |     AR: +3.18% (positive)
+2026-05-14 13:23:01 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 2007 chars
+2026-05-14 13:23:01 | INFO    | process_company:4440 | ✓ COF: 26 records | llm=llm_calls=5787, throttled=1050, rpm=40/40, backoff=1.00, workers=2
+2026-05-14 13:23:06 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:23:06 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['refer to pages', 'in Note', 'to the consolidated financial statements included under Item', 'in our', 'Form', 'Three Months Ended September', 'Servicing fees', 'Foreign exchange trading services']
+2026-05-14 13:23:06 | INFO    | process_company:4152 |     Metrics:25 | decum:True | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:23:13 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=100|tier=gold|auditor=0|causal=17|segs=8|xref=OK]: 2572 chars
+2026-05-14 13:23:13 | INFO    | process_company:4072 |   ▶ 10-Q | 2026-03-31 | 0000093751-26-000196
+2026-05-14 13:23:14 | INFO    | process_company:4090 |     AR: -2.77% (negative)
+2026-05-14 13:23:19 | DEBUG   | process_company:4113 |     V20-5 Scaling: millions
+2026-05-14 13:23:19 | INFO    | process_company:4120 |     V20-3 Segments found: 8 — ['refer to Note', 'of the notes to consolidated financial statements in our', 'Form', 'Three Months Ended March', 'Servicing fees', 'Securities finance', 'Total fee', 'Net interest income']
+2026-05-14 13:23:19 | INFO    | process_company:4152 |     Metrics:25 | decum:False | text_sourced:0 | scaling:millions | segments:8 | sections:3
+2026-05-14 13:23:52 | INFO    | process_company:4370 |     ✓ FULL [10-Q|Q=90|tier=gold|auditor=2|causal=30|segs=8|xref=OK]: 2056 chars
+2026-05-14 13:23:57 | INFO    | build_multiyear_records:3931 |     ✓ Multi-year (8 periods): 3496 chars
+2026-05-14 13:24:03 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2023-09-30→2024-06-30: 2073 chars
+2026-05-14 13:24:08 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-03-31→2024-09-30: 3011 chars
+2026-05-14 13:24:13 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-06-30→2025-03-31: 1839 chars
+2026-05-14 13:24:17 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2024-09-30→2025-06-30: 2275 chars
+2026-05-14 13:24:21 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-03-31→2025-09-30: 2133 chars
+2026-05-14 13:24:24 | INFO    | build_multiyear_records:3960 |     ✓ 3yr 2025-06-30→2026-03-31: 2065 chars
+2026-05-14 13:24:24 | INFO    | process_company:4440 | ✓ STT: 24 records | llm=llm_calls=5803, throttled=1050, rpm=40/40, backoff=1.00, workers=2
