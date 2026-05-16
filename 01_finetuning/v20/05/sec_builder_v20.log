@@ -1,0 +1,16 @@
+2026-05-16 19:46:10 | INFO    | build_dataset:4656 | Resume mode: 0 tickers done, 100 remaining, 0 accessions cached
+2026-05-16 19:46:10 | INFO    | process_company:4172 | ══ SAIC (Science Applications International Corp) ══
+2026-05-16 19:46:10 | INFO    | process_company:4172 | ══ ROL (Rollins Inc) ══
+2026-05-16 19:46:12 | INFO    | load_xbrl_facts:2886 |   XBRL: 489 GAAP + 2 DEI
+2026-05-16 19:46:13 | INFO    | load_xbrl_facts:2886 |   XBRL: 759 GAAP + 3 DEI
+2026-05-16 19:46:14 | INFO    | get_filings:2753 |   10-K: 5 filings
+2026-05-16 19:46:14 | INFO    | process_company:4211 |   ▶ 10-K | 2021-12-31 | 0001336920-22-000007
+2026-05-16 19:46:14 | INFO    | get_filings:2753 |   10-K: 0 filings
+2026-05-16 19:46:15 | INFO    | get_filings:2753 |   10-Q: 0 filings
+2026-05-16 19:46:15 | INFO    | process_company:4579 | ✓ ROL: 0 records | llm=llm_calls=0, throttled=0, rpm=40/40, backoff=1.00, workers=2
+2026-05-16 19:46:15 | INFO    | process_company:4172 | ══ ROK (Rockwell Automation Inc) ══
+2026-05-16 19:46:15 | INFO    | load_xbrl_facts:2886 |   XBRL: 622 GAAP + 2 DEI
+2026-05-16 19:46:17 | INFO    | get_filings:2753 |   10-K: 5 filings
+2026-05-16 19:46:17 | INFO    | process_company:4211 |   ▶ 10-K | 2021-09-30 | 0001024478-21-000083
+2026-05-16 19:46:20 | INFO    | process_company:4229 |     AR: +2.20% (positive)
+2026-05-16 19:46:21 | INFO    | process_company:4229 |     AR: +1.41% (neutral)
