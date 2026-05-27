@@ -1,0 +1,156 @@
+2026-05-27 17:27:41 | INFO    | <module>:4619 | v21 RAG | tickers=1 | forms=['10-K', '10-Q'] | max_per_form=8 | filings_root=filings | resume=True
+2026-05-27 17:27:41 | INFO    | build_filing_manifest:282 | Filing manifest: 13 tickers, 365 HTML files
+2026-05-27 17:27:41 | INFO    | build_dataset_v21:4338 | Pre-indexing local filings into Qdrant…
+2026-05-27 17:27:41 | INFO    | index_filing:1020 |   Indexing AAPL 10-K 2019-09-28 (10-K_2019-09-28_0000320193-19-000119.html)
+2026-05-27 17:27:58 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2019-09-28 10-K: 6 sections → 11 chunks
+2026-05-27 17:27:58 | INFO    | _ensure_collection:768 | Created Qdrant collection: sec_filings_v21
+2026-05-27 17:27:58 | INFO    | _get_embedder:745 | Loading embedding model: all-MiniLM-L6-v2
+2026-05-27 17:28:09 | DEBUG   | upsert_chunks:826 |   Upserted 11 chunks to Qdrant
+2026-05-27 17:28:09 | INFO    | index_filing:1042 |   → 11 chunks indexed
+2026-05-27 17:28:09 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2019-06-29 (10-Q_2019-06-29_0000320193-19-000076.html)
+2026-05-27 17:28:11 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2019-06-29 10-Q: 5 sections → 6 chunks
+2026-05-27 17:28:13 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:13 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:13 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2019-12-28 (10-Q_2019-12-28_0000320193-20-000010.html)
+2026-05-27 17:28:15 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2019-12-28 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:15 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:15 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:15 | INFO    | index_filing:1020 |   Indexing AAPL 10-K 2020-09-26 (10-K_2020-09-26_0000320193-20-000096.html)
+2026-05-27 17:28:17 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2020-09-26 10-K: 6 sections → 11 chunks
+2026-05-27 17:28:21 | DEBUG   | upsert_chunks:826 |   Upserted 11 chunks to Qdrant
+2026-05-27 17:28:21 | INFO    | index_filing:1042 |   → 11 chunks indexed
+2026-05-27 17:28:21 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2020-03-28 (10-Q_2020-03-28_0000320193-20-000052.html)
+2026-05-27 17:28:23 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2020-03-28 10-Q: 5 sections → 8 chunks
+2026-05-27 17:28:26 | DEBUG   | upsert_chunks:826 |   Upserted 8 chunks to Qdrant
+2026-05-27 17:28:26 | INFO    | index_filing:1042 |   → 8 chunks indexed
+2026-05-27 17:28:26 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2020-06-27 (10-Q_2020-06-27_0000320193-20-000062.html)
+2026-05-27 17:28:28 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2020-06-27 10-Q: 5 sections → 8 chunks
+2026-05-27 17:28:30 | DEBUG   | upsert_chunks:826 |   Upserted 8 chunks to Qdrant
+2026-05-27 17:28:30 | INFO    | index_filing:1042 |   → 8 chunks indexed
+2026-05-27 17:28:30 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2020-12-26 (10-Q_2020-12-26_0000320193-21-000010.html)
+2026-05-27 17:28:31 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2020-12-26 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:31 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:31 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:31 | INFO    | index_filing:1020 |   Indexing AAPL 10-K 2021-09-25 (10-K_2021-09-25_0000320193-21-000105.html)
+2026-05-27 17:28:33 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2021-09-25 10-K: 6 sections → 11 chunks
+2026-05-27 17:28:36 | DEBUG   | upsert_chunks:826 |   Upserted 11 chunks to Qdrant
+2026-05-27 17:28:36 | INFO    | index_filing:1042 |   → 11 chunks indexed
+2026-05-27 17:28:36 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2021-03-27 (10-Q_2021-03-27_0000320193-21-000056.html)
+2026-05-27 17:28:37 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2021-03-27 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:37 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:37 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:37 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2021-06-26 (10-Q_2021-06-26_0000320193-21-000065.html)
+2026-05-27 17:28:39 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2021-06-26 10-Q: 5 sections → 8 chunks
+2026-05-27 17:28:41 | DEBUG   | upsert_chunks:826 |   Upserted 8 chunks to Qdrant
+2026-05-27 17:28:41 | INFO    | index_filing:1042 |   → 8 chunks indexed
+2026-05-27 17:28:41 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2021-12-25 (10-Q_2021-12-25_0000320193-22-000007.html)
+2026-05-27 17:28:42 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2021-12-25 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:42 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:42 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:42 | INFO    | index_filing:1020 |   Indexing AAPL 10-K 2022-09-24 (10-K_2022-09-24_0000320193-22-000108.html)
+2026-05-27 17:28:44 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2022-09-24 10-K: 6 sections → 12 chunks
+2026-05-27 17:28:47 | DEBUG   | upsert_chunks:826 |   Upserted 12 chunks to Qdrant
+2026-05-27 17:28:47 | INFO    | index_filing:1042 |   → 12 chunks indexed
+2026-05-27 17:28:47 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2022-03-26 (10-Q_2022-03-26_0000320193-22-000059.html)
+2026-05-27 17:28:48 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2022-03-26 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:48 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:48 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:48 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2022-06-25 (10-Q_2022-06-25_0000320193-22-000070.html)
+2026-05-27 17:28:50 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2022-06-25 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:50 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:50 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:50 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2022-12-31 (10-Q_2022-12-31_0000320193-23-000006.html)
+2026-05-27 17:28:51 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2022-12-31 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:51 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:51 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:51 | INFO    | index_filing:1020 |   Indexing AAPL 10-K 2023-09-30 (10-K_2023-09-30_0000320193-23-000106.html)
+2026-05-27 17:28:52 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2023-09-30 10-K: 6 sections → 12 chunks
+2026-05-27 17:28:57 | DEBUG   | upsert_chunks:826 |   Upserted 12 chunks to Qdrant
+2026-05-27 17:28:57 | INFO    | index_filing:1042 |   → 12 chunks indexed
+2026-05-27 17:28:57 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2023-04-01 (10-Q_2023-04-01_0000320193-23-000064.html)
+2026-05-27 17:28:57 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2023-04-01 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:58 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:58 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:58 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2023-07-01 (10-Q_2023-07-01_0000320193-23-000077.html)
+2026-05-27 17:28:58 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2023-07-01 10-Q: 4 sections → 6 chunks
+2026-05-27 17:28:59 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:28:59 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:28:59 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2023-12-30 (10-Q_2023-12-30_0000320193-24-000006.html)
+2026-05-27 17:29:00 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2023-12-30 10-Q: 4 sections → 6 chunks
+2026-05-27 17:29:00 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:29:00 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:29:00 | INFO    | index_filing:1020 |   Indexing AAPL 10-K 2024-09-28 (10-K_2024-09-28_0000320193-24-000123.html)
+2026-05-27 17:29:01 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2024-09-28 10-K: 6 sections → 12 chunks
+2026-05-27 17:29:06 | DEBUG   | upsert_chunks:826 |   Upserted 12 chunks to Qdrant
+2026-05-27 17:29:06 | INFO    | index_filing:1042 |   → 12 chunks indexed
+2026-05-27 17:29:06 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2024-03-30 (10-Q_2024-03-30_0000320193-24-000069.html)
+2026-05-27 17:29:07 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2024-03-30 10-Q: 4 sections → 6 chunks
+2026-05-27 17:29:07 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:29:07 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:29:07 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2024-06-29 (10-Q_2024-06-29_0000320193-24-000081.html)
+2026-05-27 17:29:08 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2024-06-29 10-Q: 4 sections → 6 chunks
+2026-05-27 17:29:08 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:29:08 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:29:08 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2024-12-28 (10-Q_2024-12-28_0000320193-25-000008.html)
+2026-05-27 17:29:08 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2024-12-28 10-Q: 4 sections → 6 chunks
+2026-05-27 17:29:09 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:29:09 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:29:09 | INFO    | index_filing:1020 |   Indexing AAPL 10-K 2025-09-27 (10-K_2025-09-27_0000320193-25-000079.html)
+2026-05-27 17:29:10 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2025-09-27 10-K: 6 sections → 12 chunks
+2026-05-27 17:29:14 | DEBUG   | upsert_chunks:826 |   Upserted 12 chunks to Qdrant
+2026-05-27 17:29:14 | INFO    | index_filing:1042 |   → 12 chunks indexed
+2026-05-27 17:29:14 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2025-03-29 (10-Q_2025-03-29_0000320193-25-000057.html)
+2026-05-27 17:29:15 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2025-03-29 10-Q: 4 sections → 6 chunks
+2026-05-27 17:29:15 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:29:15 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:29:15 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2025-06-28 (10-Q_2025-06-28_0000320193-25-000073.html)
+2026-05-27 17:29:16 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2025-06-28 10-Q: 4 sections → 6 chunks
+2026-05-27 17:29:16 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:29:16 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:29:16 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2025-12-27 (10-Q_2025-12-27_0000320193-26-000006.html)
+2026-05-27 17:29:16 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2025-12-27 10-Q: 4 sections → 6 chunks
+2026-05-27 17:29:16 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:29:16 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:29:16 | INFO    | index_filing:1020 |   Indexing AAPL 10-Q 2026-03-28 (10-Q_2026-03-28_0000320193-26-000013.html)
+2026-05-27 17:29:17 | DEBUG   | chunk_filing:705 |   Chunked AAPL 2026-03-28 10-Q: 4 sections → 6 chunks
+2026-05-27 17:29:17 | DEBUG   | upsert_chunks:826 |   Upserted 6 chunks to Qdrant
+2026-05-27 17:29:17 | INFO    | index_filing:1042 |   → 6 chunks indexed
+2026-05-27 17:29:17 | INFO    | build_dataset_v21:4343 | Total chunks indexed: 213
+2026-05-27 17:29:17 | INFO    | build_dataset_v21:4352 | Resume mode: 0 tickers done, 1 remaining
+2026-05-27 17:29:17 | INFO    | process_company_v21:3921 | ══ AAPL (Apple Inc) ══
+2026-05-27 17:29:19 | INFO    | load_xbrl_facts:2182 |   XBRL: 503 GAAP + 2 DEI
+2026-05-27 17:29:19 | INFO    | process_company_v21:3961 |   10-K: 7 filings (from manifest)
+2026-05-27 17:29:19 | INFO    | process_company_v21:3973 |   ▶ 10-K | 2019-09-28 | 0000320193-19-000119
+2026-05-27 17:29:20 | INFO    | process_company_v21:3991 |   AR: +2.62% (positive)
+2026-05-27 17:29:26 | DEBUG   | rag_retrieve_text_sections:1213 |   RAG AAPL/2019/10-K: mda=5000, rf=5000, fs=5000, sections=5
+2026-05-27 17:29:27 | INFO    | process_company_v21:4028 |   Segments found: 8 — ['Operating income', 'Segment operating income', 'Total operating income', 's net sales in', 'There was no single customer that accounted for more than', 'of net sales in', 'Net sales for', 'September']
+2026-05-27 17:29:27 | INFO    | process_company_v21:4046 |   Metrics:48 | decum:False | rag_chars:25000 | scaling:millions | segments:8 | sections:5
+2026-05-27 17:32:54 | INFO    | process_company_v21:4218 |   ✓ RAG-FULL [10-K|Q=80|tier=silver|auditor=1|causal=22|rag=25000chars]: 2258 chars
+2026-05-27 17:32:54 | INFO    | process_company_v21:3973 |   ▶ 10-K | 2020-09-26 | 0000320193-20-000096
+2026-05-27 17:32:54 | INFO    | process_company_v21:3991 |   AR: -0.33% (neutral)
+2026-05-27 17:32:56 | DEBUG   | rag_retrieve_text_sections:1213 |   RAG AAPL/2020/10-K: mda=5000, rf=5000, fs=5000, sections=5
+2026-05-27 17:32:56 | INFO    | process_company_v21:4028 |   Segments found: 8 — ['Operating income', 'Segment operating income', 'Total operating income', 's net sales in', 'There was no single customer that accounted for more than', 'of net sales in', 'Net sales for', 'and long-lived assets as of September']
+2026-05-27 17:32:56 | INFO    | process_company_v21:4046 |   Metrics:48 | decum:False | rag_chars:25000 | scaling:thousands | segments:8 | sections:5
+2026-05-27 17:32:56 | DEBUG   | validate:1510 |   CrossRef: text_rev=274515000 is >10× away from xbrl_rev=274515000000 — XBRL value kept
+2026-05-27 17:34:27 | INFO    | process_company_v21:4218 |   ✓ RAG-FULL [10-K|Q=90|tier=gold|auditor=0|causal=11|rag=25000chars]: 2216 chars
+2026-05-27 17:34:27 | INFO    | process_company_v21:3973 |   ▶ 10-K | 2021-09-25 | 0000320193-21-000105
+2026-05-27 17:34:27 | INFO    | process_company_v21:3991 |   AR: -1.12% (neutral)
+2026-05-27 17:34:30 | DEBUG   | rag_retrieve_text_sections:1213 |   RAG AAPL/2021/10-K: mda=5000, rf=5000, fs=5000, sections=5
+2026-05-27 17:34:30 | INFO    | process_company_v21:4028 |   Segments found: 8 — ['Operating income', 'Segment operating income', 'Total operating income', 's net sales in', 'There was no single customer that accounted for more than', 'of net sales in', 'Net sales for', 'and long-lived assets as of September']
+2026-05-27 17:34:30 | INFO    | process_company_v21:4046 |   Metrics:48 | decum:False | rag_chars:25000 | scaling:thousands | segments:8 | sections:5
+2026-05-27 17:34:30 | DEBUG   | validate:1510 |   CrossRef: text_rev=365817000 is >10× away from xbrl_rev=365817000000 — XBRL value kept
+2026-05-27 17:35:57 | INFO    | process_company_v21:4218 |   ✓ RAG-FULL [10-K|Q=90|tier=gold|auditor=0|causal=17|rag=25000chars]: 2269 chars
+2026-05-27 17:35:57 | INFO    | process_company_v21:3973 |   ▶ 10-K | 2022-09-24 | 0000320193-22-000108
+2026-05-27 17:35:57 | INFO    | process_company_v21:3991 |   AR: -6.15% (strong_negative)
+2026-05-27 17:35:59 | DEBUG   | rag_retrieve_text_sections:1213 |   RAG AAPL/2022/10-K: mda=5000, rf=5000, fs=5000, sections=5
+2026-05-27 17:35:59 | INFO    | process_company_v21:4028 |   Segments found: 8 — ['of revenue recognized in', 'that was included in deferred revenue as of September', 'billion of revenue recognized in', 'As of September', 'and September', 'the Company had total deferred revenue of', 'the Company expects', 'within two-to-three years and']
+2026-05-27 17:35:59 | INFO    | process_company_v21:4046 |   Metrics:48 | decum:False | rag_chars:25000 | scaling:millions | segments:8 | sections:5
+2026-05-27 17:37:35 | INFO    | process_company_v21:4218 |   ✓ RAG-FULL [10-K|Q=90|tier=gold|auditor=0|causal=12|rag=25000chars]: 2260 chars
+2026-05-27 17:37:35 | INFO    | process_company_v21:3973 |   ▶ 10-K | 2023-09-30 | 0000320193-23-000106
+2026-05-27 17:37:35 | INFO    | process_company_v21:3991 |   AR: +1.85% (neutral)
+2026-05-27 17:37:37 | DEBUG   | rag_retrieve_text_sections:1213 |   RAG AAPL/2023/10-K: mda=5000, rf=5000, fs=5000, sections=5
+2026-05-27 17:37:37 | INFO    | process_company_v21:4028 |   Segments found: 8 — ['As of September', 'and September', 'the Company had total deferred revenue of', 'the Company expects', 'within two-to-three years and', 'Net income', 'Weighted-average basic shares outstanding', 'Effect of dilutive share-based awards']
+2026-05-27 17:37:37 | INFO    | process_company_v21:4046 |   Metrics:48 | decum:False | rag_chars:25000 | scaling:millions | segments:8 | sections:5
+2026-05-27 17:38:23 | INFO    | process_company_v21:4218 |   ✓ RAG-FULL [10-K|Q=90|tier=gold|auditor=0|causal=7|rag=25000chars]: 2168 chars
+2026-05-27 17:38:23 | INFO    | process_company_v21:3973 |   ▶ 10-K | 2024-09-28 | 0000320193-24-000123
+2026-05-27 17:38:23 | INFO    | process_company_v21:3991 |   AR: -3.81% (negative)
