@@ -1,6 +1,4 @@
 
-
-```
 # RAG Pipeline with Vector Store Refresh
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -129,7 +127,7 @@ This project solves these problems by building a **scheduled, evaluated, and res
 
 text
 
-````
+```
 
 ### Infrastructure Components
 
@@ -342,7 +340,6 @@ docker-compose exec airflow-webserver airflow dags trigger rag_refresh_pipeline
 #### **Stage 1: Document Extraction** (5-10 min)
 
 Python
-
 ```
 # Pulls documents from all configured sources
 extract_sources >> deduplicate_documents
@@ -362,7 +359,6 @@ extract_sources >> deduplicate_documents
 #### **Stage 2: Deduplication** (< 1 min)
 
 Python
-
 ```
 deduplicate_documents >> chunk_documents
 ```
