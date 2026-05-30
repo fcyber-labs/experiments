@@ -1,0 +1,62 @@
+[
+  {
+    "query": "What is the company vacation policy?",
+    "expected_docs": ["employee_handbook.pdf", "hr_policies.pdf"],
+    "category": "hr",
+    "difficulty": "easy"
+  },
+  {
+    "query": "How do I submit a reimbursement request?",
+    "expected_docs": ["expense_policy.pdf", "finance_procedures.pdf"],
+    "category": "finance",
+    "difficulty": "easy"
+  },
+  {
+    "query": "What are the engineering coding standards?",
+    "expected_docs": ["coding_standards.md", "engineering_guide.pdf"],
+    "category": "engineering",
+    "difficulty": "medium"
+  },
+  {
+    "query": "How do I access the VPN for remote work?",
+    "expected_docs": ["it_setup_guide.pdf", "remote_work_policy.pdf"],
+    "category": "it",
+    "difficulty": "easy"
+  },
+  {
+    "query": "What is the performance review process and timeline?",
+    "expected_docs": ["performance_management.pdf", "career_development.pdf"],
+    "category": "hr",
+    "difficulty": "medium"
+  },
+  {
+    "query": "How do I set up my development environment?",
+    "expected_docs": ["developer_onboarding.md", "setup_guide.pdf"],
+    "category": "engineering",
+    "difficulty": "easy"
+  },
+  {
+    "query": "What is the process for requesting time off?",
+    "expected_docs": ["employee_handbook.pdf", "pto_policy.pdf"],
+    "category": "hr",
+    "difficulty": "easy"
+  },
+  {
+    "query": "Where can I find the API documentation for our internal services?",
+    "expected_docs": ["api_docs.pdf", "internal_services_guide.md"],
+    "category": "engineering",
+    "difficulty": "medium"
+  },
+  {
+    "query": "What are the security best practices for handling customer data?",
+    "expected_docs": ["security_policy.pdf", "data_handling_guide.pdf"],
+    "category": "security",
+    "difficulty": "hard"
+  },
+  {
+    "query": "How do I report a bug in production?",
+    "expected_docs": ["incident_response.pdf", "engineering_runbook.md"],
+    "category": "engineering",
+    "difficulty": "medium"
+  }
+]

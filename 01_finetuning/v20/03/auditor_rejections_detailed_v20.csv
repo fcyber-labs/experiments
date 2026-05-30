@@ -1,7 +1,0 @@
-id,ticker,form_type,score,metrics_count,confidence,hallucination,sanity_action,text_filled,xbrl_pct,causal_density
-89ba6c5f48ee,VTRS,10-K,75,35,LOW,False,pass,2,100,54
-c67f003f186b,RCL,10-Q,75,34,LOW,False,pass,2,100,44
-4d9c1127b2fe,YUM,10-Q/A,70,39,LOW,False,pass,2,100,17
-b1edbaa32a96,T,10-Q,75,35,LOW,False,pass,4,100,21
-d9e5f381821a,TTWO,10-Q,75,38,LOW,False,pass,3,100,21
-bd2cf927cf38,NWS,10-K,75,36,LOW,False,pass,2,100,45
