@@ -175,6 +175,7 @@ class TestPerformHybridSearch:
         if results:
             assert 'combined_score' in results[0]
     
+
     def test_perform_hybrid_search_empty_chunks(self):
         """Test hybrid search with no chunks."""
         with patch('tasks.hybrid_search.search_similar') as mock_search:
@@ -184,10 +185,11 @@ class TestPerformHybridSearch:
                 query="test",
                 query_vector=[0.1] * 1536,
                 collection_name="test",
-                chunks=[],
+                chunks=[],  # Empty chunks
                 top_k=5
             )
             
+            # Should return empty list, not raise ZeroDivisionError
             assert results == []
 
 

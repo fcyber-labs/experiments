@@ -7,6 +7,7 @@ import logging
 from typing import List, Dict, Any
 from sentence_transformers import CrossEncoder
 import numpy as np
+from utils.metrics_exporter import export_histogram
 
 logger = logging.getLogger(__name__)
 
@@ -100,13 +101,19 @@ def rerank_results(
     Returns:
         Reranked results
     """
+    if not results:
+        return []
+    
     reranker = Reranker(model_name=model_name)
     reranked = reranker.rerank(query=query, results=results, top_k=top_k)
     
-    # Export metrics
+    # Export metrics - ALWAYS export if we have results
     from utils.metrics_exporter import export_histogram
-    if reranked:
-        score_change = reranked[0]['reranker_score'] - reranked[0].get('combined_score', 0)
+    if reranked and len(reranked) > 0:
+        # Calculate score improvement (use first result)
+        original_score = results[0].get('combined_score', results[0].get('score', 0))
+        reranked_score = reranked[0].get('reranker_score', 0)
+        score_change = reranked_score - original_score
         export_histogram('reranker_score_improvement', score_change)
     
     return reranked

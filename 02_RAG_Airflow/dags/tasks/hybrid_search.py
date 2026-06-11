@@ -8,6 +8,10 @@ from typing import List, Dict, Any
 from rank_bm25 import BM25Okapi
 import numpy as np
 
+
+from utils.vector_store import get_qdrant_client, search_similar
+
+
 logger = logging.getLogger(__name__)
 
 
@@ -119,7 +123,6 @@ class HybridSearcher:
         
         return top_results
 
-
 def perform_hybrid_search(
     query: str,
     query_vector: List[float],
@@ -143,26 +146,40 @@ def perform_hybrid_search(
     Returns:
         Hybrid search results
     """
-    from utils.vector_store import get_qdrant_client, search_similar
+    
+    
+    # Handle empty chunks case
+    if not chunks:
+        logger.warning("No chunks provided, returning empty results")
+        return []
     
     # Step 1: Get vector search results from Qdrant
     logger.info(f"Performing vector search in '{collection_name}'...")
-    qdrant_results = search_similar(
-        collection_name=collection_name,
-        query_vector=query_vector,
-        limit=top_k * 2  # Get more results for re-ranking
-    )
+    try:
+        qdrant_results = search_similar(
+            collection_name=collection_name,
+            query_vector=query_vector,
+            limit=top_k * 2  # Get more results for re-ranking
+        )
+    except Exception as e:
+        logger.error(f"Vector search failed: {e}")
+        qdrant_results = []
     
-    # Step 2: Initialize hybrid searcher
-    searcher = HybridSearcher(chunks=chunks, bm25_weight=bm25_weight)
-    
-    # Step 3: Combine scores
-    hybrid_results = searcher.search(
-        query=query,
-        query_vector=query_vector,
-        qdrant_results=qdrant_results,
-        top_k=top_k
-    )
+    # Step 2: Initialize hybrid searcher (will fail if chunks empty, but we already checked)
+    try:
+        searcher = HybridSearcher(chunks=chunks, bm25_weight=bm25_weight)
+        
+        # Step 3: Combine scores
+        hybrid_results = searcher.search(
+            query=query,
+            query_vector=query_vector,
+            qdrant_results=qdrant_results,
+            top_k=top_k
+        )
+    except ZeroDivisionError as e:
+        logger.error(f"BM25 error (empty corpus?): {e}")
+        # Fallback to vector results only
+        hybrid_results = qdrant_results[:top_k]
     
     logger.info(f"Hybrid search returned {len(hybrid_results)} results")
     

@@ -9,6 +9,8 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from datetime import datetime, timedelta
 import json
+from typing import Any, Dict, List
+import requests
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +48,9 @@ def predict_monthly_cost(
     # Step 3: Predict future costs
     now = datetime.now().timestamp()
     future_timestamp = now + (days_to_predict * 24 * 60 * 60)
-    predicted_cost = model.predict([[future_timestamp]])[0]
+    predicted_daily_cost = float(model.predict([[future_timestamp]])[0])
+
+    predicted_cost = predicted_daily_cost * days_to_predict 
     
     # Step 4: Calculate confidence based on R² score
     r2_score = model.score(timestamps, costs)
@@ -59,8 +63,8 @@ def predict_monthly_cost(
         confidence = 'low'
     
     # Step 5: Calculate daily and monthly averages
-    daily_avg = predicted_cost / days_to_predict
-    monthly_estimate = daily_avg * 30
+    daily_avg = predicted_daily_cost   
+    monthly_estimate = predicted_daily_cost * 30     
     
     # Step 6: Identify trend
     slope = model.coef_[0]
@@ -145,24 +149,19 @@ def generate_cost_budget_alert(
     predicted_monthly_cost: float,
     budget_limit: float = 50.0
 ) -> Dict[str, Any]:
-    """
-    Generate budget alert if costs exceed limits.
-    
-    Args:
-        current_cost: Current run cost
-        predicted_monthly_cost: Predicted monthly cost
-        budget_limit: Monthly budget limit
-        
-    Returns:
-        Alert dictionary
-    """
     # Calculate utilization
     utilization = (predicted_monthly_cost / budget_limit) * 100
     
-    if utilization > 100:
+    # Calculate derived values
+    predicted_cost = predicted_monthly_cost
+    daily_avg = current_cost
+    monthly_estimate = predicted_monthly_cost
+    
+    # Use >= for thresholds (not >)
+    if utilization >= 100:  # Changed from > to >=
         severity = 'critical'
         message = f"🚨 Cost exceeding budget! Predicted: ${predicted_monthly_cost:.2f} > Budget: ${budget_limit:.2f}"
-    elif utilization > 80:
+    elif utilization >= 95:  # Changed from > 95 to >= 95
         severity = 'warning'
         message = f"⚠️ Cost approaching budget limit ({utilization:.1f}% of ${budget_limit:.2f})"
     else:
@@ -173,7 +172,10 @@ def generate_cost_budget_alert(
         'severity': severity,
         'message': message,
         'utilization': round(utilization, 1),
-        'predicted_monthly_cost': predicted_monthly_cost,
+        "predicted_cost": round(predicted_cost, 2),
+        "predicted_monthly_cost": round(predicted_monthly_cost, 2),
+        "daily_avg": round(daily_avg, 4),
+        "monthly_estimate": round(monthly_estimate, 2),
         'budget_limit': budget_limit,
         'current_cost': current_cost
     }

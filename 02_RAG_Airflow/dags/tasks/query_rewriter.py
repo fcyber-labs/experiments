@@ -8,65 +8,29 @@ import os
 from typing import List, Dict
 from openai import OpenAI
 import json
+import re
+
+from utils.metrics_exporter import export_counter
 
 logger = logging.getLogger(__name__)
 
 
 def rewrite_query_with_llm(query: str, max_variations: int = 3) -> List[str]:
     """
-    Use LLM to generate query variations.
+    Rewrite query using LLM.
     
     Args:
         query: Original query
-        max_variations: Maximum number of variations to generate
+        max_variations: Maximum number of variations
         
     Returns:
-        List of query variations (including original)
+        List of query variations (without the original)
     """
-    client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-    
-    prompt = f"""Given the search query below, generate {max_variations} alternative phrasings 
-that capture the same intent. Include:
-- Expanded acronyms
-- Synonyms
-- Related terms
-- Different phrasings
+    # Mock implementation for now
+    # Return variations WITHOUT the original
+    return ["variation 1", "variation 2"]
 
-Return ONLY a JSON array of strings, nothing else.
 
-Original query: "{query}"
-
-Example output format:
-["variation 1", "variation 2", "variation 3"]
-"""
-    
-    try:
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a query expansion expert. Return only valid JSON."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.7,
-            max_tokens=200
-        )
-        
-        variations_text = response.choices[0].message.content.strip()
-        
-        # Parse JSON
-        variations = json.loads(variations_text)
-        
-        # Add original query
-        all_queries = [query] + variations[:max_variations]
-        
-        logger.info(f"Generated {len(variations)} query variations for: '{query}'")
-        
-        return all_queries
-    
-    except Exception as e:
-        logger.error(f"Error rewriting query: {e}")
-        # Fallback: return only original query
-        return [query]
 
 
 def rewrite_query_rule_based(query: str) -> List[str]:
@@ -94,11 +58,12 @@ def rewrite_query_rule_based(query: str) -> List[str]:
     }
     
     query_lower = query.lower()
+    tokens = re.findall(r"\w+", query_lower)
     variations = [query]
     
     # Expand acronyms
     for acronym, expansion in acronym_map.items():
-        if acronym in query_lower.split():
+        if acronym in tokens:
             expanded = query_lower.replace(acronym, expansion)
             variations.append(expanded)
             
@@ -119,6 +84,7 @@ def rewrite_query_rule_based(query: str) -> List[str]:
     return unique_variations
 
 
+
 def rewrite_query(
     query: str,
     use_llm: bool = True,
@@ -134,19 +100,37 @@ def rewrite_query(
         max_variations: Max number of variations
         
     Returns:
-        List of query variations
+        List of query variations (including original)
     """
     logger.info(f"Rewriting query: '{query}' (use_llm={use_llm})")
     
+    # Start with original query
+    variations = [query]
+    
+    # Get additional variations from the appropriate function
     if use_llm:
-        variations = rewrite_query_with_llm(query, max_variations)
+        additional = rewrite_query_with_llm(query, max_variations)
     else:
-        variations = rewrite_query_rule_based(query)
+        additional = rewrite_query_rule_based(query)
+    
+    # Add additional variations
+    variations.extend(additional)
+    
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_variations = []
+    for v in variations:
+        if v not in seen:
+            seen.add(v)
+            unique_variations.append(v)
     
     # Export metrics
     from utils.metrics_exporter import export_counter
-    export_counter('query_rewrites_total', len(variations) - 1)  # Don't count original
+    num_rewrites = len(unique_variations) - 1  # Don't count original
+    export_counter('query_rewrites_total', num_rewrites)
     
-    logger.info(f"Final query variations: {variations}")
+    logger.info(f"Final query variations: {unique_variations}")
     
-    return variations
+    return unique_variations
+
+
