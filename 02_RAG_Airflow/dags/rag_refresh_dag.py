@@ -2,7 +2,7 @@
 RAG Refresh Pipeline DAG - ENHANCED VERSION
 Includes: Hybrid Search, Query Rewriting, Reranking, Document Expiration, Cost Prediction
 """
-
+import os
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator, BranchPythonOperator
@@ -73,7 +73,7 @@ dag = DAG(
     params={
         'chunk_size': 512,
         'chunk_overlap': 50,
-        'embedding_model': 'text-embedding-3-small',
+        'embedding_model': os.getenv('RAG_EMBEDDING_MODEL', 'sentence-transformers/all-MiniLM-L6-v2'),
         'eval_threshold': 0.75,
         'sources': ['s3', 'filesystem', 'urls'],
         'use_hybrid_search': True,

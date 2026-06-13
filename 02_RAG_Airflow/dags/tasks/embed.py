@@ -6,7 +6,7 @@ import logging
 import os
 from typing import List, Dict, Any
 import time
-from openai import OpenAI
+#from openai import OpenAI
 #import numpy as np
 from tenacity import retry, stop_after_attempt, wait_exponential
 

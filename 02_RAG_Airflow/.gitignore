@@ -283,4 +283,4 @@ Thumbs.db
 *.local.yaml
 *.local.yml
 config.local.*
-settings.local.*
+settings.local.*.env
