@@ -116,7 +116,10 @@ def deduplicate_documents(documents: Any, **kwargs) -> List[Dict[str, Any]]:
     )
     
     # Export metrics
+    
     from utils.metrics_exporter import export_counter, export_gauge
+    from utils.metadata_db import record_documents
+    record_documents(new_documents)
     export_counter('documents_deduplicated_new', len(new_documents))
     export_counter('documents_deduplicated_skipped', duplicate_count)
     export_gauge('deduplication_cache_hit_rate', 

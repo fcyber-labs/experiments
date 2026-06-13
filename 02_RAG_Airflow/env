@@ -62,3 +62,21 @@ RAG_EVAL_THRESHOLD=0.75
 # --------------------------------------------
 RAG_S3_BUCKET=your-company-docs-bucket
 RAG_S3_PREFIX=knowledge-base/
+<<<<<<< HEAD:02_RAG_Airflow/env
+=======
+
+# --------------------------------------------
+# Metadata DB (new — separate from Airflow's own DB)
+# --------------------------------------------
+RAG_METADATA_DB_HOST=postgres
+RAG_METADATA_DB_PORT=5432
+RAG_METADATA_DB_NAME=rag_metadata
+RAG_METADATA_DB_USER=airflow
+RAG_METADATA_DB_PASSWORD=airflow
+
+
+
+# SLACK
+
+SLACK_WEBHOOK_URL = https://hooks.slack.com/services/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
+>>>>>>> 00f238a (add metadata db):02_RAG_Airflow/.env

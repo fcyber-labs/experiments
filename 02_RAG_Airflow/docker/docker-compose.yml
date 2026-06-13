@@ -222,6 +222,10 @@ services:
         exec /entrypoint airflow version
         airflow db init
         airflow db upgrade
+        PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -tc "SELECT 1 FROM pg_database WHERE datname = 'mlflow'" | grep -q 1 || PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -c "CREATE DATABASE mlflow"
+        PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -tc "SELECT 1 FROM pg_database WHERE datname = 'rag_metadata'" | grep -q 1 || PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -c "CREATE DATABASE rag_metadata"
+        PGPASSWORD=airflow psql -h postgres -U airflow -d rag_metadata -f /sources/sql/init.sql
+        
         airflow users create \
           --username admin \
           --firstname Admin \
