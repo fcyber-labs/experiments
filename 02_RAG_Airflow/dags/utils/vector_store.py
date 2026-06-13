@@ -7,7 +7,7 @@ import logging
 import os
 from typing import List, Dict, Any
 from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, VectorParams, PointStruct, SearchRequest
+from qdrant_client.models import Distance, VectorParams
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +46,8 @@ def create_collection_if_not_exists(
             client.get_collection(collection_name)
             logger.info(f"Collection '{collection_name}' already exists")
             return
-        except:
+        except Exception as e:
+            logger.error(f"Evaluation failed: {e}")
             pass
         
         # Create collection

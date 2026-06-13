@@ -3,10 +3,8 @@ Tests for ML-based cost prediction functionality.
 Tests linear regression forecasting, trend detection, and budget alerts.
 """
 
-import pytest
 from unittest.mock import Mock, patch
-import numpy as np
-from datetime import datetime, timedelta
+from datetime import datetime
 import sys
 sys.path.insert(0, 'dags')
 

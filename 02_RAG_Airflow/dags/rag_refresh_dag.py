@@ -20,9 +20,9 @@ from tasks.run_eval import run_retrieval_evaluation
 from tasks.rollback import rollback_collection, promote_collection
 
 # Import NEW enhanced tasks
-from tasks.hybrid_search import perform_hybrid_search
-from tasks.query_rewriter import rewrite_query
-from tasks.reranker import rerank_results
+#from tasks.hybrid_search import perform_hybrid_search
+#from tasks.query_rewriter import rewrite_query
+#from tasks.reranker import rerank_results
 
 # Import utilities
 from utils.slack_notifier import send_pipeline_summary, send_alert

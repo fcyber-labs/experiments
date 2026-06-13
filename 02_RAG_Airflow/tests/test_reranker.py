@@ -3,8 +3,7 @@ Tests for cross-encoder reranking functionality.
 Tests reranking logic, score improvements, and ranking changes.
 """
 
-import pytest
-from unittest.mock import Mock, patch, MagicMock
+from unittest.mock import Mock, patch
 import sys
 sys.path.insert(0, 'dags')
 
@@ -31,7 +30,7 @@ class TestReranker:
         mock_model = Mock()
         mock_cross_encoder.return_value = mock_model
         
-        reranker = Reranker()
+        Reranker()
         
         mock_cross_encoder.assert_called_once_with('cross-encoder/ms-marco-MiniLM-L-6-v2')
     
@@ -179,7 +178,7 @@ class TestRerankResults:
         mock_reranker_class.return_value = mock_reranker
         
         with patch('tasks.reranker.export_histogram') as mock_export:
-            results = rerank_results(
+            rerank_results(
                 query="test",
                 results=[{'id': '1', 'score': 0.7}],
                 top_k=1

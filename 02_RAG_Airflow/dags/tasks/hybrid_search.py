@@ -9,7 +9,7 @@ from rank_bm25 import BM25Okapi
 import numpy as np
 
 
-from utils.vector_store import get_qdrant_client, search_similar
+from utils.vector_store import search_similar
 
 
 logger = logging.getLogger(__name__)

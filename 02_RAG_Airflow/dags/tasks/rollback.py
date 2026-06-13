@@ -6,7 +6,6 @@ import logging
 import os
 from typing import Dict, Any
 from qdrant_client import QdrantClient
-from qdrant_client.models import CollectionInfo
 import time
 
 logger = logging.getLogger(__name__)
@@ -89,7 +88,7 @@ def promote_collection(
         
         # Check if production exists
         try:
-            prod_info = client.get_collection(production_collection)
+            client.get_collection(production_collection)
             logger.info(f"Creating backup of current production as '{backup_name}'")
             
             # Unfortunately Qdrant doesn't have direct rename, so we need to:

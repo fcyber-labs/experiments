@@ -3,7 +3,6 @@ Test embedding generation with mocked API calls.
 Tests OpenAI and local model embedding logic.
 """
 
-import pytest
 from unittest.mock import Mock, patch
 from dags.tasks.embed import embed_chunks, _get_openai_embeddings
 

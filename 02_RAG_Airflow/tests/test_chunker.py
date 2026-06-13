@@ -3,7 +3,6 @@ Test chunking logic - validates text splitting with overlap.
 Tests edge cases like empty text, single chunk, etc.
 """
 
-import pytest
 from dags.tasks.chunk import _split_text_into_chunks, chunk_documents
 
 

@@ -8,7 +8,7 @@ from typing import Any, Dict, List
 
 import numpy as np
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime
 from sklearn.linear_model import LinearRegression
 
 logger = logging.getLogger(__name__)

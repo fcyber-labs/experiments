@@ -54,8 +54,8 @@ def deduplicate_documents(documents: Any, **kwargs) -> List[Dict[str, Any]]:
         # If passed as string, try to parse
         try:
             documents = eval(documents)
-        except:
-            logger.error("Could not parse documents from XCom")
+        except Exception as e:  
+            logger.error(f"Could not parse chunks from XCom: {e}")
             return []
     
     if not documents:

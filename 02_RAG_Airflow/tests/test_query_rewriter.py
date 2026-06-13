@@ -3,7 +3,6 @@ Tests for query rewriting/expansion functionality.
 Tests LLM-based and rule-based query expansion strategies.
 """
 
-import pytest
 from unittest.mock import Mock, patch
 import sys
 sys.path.insert(0, 'dags')

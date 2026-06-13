@@ -6,7 +6,6 @@ Improves relevance by scoring query-document pairs directly.
 import logging
 from typing import Any, Dict, List
 
-import numpy as np
 from sentence_transformers import CrossEncoder
 
 from utils.metrics_exporter import export_histogram   # module-level – mocks work correctly

@@ -5,7 +5,6 @@ Sends alerts and summaries via webhook.
 
 import logging
 import os
-import json
 import requests
 
 logger = logging.getLogger(__name__)
@@ -58,13 +57,15 @@ def send_pipeline_summary(status: str, eval_results: dict, docs_processed: int, 
         try:
             import ast
             eval_results = ast.literal_eval(eval_results)
-        except:
+        except Exception as e:
+            logger.error(f"Evaluation failed: {e}")
             eval_results = {}
     
     if isinstance(docs_processed, str):
         try:
             docs_processed = len(ast.literal_eval(docs_processed))
-        except:
+        except Exception as e:
+            logger.error(f"Evaluation failed: {e}")
             docs_processed = 0
     
     # Build message
@@ -99,7 +100,8 @@ def send_alert(message: str, eval_results: dict, threshold: float, **kwargs):
         try:
             import ast
             eval_results = ast.literal_eval(eval_results)
-        except:
+        except Exception as e:
+            logger.error(f"Evaluation failed: {e}")
             eval_results = {}
     
     if isinstance(threshold, str):

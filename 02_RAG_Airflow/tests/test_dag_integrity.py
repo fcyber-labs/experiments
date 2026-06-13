@@ -2,9 +2,13 @@
 Test DAG integrity - ensures DAG loads without errors.
 Simple tests for a junior engineer to understand DAG validation.
 """
-
-import pytest
 from airflow.models import DagBag
+import logging
+
+# At the top of your file
+logger = logging.getLogger(__name__)
+
+
 
 
 def test_dag_loads_without_errors():
@@ -85,7 +89,8 @@ def test_dag_has_no_cycles():
     try:
         dag.test_cycle()
         has_cycle = False
-    except:
+    except Exception as e:
+        logger.error(f"Error checking for cycles: {e}")
         has_cycle = True
     
     assert not has_cycle, "DAG should not have circular dependencies"

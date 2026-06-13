@@ -99,9 +99,10 @@ def chunk_documents(
     if isinstance(documents, str):
         try:
             documents = eval(documents)
-        except:
-            logger.error("Could not parse documents from XCom")
+        except Exception as e:
+            logger.error(f"Could not parse documents from XCom:  {e}")
             return []
+    
     
     if not documents:
         logger.warning("No documents to chunk")

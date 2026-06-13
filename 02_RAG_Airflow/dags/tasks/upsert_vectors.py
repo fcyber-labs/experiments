@@ -5,14 +5,13 @@ ENHANCED: Now includes document expiration metadata.
 
 import logging
 import os
-from typing import List, Dict, Any
+from typing import Dict, Any
 import time
 from qdrant_client import QdrantClient
 from qdrant_client.models import (
     Distance,
     VectorParams,
     PointStruct,
-    CollectionInfo,
 )
 from qdrant_client.http.exceptions import UnexpectedResponse
 import uuid
@@ -74,8 +73,8 @@ def upsert_to_qdrant(
     if isinstance(embedded_chunks, str):
         try:
             embedded_chunks = eval(embedded_chunks)
-        except:
-            logger.error("Could not parse embedded_chunks from XCom")
+        except Exception as e:
+            logger.error(f"Could not parse embedded_chunks from XCom: {e}")
             return {'success': False, 'points_upserted': 0}
     
     if not embedded_chunks:

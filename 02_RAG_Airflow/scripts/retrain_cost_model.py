@@ -11,7 +11,7 @@ Usage:
 import argparse
 import sys
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 import pickle
 import json
 
@@ -91,7 +91,7 @@ def main():
     # Calculate R² score
     r2 = model.score(timestamps, costs)
     
-    print(f"✓ Model trained")
+    print("✓ Model trained")
     print(f"  R² score: {r2:.4f}")
     print(f"  Slope: {model.coef_[0]:.6f}")
     print(f"  Intercept: {model.intercept_:.6f}")
@@ -105,7 +105,7 @@ def main():
         days_to_predict=30
     )
     
-    print(f"✓ Forecast generated")
+    print("✓ Forecast generated")
     print(f"  Monthly estimate: ${prediction['monthly_estimate']:.2f}")
     print(f"  Daily average: ${prediction['daily_avg']:.4f}")
     print(f"  Trend: {prediction['trend']}")
@@ -158,7 +158,7 @@ def main():
         with open(metadata_path, 'w') as f:
             json.dump(metadata, f, indent=2)
         
-        print(f"✓ Model saved:")
+        print("✓ Model saved:")
         print(f"  {model_path}")
         print(f"  {metadata_path}")
     else:

@@ -3,7 +3,6 @@ Test evaluation metrics: Recall@K and MRR computation.
 Tests correctness of retrieval quality metrics.
 """
 
-import pytest
 from dags.tasks.run_eval import _compute_recall_at_k, _compute_mrr
 
 

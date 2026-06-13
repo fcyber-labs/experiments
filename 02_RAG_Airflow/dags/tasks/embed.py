@@ -7,7 +7,7 @@ import os
 from typing import List, Dict, Any
 import time
 from openai import OpenAI
-import numpy as np
+#import numpy as np
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 logger = logging.getLogger(__name__)
@@ -79,8 +79,8 @@ def embed_chunks(
     if isinstance(chunks, str):
         try:
             chunks = eval(chunks)
-        except:
-            logger.error("Could not parse chunks from XCom")
+        except Exception as e:
+            logger.error(f"Could not parse chunks from XCom: {e}")
             return []
     
     if not chunks:

@@ -3,7 +3,6 @@ Test deduplication logic using mocked Redis.
 Tests hash checking and duplicate detection.
 """
 
-import pytest
 from unittest.mock import Mock, patch
 from dags.tasks.deduplicate import deduplicate_documents
 from dags.utils.hash_store import compute_content_hash, check_document_hash
@@ -46,7 +45,7 @@ def test_check_document_hash_new(mock_redis_client):
     
     is_new = check_document_hash(content, metadata)
     
-    assert is_new == True, "New document should return True"
+    assert is_new, "New document should return True"
     mock_client.set.assert_called_once()
 
 
@@ -65,7 +64,7 @@ def test_check_document_hash_duplicate(mock_redis_client):
     
     is_new = check_document_hash(content, metadata)
     
-    assert is_new == False, "Duplicate document should return False"
+    assert not is_new, "Duplicate document should return False"
 
 
 @patch('dags.tasks.deduplicate._get_redis_client')

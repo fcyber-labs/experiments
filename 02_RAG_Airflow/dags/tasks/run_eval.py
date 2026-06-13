@@ -10,7 +10,7 @@ import json
 from typing import List, Dict, Any
 from qdrant_client import QdrantClient
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -88,7 +88,6 @@ def _filter_expired_documents(client: QdrantClient, collection_name: str) -> int
     Returns:
         Number of expired documents removed
     """
-    from qdrant_client.models import Filter, FieldCondition, Range
     
     try:
         # Get current timestamp
