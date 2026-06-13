@@ -11,6 +11,7 @@ from typing import List, Dict, Any
 from qdrant_client import QdrantClient
 import time
 from datetime import datetime
+from utils.metadata_db import record_eval_result
 
 logger = logging.getLogger(__name__)
 
@@ -332,5 +333,15 @@ def run_retrieval_evaluation(
         })
     except Exception as e:
         logger.warning(f"Could not log to MLflow: {e}")
+
+    try:
+        record_eval_result(
+            run_id=kwargs.get('run_id', 'unknown'),
+            collection_name=collection_name,
+            eval_results=results,
+            threshold_value=float(kwargs.get('eval_threshold', 0.75)),
+        )
+    except Exception as e:
+        logger.warning(f"Could not record eval result to metadata DB: {e}")
     
     return results

@@ -32,6 +32,7 @@ from utils.cost_predictor import (
     get_historical_costs_from_prometheus,
     generate_cost_budget_alert,
 )
+from utils.metadata_db import log_ingestion_start, log_ingestion_complete
 
 # Default arguments
 default_args = {
@@ -43,6 +44,19 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
     'execution_timeout': timedelta(hours=2),
 }
+
+def init_ingestion_log(**context):
+    log_id = log_ingestion_start(
+        run_id=context['run_id'],
+        dag_id=context['dag'].dag_id,
+        execution_date=context['ts'],
+    )
+    return log_id  # pushed to XCom automatically
+
+init_log = PythonOperator(
+    task_id='init_ingestion_log',
+    python_callable=init_ingestion_log,
+)
 
 # DAG definition
 # NOTE: id is "rag_refresh_pipeline" (without the _enhanced suffix)
@@ -327,6 +341,23 @@ with dag:
 
     # Failure path
     quality_gate >> rollback >> send_failure_alert >> log_metrics >> end
+
+def finalize_run(eval_results, chunks_created, docs_processed, **context):
+    log_pipeline_metrics(eval_results, chunks_created, docs_processed, **context)
+
+    log_id = context['task_instance'].xcom_pull(task_ids='init_ingestion_log')
+    quality_gate_result = context['task_instance'].xcom_pull(task_ids='quality_gate_decision')
+    status = 'success' if quality_gate_result == 'promote_to_production' else 'rolled_back'
+
+    log_ingestion_complete(
+        log_id=log_id,
+        documents_extracted=len(context['task_instance'].xcom_pull(task_ids='extract_sources.extract_all_sources') or []),
+        documents_deduplicated=docs_processed,
+        chunks_created=chunks_created,
+        chunks_embedded=chunks_created,
+        vectors_upserted=chunks_created,
+        status=status,
+    )
 
 # ---------------------------------------------------------------------------
 # Airflow 3.x removed DAG.test_cycle().  The dag-integrity test calls it
