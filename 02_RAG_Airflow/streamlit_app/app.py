@@ -16,7 +16,7 @@ from dags.tasks.hybrid_search import perform_hybrid_search
 from dags.tasks.query_rewriter import rewrite_query
 from dags.tasks.reranker import rerank_results
 from dags.utils.vector_store import get_qdrant_client, get_collection_info
-
+from dags.tasks.embed import _get_openai_embeddings, _get_local_embeddings
 
 # Page config
 st.set_page_config(
@@ -113,8 +113,12 @@ if search_button and query:
             
             # Step 2: Generate embedding
             st.info("🧠 Generating embedding...")
-            query_embedding = _get_openai_embeddings([search_query], "text-embedding-3-small")[0]
-            
+            EMBEDDING_MODEL = os.getenv("RAG_EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
+            if EMBEDDING_MODEL.startswith("text-embedding-"):
+                query_embedding = _get_openai_embeddings([search_query], EMBEDDING_MODEL)[0]
+            else:
+                query_embedding = _get_local_embeddings([search_query], EMBEDDING_MODEL)[0]
+                        
             # Step 3: Search
             if use_hybrid_search:
                 st.info("🔍 Performing hybrid search (BM25 + Vector)...")

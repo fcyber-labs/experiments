@@ -14,7 +14,7 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
-    
+
     # Custom environment variables
     REDIS_HOST: redis
     REDIS_PORT: 6379
@@ -22,14 +22,24 @@ x-airflow-common:
     QDRANT_PORT: 6333
     MLFLOW_TRACKING_URI: http://mlflow:5000
     PROMETHEUS_PUSHGATEWAY: http://prometheus-pushgateway:9091
-    OPENAI_API_KEY: ${OPENAI_API_KEY}
-    SLACK_WEBHOOK_URL: ${SLACK_WEBHOOK_URL}
-    
+    OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    SLACK_WEBHOOK_URL: ${SLACK_WEBHOOK_URL:-}
+
     # S3 Configuration (optional)
     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
     AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION:-us-east-1}
-    
+
+    # Embedding model — defaults to free HuggingFace model (no OpenAI key needed)
+    RAG_EMBEDDING_MODEL: ${RAG_EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+
+    # Metadata DB — separate Postgres database for the pipeline audit trail
+    RAG_METADATA_DB_HOST: postgres
+    RAG_METADATA_DB_PORT: 5432
+    RAG_METADATA_DB_NAME: rag_metadata
+    RAG_METADATA_DB_USER: airflow
+    RAG_METADATA_DB_PASSWORD: airflow
+
   volumes:
     - ../dags:/opt/airflow/dags
     - ../data:/opt/airflow/data
@@ -47,7 +57,9 @@ x-airflow-common:
       condition: service_healthy
 
 services:
-  # PostgreSQL - Airflow metadata DB
+
+  # ── Infrastructure ──────────────────────────────────────────────────────────
+
   postgres:
     image: postgres:15
     environment:
@@ -65,7 +77,6 @@ services:
     ports:
       - "5432:5432"
 
-  # Redis - Deduplication cache
   redis:
     image: redis:7.2-alpine
     expose:
@@ -80,7 +91,9 @@ services:
     volumes:
       - redis-data:/data
 
-  # Qdrant - Vector database
+  # ── Qdrant ──────────────────────────────────────────────────────────────────
+  # FIX: qdrant/qdrant:v1.7.4 is debian:bookworm-slim — curl is NOT installed.
+  # Using bash /dev/tcp built-in — works in any Debian image, zero extra tools.
   qdrant:
     image: qdrant/qdrant:v1.7.4
     ports:
@@ -91,13 +104,15 @@ services:
     environment:
       QDRANT__SERVICE__GRPC_PORT: 6334
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:6333/healthz"]
-      interval: 10s
+      test: ["CMD-SHELL", "bash -c '</dev/tcp/localhost/6333' 2>/dev/null && echo ok || exit 1"]
+      interval: 5s
       timeout: 5s
-      retries: 5
+      retries: 20
+      start_period: 30s
     restart: always
 
-  # MLflow - Experiment tracking
+  # ── MLflow ──────────────────────────────────────────────────────────────────
+  # Depends on airflow-init so the 'mlflow' database exists before this starts
   mlflow:
     image: ghcr.io/mlflow/mlflow:v2.10.2
     ports:
@@ -114,10 +129,14 @@ services:
       --host 0.0.0.0
       --port 5000
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
     restart: always
 
-  # Prometheus - Metrics collection
+  # ── Monitoring ──────────────────────────────────────────────────────────────
+
   prometheus:
     image: prom/prometheus:v2.48.1
     ports:
@@ -133,14 +152,12 @@ services:
       - '--web.enable-lifecycle'
     restart: always
 
-  # Prometheus Pushgateway - For batch job metrics
   prometheus-pushgateway:
     image: prom/pushgateway:v1.6.2
     ports:
       - "9091:9091"
     restart: always
 
-  # Grafana - Visualization
   grafana:
     image: grafana/grafana:10.2.3
     ports:
@@ -157,7 +174,8 @@ services:
       - prometheus
     restart: always
 
-  # Streamlit - Real-time dashboard (NEW)
+  # ── Streamlit ───────────────────────────────────────────────────────────────
+
   streamlit:
     build:
       context: .
@@ -168,7 +186,8 @@ services:
     environment:
       QDRANT_HOST: qdrant
       QDRANT_PORT: 6333
-      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      RAG_EMBEDDING_MODEL: ${RAG_EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
     volumes:
       - ../streamlit_app:/opt/airflow/streamlit_app
       - ../dags:/opt/airflow/dags
@@ -176,7 +195,8 @@ services:
       - qdrant
     restart: always
 
-  # Airflow webserver
+  # ── Airflow webserver ───────────────────────────────────────────────────────
+
   airflow-webserver:
     <<: *airflow-common
     command: webserver
@@ -194,7 +214,8 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
-  # Airflow scheduler
+  # ── Airflow scheduler ───────────────────────────────────────────────────────
+
   airflow-scheduler:
     <<: *airflow-common
     command: scheduler
@@ -210,7 +231,18 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
-  # Airflow initialization
+  # ── Airflow init ─────────────────────────────────────────────────────────────
+  # THREE bugs fixed vs original:
+  #
+  # BUG 1 — exec kills the shell: `exec /entrypoint` replaces the process,
+  #   so every line AFTER exec is dead code. DB creation now runs BEFORE exec.
+  #
+  # BUG 2 — no psql binary: the airflow image doesn't have psql installed.
+  #   DB creation now uses psycopg2 (Python driver already in requirements.txt).
+  #
+  # BUG 3 — qdrant dep blocks init: airflow-init doesn't use qdrant during
+  #   initialisation at all. Changed to service_started so init isn't blocked
+  #   by qdrant's health status.
   airflow-init:
     <<: *airflow-common
     entrypoint: /bin/bash
@@ -218,8 +250,54 @@ services:
       - -c
       - |
         mkdir -p /sources/logs /sources/dags /sources/plugins
-        chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
+        chown -R "${AIRFLOW_UID:-50000}:0" /sources/{logs,dags,plugins}
+
+        echo ">>> Creating mlflow + rag_metadata databases..."
+        python3 - << 'PYEOF'
+        import psycopg2, sys, time
+
+        for attempt in range(10):
+            try:
+                conn = psycopg2.connect(
+                    host="postgres", user="airflow",
+                    password="airflow", dbname="airflow"
+                )
+                break
+            except psycopg2.OperationalError:
+                print(f"  waiting for postgres... ({attempt+1}/10)")
+                time.sleep(3)
+        else:
+            print("ERROR: could not connect to postgres")
+            sys.exit(1)
+
+        conn.autocommit = True
+        cur = conn.cursor()
+        for db in ("mlflow", "rag_metadata"):
+            cur.execute("SELECT 1 FROM pg_database WHERE datname = %s", (db,))
+            if not cur.fetchone():
+                cur.execute(f"CREATE DATABASE {db}")
+                print(f"  created database: {db}")
+            else:
+                print(f"  already exists:   {db}")
+        cur.close()
+        conn.close()
+
+        conn2 = psycopg2.connect(
+            host="postgres", user="airflow",
+            password="airflow", dbname="rag_metadata"
+        )
+        conn2.autocommit = True
+        cur2 = conn2.cursor()
+        with open("/sources/sql/init.sql") as f:
+            cur2.execute(f.read())
+        cur2.close()
+        conn2.close()
+        print("  rag_metadata schema: OK")
+        PYEOF
+
+        echo ">>> Handing off to Airflow entrypoint (db upgrade + user create)..."
         exec /entrypoint airflow version
+<<<<<<< HEAD
         airflow db init
         airflow db upgrade
         PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -tc "SELECT 1 FROM pg_database WHERE datname = 'mlflow'" | grep -q 1 || PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -c "CREATE DATABASE mlflow"
@@ -233,6 +311,8 @@ services:
           --role Admin \
           --email admin@example.com \
           --password admin
+=======
+>>>>>>> my-work
     environment:
       <<: *airflow-common-env
       _AIRFLOW_DB_UPGRADE: 'true'
@@ -242,6 +322,13 @@ services:
     user: "0:0"
     volumes:
       - ../:/sources
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      qdrant:
+        condition: service_started   # init doesn't USE qdrant — just needs it running
 
 volumes:
   postgres-db-volume:

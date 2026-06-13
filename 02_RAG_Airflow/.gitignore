@@ -283,4 +283,8 @@ Thumbs.db
 *.local.yaml
 *.local.yml
 config.local.*
+<<<<<<< HEAD
 settings.local.*
+=======
+settings.local.*.env
+>>>>>>> my-work
