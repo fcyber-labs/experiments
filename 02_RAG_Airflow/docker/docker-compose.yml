@@ -166,6 +166,7 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+    entrypoint: [""] 
     command: streamlit run /opt/airflow/streamlit_app/app.py --server.port=8501 --server.address=0.0.0.0
     ports:
       - "8501:8501"
